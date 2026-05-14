@@ -1,0 +1,59 @@
+[
+  {
+    "methods": [
+      {
+        "method": "ObjectReader",
+        "depends_on_methods": [],
+        "cross_page_calls": [],
+        "helpers": [
+          "ObjectReader",
+          "Properties"
+        ],
+        "utilities": []
+      },
+      {
+        "method": "getProperty",
+        "depends_on_methods": [],
+        "cross_page_calls": [],
+        "helpers": [],
+        "utilities": [
+          "System.getProperty"
+        ]
+      },
+      {
+        "method": "getInstance",
+        "depends_on_methods": [
+          "IncidentDetailsPage constructor"
+        ],
+        "cross_page_calls": [],
+        "helpers": [],
+        "utilities": [
+          "DRIVER (WebDriver instance from Base/DriverManager)"
+        ]
+      },
+      {
+        "method": "IncidentDetailsPage",
+        "depends_on_methods": [],
+        "cross_page_calls": [],
+        "helpers": [
+          "ObjectReader"
+        ],
+        "utilities": [
+          "ObjectReader.getObjectRepository"
+        ]
+      },
+      {
+        "method": "getTextLanguage",
+        "depends_on_methods": [],
+        "cross_page_calls": [],
+        "helpers": [
+          "ObjectReader"
+        ],
+        "utilities": [
+          "ObjectReader.getLanguageObjectRepository",
+          "Properties.getProperty"
+        ]
+      }
+    ]
+  }
+]
