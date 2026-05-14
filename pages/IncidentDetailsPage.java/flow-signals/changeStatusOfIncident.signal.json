@@ -1,0 +1,14 @@
+{
+  "method": "changeStatusOfIncident",
+  "signals": [
+    "incident_update",
+    "status_change",
+    "comment_validation"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "status",
+    "comment"
+  ]
+}
