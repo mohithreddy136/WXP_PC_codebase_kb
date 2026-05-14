@@ -1,0 +1,9 @@
+[
+  {
+    "method": "changeStatusOfIncident",
+    "depends_on_methods": [
+      "clickOnElementOfIncidentDetailsPage",
+      "selectOptionFromDropdownOnIncidentDetailsPage"
+    ]
+  }
+]
