@@ -1,0 +1,7 @@
+{
+  "method": "changeStatusOfIncident",
+  "pattern_detected": [
+    "dropdown_selection_workflow",
+    "safe_click_pattern"
+  ]
+}
