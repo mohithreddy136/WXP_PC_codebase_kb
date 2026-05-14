@@ -2,82 +2,120 @@
   {
     "methods": [
       {
-        "method": "ObjectReader",
-        "actions": [],
-        "locators": [],
-        "waits": [],
-        "assertions": [],
-        "return_values": [],
-        "selenium_actions": [],
-        "ui_interactions": [],
-        "reusable_helpers": []
-      },
-      {
-        "method": "getProperty",
-        "actions": [],
-        "locators": [],
-        "waits": [],
-        "assertions": [],
-        "return_values": [
-          "static field uiVersion from System property uiVersion"
-        ],
-        "selenium_actions": [],
-        "ui_interactions": [],
-        "reusable_helpers": []
-      },
-      {
-        "method": "getInstance",
+        "method": "getTextOfElementOnIncidentDetailsPage",
         "actions": [
-          "singleton_initialization",
-          "conditional_instance_creation"
+          "read_text"
         ],
-        "locators": [],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+        ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "IncidentDetailsPage singleton instance"
+          "String text or null on exception"
         ],
-        "selenium_actions": [],
-        "ui_interactions": [],
-        "reusable_helpers": [
-          "DRIVER (shared WebDriver instance)"
+        "selenium_actions": [
+          "getTextBy"
+        ],
+        "ui_interactions": [
+          "read_element_text"
+        ],
+        "reusable_helper_usage": [
+          "getTextBy"
         ]
       },
       {
-        "method": "IncidentDetailsPage",
+        "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "actions": [
-          "properties_loading"
+          "check_enabled_state"
         ],
         "locators": [
-          "IncidentDetailsPageV3 object repository"
-        ],
-        "waits": [],
-        "assertions": [],
-        "return_values": [],
-        "selenium_actions": [],
-        "ui_interactions": [],
-        "reusable_helpers": [
-          "incidentDetailsPagePropertiesReader.getObjectRepository"
-        ]
-      },
-      {
-        "method": "getTextLanguage",
-        "actions": [
-          "load_language_properties",
-          "read_property"
-        ],
-        "locators": [
-          "language properties key"
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
         ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "localized_text_for_key"
+          "boolean (false on exception)"
         ],
-        "selenium_actions": [],
-        "ui_interactions": [],
-        "reusable_helpers": [
-          "incidentDetailsPagePropertiesReader.getLanguageObjectRepository"
+        "selenium_actions": [
+          "verifyElementIsEnable"
+        ],
+        "ui_interactions": [
+          "verify_element_enabled"
+        ],
+        "reusable_helper_usage": [
+          "verifyElementIsEnable"
+        ]
+      },
+      {
+        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "actions": [
+          "check_clickable_state"
+        ],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+        ],
+        "waits": [],
+        "assertions": [],
+        "return_values": [
+          "boolean (false on exception)"
+        ],
+        "selenium_actions": [
+          "verifyElementIsClickable"
+        ],
+        "ui_interactions": [
+          "verify_element_clickable"
+        ],
+        "reusable_helper_usage": [
+          "verifyElementIsClickable"
+        ]
+      },
+      {
+        "method": "waitForElementOfIncidentDetailsPage",
+        "actions": [
+          "wait_for_visibility"
+        ],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+        ],
+        "waits": [
+          "verifyElementIsVisible"
+        ],
+        "assertions": [],
+        "return_values": [
+          "boolean (false on exception)"
+        ],
+        "selenium_actions": [
+          "verifyElementIsVisible"
+        ],
+        "ui_interactions": [
+          "wait_for_element_visible"
+        ],
+        "reusable_helper_usage": [
+          "verifyElementIsVisible"
+        ]
+      },
+      {
+        "method": "getElementOfIncidentDetailsPage",
+        "actions": [
+          "get_webelement"
+        ],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+        ],
+        "waits": [],
+        "assertions": [],
+        "return_values": [
+          "WebElement or null on exception"
+        ],
+        "selenium_actions": [
+          "getElement"
+        ],
+        "ui_interactions": [
+          "access_webelement"
+        ],
+        "reusable_helper_usage": [
+          "getElement"
         ]
       }
     ]
