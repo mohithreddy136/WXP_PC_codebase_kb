@@ -4,19 +4,17 @@
       {
         "method": "ObjectReader",
         "signals": [
-          "page_level_configuration"
+          "page_config_repository"
         ],
-        "domain": "ui_framework",
+        "domain": "ui_automation_framework",
         "related_entities": [
-          "IncidentDetailsPage",
-          "ObjectReader",
-          "Properties"
+          "object_repository",
+          "incident_details_page"
         ]
       },
       {
         "method": "getProperty",
         "signals": [
-          "runtime_configuration_read",
           "ui_version_resolution"
         ],
         "domain": "configuration_management",
@@ -28,39 +26,36 @@
       {
         "method": "getInstance",
         "signals": [
-          "page_singleton_access"
+          "page_instance_access"
         ],
-        "domain": "test_automation",
+        "domain": "ui_automation_framework",
         "related_entities": [
-          "IncidentDetailsPage",
-          "WebDriver"
+          "incident_details_page",
+          "webdriver"
         ]
       },
       {
         "method": "IncidentDetailsPage",
         "signals": [
           "page_initialization",
-          "object_repository_binding"
+          "repository_binding"
         ],
-        "domain": "test_automation",
+        "domain": "ui_automation_framework",
         "related_entities": [
-          "IncidentDetailsPage",
-          "ObjectReader",
-          "IncidentDetailsPageV3"
+          "incident_details_page",
+          "object_repository"
         ]
       },
       {
         "method": "getTextLanguage",
         "signals": [
-          "i18n_text_resolution",
-          "locale_selection"
+          "localized_text_resolution"
         ],
         "domain": "internationalization",
         "related_entities": [
           "language",
-          "locale_folder",
-          "key",
-          "Properties"
+          "locale",
+          "message_key"
         ]
       }
     ]
