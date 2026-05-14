@@ -1,0 +1,69 @@
+[
+  {
+    "methods": [
+      {
+        "method": "ObjectReader",
+        "signals": [
+          "page_object_config"
+        ],
+        "domain": "ui_framework_infra",
+        "related_entities": [
+          "object_repository",
+          "properties",
+          "incident_details_page"
+        ]
+      },
+      {
+        "method": "getProperty",
+        "signals": [
+          "ui_runtime_configuration"
+        ],
+        "domain": "ui_framework_infra",
+        "related_entities": [
+          "ui_version",
+          "system_property"
+        ]
+      },
+      {
+        "method": "getInstance",
+        "signals": [
+          "page_object_access",
+          "singleton_resolution"
+        ],
+        "domain": "ui_framework_infra",
+        "related_entities": [
+          "incident_details_page",
+          "webdriver",
+          "singleton"
+        ]
+      },
+      {
+        "method": "IncidentDetailsPage",
+        "signals": [
+          "page_object_bootstrap",
+          "repository_binding"
+        ],
+        "domain": "ui_framework_infra",
+        "related_entities": [
+          "object_reader",
+          "incident_details_page",
+          "incident_details_page_repository"
+        ]
+      },
+      {
+        "method": "getTextLanguage",
+        "signals": [
+          "i18n_text_resolution",
+          "language_specific_text_lookup"
+        ],
+        "domain": "ui_framework_infra",
+        "related_entities": [
+          "language",
+          "locale_folder",
+          "translation_key",
+          "properties_file"
+        ]
+      }
+    ]
+  }
+]
