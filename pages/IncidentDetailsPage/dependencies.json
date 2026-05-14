@@ -5,18 +5,19 @@
         "method": "ObjectReader",
         "depends_on_methods": [],
         "cross_page_calls": [],
-        "helpers": [
-          "ObjectReader",
-          "Properties"
+        "helpers_used": [
+          "ObjectReader"
         ],
-        "utilities": []
+        "utilities_used": [
+          "java.util.Properties"
+        ]
       },
       {
         "method": "getProperty",
         "depends_on_methods": [],
         "cross_page_calls": [],
-        "helpers": [],
-        "utilities": [
+        "helpers_used": [],
+        "utilities_used": [
           "System.getProperty"
         ]
       },
@@ -26,30 +27,31 @@
           "IncidentDetailsPage constructor"
         ],
         "cross_page_calls": [],
-        "helpers": [],
-        "utilities": [
-          "DRIVER shared WebDriver instance",
-          "synchronized block on IncidentDetailsPage.class"
-        ]
+        "helpers_used": [
+          "DRIVER shared WebDriver"
+        ],
+        "utilities_used": []
       },
       {
         "method": "IncidentDetailsPage",
         "depends_on_methods": [],
         "cross_page_calls": [],
-        "helpers": [
-          "ObjectReader.getObjectRepository"
+        "helpers_used": [
+          "incidentDetailsPagePropertiesReader.getObjectRepository"
         ],
-        "utilities": []
+        "utilities_used": [
+          "java.util.Properties"
+        ]
       },
       {
         "method": "getTextLanguage",
         "depends_on_methods": [],
         "cross_page_calls": [],
-        "helpers": [
-          "ObjectReader.getLanguageObjectRepository"
+        "helpers_used": [
+          "incidentDetailsPagePropertiesReader.getLanguageObjectRepository"
         ],
-        "utilities": [
-          "Properties.getProperty"
+        "utilities_used": [
+          "java.util.Properties"
         ]
       }
     ]
