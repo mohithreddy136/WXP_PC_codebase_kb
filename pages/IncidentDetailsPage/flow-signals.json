@@ -4,11 +4,12 @@
       {
         "method": "ObjectReader",
         "signals": [
-          "page_config_repository"
+          "page_repository_configuration"
         ],
         "domain": "ui_automation_framework",
         "related_entities": [
           "object_repository",
+          "properties_file",
           "incident_details_page"
         ]
       },
@@ -17,45 +18,49 @@
         "signals": [
           "ui_version_resolution"
         ],
-        "domain": "configuration_management",
+        "domain": "test_configuration",
         "related_entities": [
-          "system_properties",
-          "ui_version"
+          "uiVersion",
+          "system_property"
         ]
       },
       {
         "method": "getInstance",
         "signals": [
-          "page_instance_access"
+          "page_singleton_resolution",
+          "driver_bound_page_initialization"
         ],
         "domain": "ui_automation_framework",
         "related_entities": [
-          "incident_details_page",
-          "webdriver"
+          "IncidentDetailsPage",
+          "WebDriver",
+          "singleton"
         ]
       },
       {
         "method": "IncidentDetailsPage",
         "signals": [
-          "page_initialization",
-          "repository_binding"
+          "page_repository_load"
         ],
         "domain": "ui_automation_framework",
         "related_entities": [
-          "incident_details_page",
-          "object_repository"
+          "IncidentDetailsPage",
+          "object_repository",
+          "IncidentDetailsPageV3"
         ]
       },
       {
         "method": "getTextLanguage",
         "signals": [
-          "localized_text_resolution"
+          "localized_text_resolution",
+          "language_based_property_lookup"
         ],
-        "domain": "internationalization",
+        "domain": "localization",
         "related_entities": [
           "language",
-          "locale",
-          "message_key"
+          "locale_folder",
+          "property_key",
+          "localized_text"
         ]
       }
     ]
