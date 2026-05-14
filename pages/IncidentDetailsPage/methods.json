@@ -10,11 +10,7 @@
         "return_values": [],
         "selenium_actions": [],
         "ui_interactions": [],
-        "reusable_helper_usage": [
-          "ObjectReader",
-          "Properties",
-          "IncidentDetailsPage singleton field"
-        ]
+        "reusable_helpers": []
       },
       {
         "method": "getProperty",
@@ -23,19 +19,17 @@
         "waits": [],
         "assertions": [],
         "return_values": [
-          "uiVersion system property"
+          "static field uiVersion from System property uiVersion"
         ],
         "selenium_actions": [],
         "ui_interactions": [],
-        "reusable_helper_usage": [
-          "System.getProperty"
-        ]
+        "reusable_helpers": []
       },
       {
         "method": "getInstance",
         "actions": [
-          "create_singleton_instance",
-          "return_singleton"
+          "singleton_initialization",
+          "conditional_instance_creation"
         ],
         "locators": [],
         "waits": [],
@@ -45,15 +39,14 @@
         ],
         "selenium_actions": [],
         "ui_interactions": [],
-        "reusable_helper_usage": [
-          "IncidentDetailsPage(WebDriver) constructor",
+        "reusable_helpers": [
           "DRIVER (shared WebDriver instance)"
         ]
       },
       {
         "method": "IncidentDetailsPage",
         "actions": [
-          "load_page_object_repository"
+          "properties_loading"
         ],
         "locators": [
           "IncidentDetailsPageV3 object repository"
@@ -63,29 +56,28 @@
         "return_values": [],
         "selenium_actions": [],
         "ui_interactions": [],
-        "reusable_helper_usage": [
-          "ObjectReader.getObjectRepository"
+        "reusable_helpers": [
+          "incidentDetailsPagePropertiesReader.getObjectRepository"
         ]
       },
       {
         "method": "getTextLanguage",
         "actions": [
           "load_language_properties",
-          "lookup_localized_text"
+          "read_property"
         ],
         "locators": [
-          "language property key"
+          "language properties key"
         ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "localized text for key"
+          "localized_text_for_key"
         ],
         "selenium_actions": [],
         "ui_interactions": [],
-        "reusable_helper_usage": [
-          "ObjectReader.getLanguageObjectRepository",
-          "Properties.getProperty"
+        "reusable_helpers": [
+          "incidentDetailsPagePropertiesReader.getLanguageObjectRepository"
         ]
       }
     ]
