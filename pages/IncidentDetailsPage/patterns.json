@@ -1,0 +1,37 @@
+[
+  {
+    "methods": [
+      {
+        "method": "ObjectReader",
+        "pattern_detected": []
+      },
+      {
+        "method": "getProperty",
+        "pattern_detected": [
+          "config_via_system_property"
+        ]
+      },
+      {
+        "method": "getInstance",
+        "pattern_detected": [
+          "double_checked_locking_singleton",
+          "lazy_initialization"
+        ]
+      },
+      {
+        "method": "IncidentDetailsPage",
+        "pattern_detected": [
+          "page_object_initialization",
+          "object_repository_pattern"
+        ]
+      },
+      {
+        "method": "getTextLanguage",
+        "pattern_detected": [
+          "i18n_language_resolution",
+          "properties_lookup"
+        ]
+      }
+    ]
+  }
+]
