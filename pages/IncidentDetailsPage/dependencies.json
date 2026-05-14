@@ -5,16 +5,18 @@
         "method": "ObjectReader",
         "depends_on_methods": [],
         "cross_page_calls": [],
-        "helpers": [
+        "helper_methods": [
           "ObjectReader"
         ],
-        "utilities": []
+        "utilities": [
+          "Properties"
+        ]
       },
       {
         "method": "getProperty",
         "depends_on_methods": [],
         "cross_page_calls": [],
-        "helpers": [],
+        "helper_methods": [],
         "utilities": [
           "System.getProperty"
         ]
@@ -22,31 +24,34 @@
       {
         "method": "getInstance",
         "depends_on_methods": [
-          "IncidentDetailsPage constructor"
+          "IncidentDetailsPage(WebDriver)"
         ],
         "cross_page_calls": [],
-        "helpers": [],
-        "utilities": []
+        "helper_methods": [],
+        "utilities": [
+          "DRIVER"
+        ]
       },
       {
         "method": "IncidentDetailsPage",
         "depends_on_methods": [],
         "cross_page_calls": [],
-        "helpers": [
+        "helper_methods": [
           "ObjectReader.getObjectRepository"
         ],
-        "utilities": []
+        "utilities": [
+          "Properties"
+        ]
       },
       {
         "method": "getTextLanguage",
         "depends_on_methods": [],
         "cross_page_calls": [],
-        "helpers": [
-          "ObjectReader.getLanguageObjectRepository"
-        ],
-        "utilities": [
+        "helper_methods": [
+          "getLanguageObjectRepository",
           "Properties.getProperty"
-        ]
+        ],
+        "utilities": []
       }
     ]
   }
