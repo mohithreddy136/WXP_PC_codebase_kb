@@ -1,0 +1,15 @@
+{
+  "method": "changeStatusOfIncident",
+  "actions": [
+    "click",
+    "select_dropdown",
+    "submit"
+  ],
+  "locators": [
+    "statusDropdown",
+    "submitButton"
+  ],
+  "assertions": [
+    "status_updated_message"
+  ]
+}
