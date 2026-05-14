@@ -4,34 +4,32 @@
       {
         "method": "ObjectReader",
         "pattern_detected": [
-          "page_object_configuration_holder"
+          "page_object_repository_initialization_fields"
         ]
       },
       {
         "method": "getProperty",
         "pattern_detected": [
-          "system_property_configuration"
+          "static_configuration_property"
         ]
       },
       {
         "method": "getInstance",
         "pattern_detected": [
-          "lazy_initialized_singleton",
-          "double_checked_locking"
+          "double_checked_locking_singleton",
+          "shared_webdriver_page_singleton"
         ]
       },
       {
         "method": "IncidentDetailsPage",
         "pattern_detected": [
-          "page_object_constructor",
-          "properties_repository_loading"
+          "page_object_constructor_initializes_repository"
         ]
       },
       {
         "method": "getTextLanguage",
         "pattern_detected": [
-          "i18n_message_resolution",
-          "locale_based_properties_lookup"
+          "localization_lookup_via_properties"
         ]
       }
     ]
