@@ -2,60 +2,69 @@
   {
     "methods": [
       {
-        "method": "ObjectReader",
-        "signals": [],
-        "domain": "ui_automation_framework",
+        "method": "getTextOfElementOnIncidentDetailsPage",
+        "signals": [
+          "incident_details_read",
+          "field_text_read"
+        ],
+        "domain": "incident_management_ui",
         "related_entities": [
-          "object_repository",
-          "properties"
+          "incident",
+          "incident_field",
+          "label",
+          "value"
         ]
       },
       {
-        "method": "getProperty",
+        "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "signals": [
-          "ui_version_detection"
+          "ui_field_state_check",
+          "incident_details_interaction_precheck"
         ],
-        "domain": "ui_automation_framework",
+        "domain": "incident_management_ui",
         "related_entities": [
-          "ui_version",
-          "system_property"
+          "incident",
+          "ui_field",
+          "enabled_state"
         ]
       },
       {
-        "method": "getInstance",
+        "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "signals": [
-          "page_singleton_access"
+          "ui_field_clickability_check",
+          "incident_details_interaction_precheck"
         ],
-        "domain": "ui_automation_framework",
+        "domain": "incident_management_ui",
         "related_entities": [
-          "IncidentDetailsPage",
-          "webdriver",
-          "singleton"
+          "incident",
+          "ui_field",
+          "clickable_state"
         ]
       },
       {
-        "method": "IncidentDetailsPage",
+        "method": "waitForElementOfIncidentDetailsPage",
         "signals": [
-          "page_initialization",
-          "object_repository_binding"
+          "ui_wait_for_element",
+          "incident_details_load_sync"
         ],
-        "domain": "ui_automation_framework",
+        "domain": "incident_management_ui",
         "related_entities": [
-          "IncidentDetailsPage",
-          "object_repository"
+          "incident",
+          "ui_field",
+          "visibility_state"
         ]
       },
       {
-        "method": "getTextLanguage",
+        "method": "getElementOfIncidentDetailsPage",
         "signals": [
-          "localized_text_resolution"
+          "ui_element_access",
+          "incident_details_dom_access"
         ],
-        "domain": "ui_automation_framework",
+        "domain": "incident_management_ui",
         "related_entities": [
-          "language",
-          "locale",
-          "properties_key",
-          "localized_text"
+          "incident",
+          "ui_field",
+          "webelement"
         ]
       }
     ]
