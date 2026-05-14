@@ -8,51 +8,50 @@
           "safe_wrapper_with_logging"
         ],
         "notes": [
-          "Wraps low-level text retrieval with try/catch and logs exceptions."
+          "Uses properties file key to resolve locator, wrapped in try/catch with error logging and null fallback."
         ]
       },
       {
         "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "pattern_detected": [
-          "state_verification_wrapper",
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging"
+          "safe_wrapper_with_logging",
+          "state_verification_helper"
         ],
         "notes": [
-          "Returns boolean with graceful fallback on error."
+          "Delegates enabled-state verification to shared helper with robust error handling."
         ]
       },
       {
         "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "pattern_detected": [
-          "state_verification_wrapper",
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging"
+          "safe_wrapper_with_logging",
+          "state_verification_helper"
         ],
         "notes": [
-          "Verifies clickability via shared helper."
+          "Encapsulates clickability check with logging and boolean fallback."
         ]
       },
       {
         "method": "waitForElementOfIncidentDetailsPage",
         "pattern_detected": [
-          "wait_and_verify_visibility",
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging"
+          "safe_wrapper_with_logging",
+          "wait_and_verify_visibility_pattern"
         ],
         "notes": [
-          "Waits for visibility using shared verification helper."
+          "Combines implicit wait via verifyElementIsVisible with safe wrapper."
         ]
       },
       {
         "method": "getElementOfIncidentDetailsPage",
         "pattern_detected": [
-          "webelement_access_wrapper",
           "property_key_to_locator_resolution",
           "safe_wrapper_with_logging"
         ],
         "notes": [
-          "Provides typed WebElement accessor with exception logging."
+          "Encapsulates raw WebElement retrieval behind key-based lookup with logging."
         ]
       }
     ]
