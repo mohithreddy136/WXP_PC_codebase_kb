@@ -2,56 +2,74 @@
   {
     "methods": [
       {
-        "method": "ObjectReader",
-        "depends_on_methods": [],
-        "cross_page_calls": [],
-        "helpers_used": [
-          "ObjectReader"
-        ],
-        "utilities_used": [
-          "java.util.Properties"
-        ]
-      },
-      {
-        "method": "getProperty",
-        "depends_on_methods": [],
-        "cross_page_calls": [],
-        "helpers_used": [],
-        "utilities_used": [
-          "System.getProperty"
-        ]
-      },
-      {
-        "method": "getInstance",
+        "method": "getTextOfElementOnIncidentDetailsPage",
         "depends_on_methods": [
-          "IncidentDetailsPage constructor"
+          "getTextBy"
         ],
         "cross_page_calls": [],
-        "helpers_used": [
-          "DRIVER shared WebDriver"
+        "helper_method_usage": [
+          "getTextBy"
         ],
-        "utilities_used": []
-      },
-      {
-        "method": "IncidentDetailsPage",
-        "depends_on_methods": [],
-        "cross_page_calls": [],
-        "helpers_used": [
-          "incidentDetailsPagePropertiesReader.getObjectRepository"
-        ],
-        "utilities_used": [
-          "java.util.Properties"
+        "utility_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
         ]
       },
       {
-        "method": "getTextLanguage",
-        "depends_on_methods": [],
-        "cross_page_calls": [],
-        "helpers_used": [
-          "incidentDetailsPagePropertiesReader.getLanguageObjectRepository"
+        "method": "verifyElementIsEnableOfIncidentDetailsPage",
+        "depends_on_methods": [
+          "verifyElementIsEnable"
         ],
-        "utilities_used": [
-          "java.util.Properties"
+        "cross_page_calls": [],
+        "helper_method_usage": [
+          "verifyElementIsEnable"
+        ],
+        "utility_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
+        ]
+      },
+      {
+        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "depends_on_methods": [
+          "verifyElementIsClickable"
+        ],
+        "cross_page_calls": [],
+        "helper_method_usage": [
+          "verifyElementIsClickable"
+        ],
+        "utility_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
+        ]
+      },
+      {
+        "method": "waitForElementOfIncidentDetailsPage",
+        "depends_on_methods": [
+          "verifyElementIsVisible"
+        ],
+        "cross_page_calls": [],
+        "helper_method_usage": [
+          "verifyElementIsVisible"
+        ],
+        "utility_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
+        ]
+      },
+      {
+        "method": "getElementOfIncidentDetailsPage",
+        "depends_on_methods": [
+          "getElement"
+        ],
+        "cross_page_calls": [],
+        "helper_method_usage": [
+          "getElement"
+        ],
+        "utility_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER",
+          "WebElement"
         ]
       }
     ]
