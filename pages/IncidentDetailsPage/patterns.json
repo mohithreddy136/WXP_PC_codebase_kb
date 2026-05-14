@@ -3,35 +3,35 @@
     "methods": [
       {
         "method": "ObjectReader",
-        "pattern_detected": []
+        "pattern_detected": [
+          "page_object_configuration_holder"
+        ]
       },
       {
         "method": "getProperty",
         "pattern_detected": [
-          "config_driven_ui_version"
+          "system_property_configuration"
         ]
       },
       {
         "method": "getInstance",
         "pattern_detected": [
-          "double_checked_locking_singleton"
-        ],
-        "thread_safety_notes": [
-          "synchronized on IncidentDetailsPage.class for lazy singleton initialization"
+          "lazy_initialized_singleton",
+          "double_checked_locking"
         ]
       },
       {
         "method": "IncidentDetailsPage",
         "pattern_detected": [
-          "page_object_initialization",
-          "object_repository_loading"
+          "page_object_constructor",
+          "properties_repository_loading"
         ]
       },
       {
         "method": "getTextLanguage",
         "pattern_detected": [
-          "i18n_property_lookup",
-          "language_specific_object_repository"
+          "i18n_message_resolution",
+          "locale_based_properties_lookup"
         ]
       }
     ]
