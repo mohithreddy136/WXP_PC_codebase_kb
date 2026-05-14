@@ -4,64 +4,63 @@
       {
         "method": "ObjectReader",
         "signals": [
-          "page_object_config"
+          "page_level_configuration"
         ],
-        "domain": "ui_framework_infra",
+        "domain": "ui_framework",
         "related_entities": [
-          "object_repository",
-          "properties",
-          "incident_details_page"
+          "IncidentDetailsPage",
+          "ObjectReader",
+          "Properties"
         ]
       },
       {
         "method": "getProperty",
         "signals": [
-          "ui_runtime_configuration"
+          "runtime_configuration_read",
+          "ui_version_resolution"
         ],
-        "domain": "ui_framework_infra",
+        "domain": "configuration_management",
         "related_entities": [
-          "ui_version",
-          "system_property"
+          "system_properties",
+          "ui_version"
         ]
       },
       {
         "method": "getInstance",
         "signals": [
-          "page_object_access",
-          "singleton_resolution"
+          "page_singleton_access"
         ],
-        "domain": "ui_framework_infra",
+        "domain": "test_automation",
         "related_entities": [
-          "incident_details_page",
-          "webdriver",
-          "singleton"
+          "IncidentDetailsPage",
+          "WebDriver"
         ]
       },
       {
         "method": "IncidentDetailsPage",
         "signals": [
-          "page_object_bootstrap",
-          "repository_binding"
+          "page_initialization",
+          "object_repository_binding"
         ],
-        "domain": "ui_framework_infra",
+        "domain": "test_automation",
         "related_entities": [
-          "object_reader",
-          "incident_details_page",
-          "incident_details_page_repository"
+          "IncidentDetailsPage",
+          "ObjectReader",
+          "IncidentDetailsPageV3"
         ]
       },
       {
         "method": "getTextLanguage",
         "signals": [
           "i18n_text_resolution",
-          "language_specific_text_lookup"
+          "locale_selection"
         ],
-        "domain": "ui_framework_infra",
+        "domain": "internationalization",
         "related_entities": [
           "language",
           "locale_folder",
-          "translation_key",
-          "properties_file"
+          "key",
+          "Properties"
         ]
       }
     ]
