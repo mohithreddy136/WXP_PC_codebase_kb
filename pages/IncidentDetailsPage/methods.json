@@ -1,0 +1,88 @@
+[
+  {
+    "methods": [
+      {
+        "method": "ObjectReader",
+        "actions": [],
+        "locators": [],
+        "waits": [],
+        "assertions": [],
+        "return_values": [],
+        "selenium_actions": [],
+        "ui_interactions": [],
+        "reusable_helper_usage": [
+          "ObjectReader",
+          "Properties"
+        ]
+      },
+      {
+        "method": "getProperty",
+        "actions": [],
+        "locators": [],
+        "waits": [],
+        "assertions": [],
+        "return_values": [
+          "String uiVersion (static, from System property \"uiVersion\")"
+        ],
+        "selenium_actions": [],
+        "ui_interactions": [],
+        "reusable_helper_usage": [
+          "System.getProperty"
+        ]
+      },
+      {
+        "method": "getInstance",
+        "actions": [
+          "lazy_singleton_creation"
+        ],
+        "locators": [],
+        "waits": [],
+        "assertions": [],
+        "return_values": [
+          "IncidentDetailsPage singleton instance"
+        ],
+        "selenium_actions": [],
+        "ui_interactions": [],
+        "reusable_helper_usage": [
+          "IncidentDetailsPage(WebDriver) constructor",
+          "DRIVER reference"
+        ]
+      },
+      {
+        "method": "IncidentDetailsPage",
+        "actions": [
+          "page_object_initialization",
+          "object_repository_load"
+        ],
+        "locators": [],
+        "waits": [],
+        "assertions": [],
+        "return_values": [],
+        "selenium_actions": [],
+        "ui_interactions": [],
+        "reusable_helper_usage": [
+          "ObjectReader.getObjectRepository"
+        ]
+      },
+      {
+        "method": "getTextLanguage",
+        "actions": [
+          "language_properties_load",
+          "property_lookup"
+        ],
+        "locators": [],
+        "waits": [],
+        "assertions": [],
+        "return_values": [
+          "String localizedText from Properties by key"
+        ],
+        "selenium_actions": [],
+        "ui_interactions": [],
+        "reusable_helper_usage": [
+          "ObjectReader.getLanguageObjectRepository",
+          "Properties.getProperty"
+        ]
+      }
+    ]
+  }
+]
