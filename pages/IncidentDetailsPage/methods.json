@@ -11,8 +11,7 @@
         "selenium_actions": [],
         "ui_interactions": [],
         "reusable_helper_usage": [
-          "ObjectReader",
-          "Properties"
+          "ObjectReader"
         ]
       },
       {
@@ -22,7 +21,7 @@
         "waits": [],
         "assertions": [],
         "return_values": [
-          "String uiVersion (static, from System property \"uiVersion\")"
+          "String uiVersion (static field)"
         ],
         "selenium_actions": [],
         "ui_interactions": [],
@@ -33,7 +32,7 @@
       {
         "method": "getInstance",
         "actions": [
-          "lazy_singleton_creation"
+          "lazy_initialize_singleton"
         ],
         "locators": [],
         "waits": [],
@@ -43,16 +42,12 @@
         ],
         "selenium_actions": [],
         "ui_interactions": [],
-        "reusable_helper_usage": [
-          "IncidentDetailsPage(WebDriver) constructor",
-          "DRIVER reference"
-        ]
+        "reusable_helper_usage": []
       },
       {
         "method": "IncidentDetailsPage",
         "actions": [
-          "page_object_initialization",
-          "object_repository_load"
+          "load_object_repository"
         ],
         "locators": [],
         "waits": [],
@@ -67,14 +62,14 @@
       {
         "method": "getTextLanguage",
         "actions": [
-          "language_properties_load",
-          "property_lookup"
+          "load_language_bundle",
+          "read_property"
         ],
         "locators": [],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "String localizedText from Properties by key"
+          "localized text for key"
         ],
         "selenium_actions": [],
         "ui_interactions": [],
