@@ -7,12 +7,11 @@
           "getTextBy"
         ],
         "cross_page_calls": [],
-        "helper_method_usage": [
-          "getTextBy"
+        "helper_usage": [
+          "LOGGER.error"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
@@ -21,12 +20,11 @@
           "verifyElementIsEnable"
         ],
         "cross_page_calls": [],
-        "helper_method_usage": [
-          "verifyElementIsEnable"
+        "helper_usage": [
+          "LOGGER.error"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
@@ -35,12 +33,11 @@
           "verifyElementIsClickable"
         ],
         "cross_page_calls": [],
-        "helper_method_usage": [
-          "verifyElementIsClickable"
+        "helper_usage": [
+          "LOGGER.error"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
@@ -49,12 +46,11 @@
           "verifyElementIsVisible"
         ],
         "cross_page_calls": [],
-        "helper_method_usage": [
-          "verifyElementIsVisible"
+        "helper_usage": [
+          "LOGGER.error"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
@@ -63,13 +59,11 @@
           "getElement"
         ],
         "cross_page_calls": [],
-        "helper_method_usage": [
-          "getElement"
+        "helper_usage": [
+          "LOGGER.error"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER",
-          "WebElement"
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       }
     ]
