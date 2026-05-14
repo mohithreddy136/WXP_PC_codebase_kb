@@ -6,8 +6,7 @@
         "depends_on_methods": [],
         "cross_page_calls": [],
         "helpers": [
-          "ObjectReader",
-          "Properties"
+          "ObjectReader"
         ],
         "utilities": []
       },
@@ -27,30 +26,25 @@
         ],
         "cross_page_calls": [],
         "helpers": [],
-        "utilities": [
-          "DRIVER (WebDriver instance from Base/DriverManager)"
-        ]
+        "utilities": []
       },
       {
         "method": "IncidentDetailsPage",
         "depends_on_methods": [],
         "cross_page_calls": [],
         "helpers": [
-          "ObjectReader"
-        ],
-        "utilities": [
           "ObjectReader.getObjectRepository"
-        ]
+        ],
+        "utilities": []
       },
       {
         "method": "getTextLanguage",
         "depends_on_methods": [],
         "cross_page_calls": [],
         "helpers": [
-          "ObjectReader"
+          "ObjectReader.getLanguageObjectRepository"
         ],
         "utilities": [
-          "ObjectReader.getLanguageObjectRepository",
           "Properties.getProperty"
         ]
       }
