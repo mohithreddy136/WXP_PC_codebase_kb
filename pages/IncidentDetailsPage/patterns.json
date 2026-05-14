@@ -3,33 +3,34 @@
     "methods": [
       {
         "method": "ObjectReader",
-        "pattern_detected": [
-          "page_object_repository_initialization_fields"
-        ]
+        "pattern_detected": []
       },
       {
         "method": "getProperty",
         "pattern_detected": [
-          "static_configuration_property"
+          "configuration_from_system_properties"
         ]
       },
       {
         "method": "getInstance",
         "pattern_detected": [
-          "double_checked_locking_singleton",
-          "shared_webdriver_page_singleton"
+          "lazy_initialized_singleton",
+          "double_checked_locking",
+          "thread_safe_singleton"
         ]
       },
       {
         "method": "IncidentDetailsPage",
         "pattern_detected": [
-          "page_object_constructor_initializes_repository"
+          "page_object_initialization",
+          "object_repository_loading"
         ]
       },
       {
         "method": "getTextLanguage",
         "pattern_detected": [
-          "localization_lookup_via_properties"
+          "i18n_localization_lookup",
+          "properties_file_based_localization"
         ]
       }
     ]
