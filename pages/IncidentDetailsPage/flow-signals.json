@@ -3,63 +3,58 @@
     "methods": [
       {
         "method": "ObjectReader",
-        "signals": [
-          "page_repository_configuration"
-        ],
+        "signals": [],
         "domain": "ui_automation_framework",
         "related_entities": [
           "object_repository",
-          "properties_file",
-          "incident_details_page"
+          "properties"
         ]
       },
       {
         "method": "getProperty",
         "signals": [
-          "ui_version_resolution"
+          "ui_version_detection"
         ],
-        "domain": "test_configuration",
+        "domain": "ui_automation_framework",
         "related_entities": [
-          "uiVersion",
+          "ui_version",
           "system_property"
         ]
       },
       {
         "method": "getInstance",
         "signals": [
-          "page_singleton_resolution",
-          "driver_bound_page_initialization"
+          "page_singleton_access"
         ],
         "domain": "ui_automation_framework",
         "related_entities": [
           "IncidentDetailsPage",
-          "WebDriver",
+          "webdriver",
           "singleton"
         ]
       },
       {
         "method": "IncidentDetailsPage",
         "signals": [
-          "page_repository_load"
+          "page_initialization",
+          "object_repository_binding"
         ],
         "domain": "ui_automation_framework",
         "related_entities": [
           "IncidentDetailsPage",
-          "object_repository",
-          "IncidentDetailsPageV3"
+          "object_repository"
         ]
       },
       {
         "method": "getTextLanguage",
         "signals": [
-          "localized_text_resolution",
-          "language_based_property_lookup"
+          "localized_text_resolution"
         ],
-        "domain": "localization",
+        "domain": "ui_automation_framework",
         "related_entities": [
           "language",
-          "locale_folder",
-          "property_key",
+          "locale",
+          "properties_key",
           "localized_text"
         ]
       }
