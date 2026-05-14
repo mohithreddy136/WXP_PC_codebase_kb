@@ -12,22 +12,22 @@
         "waits": [],
         "assertions": [],
         "return_values": [
-          "String text or null on exception"
+          "String text of targeted element or null on exception"
         ],
         "selenium_actions": [
           "getTextBy"
         ],
         "ui_interactions": [
-          "read_element_text"
+          "retrieve text of UI element identified by logical key"
         ],
         "reusable_helper_usage": [
-          "getTextBy"
+          "getTextBy(String locator)"
         ]
       },
       {
         "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "actions": [
-          "check_enabled_state"
+          "verify_enabled_state"
         ],
         "locators": [
           "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
@@ -35,22 +35,22 @@
         "waits": [],
         "assertions": [],
         "return_values": [
-          "boolean (false on exception)"
+          "boolean (true if element enabled, false on failure/exception)"
         ],
         "selenium_actions": [
           "verifyElementIsEnable"
         ],
         "ui_interactions": [
-          "verify_element_enabled"
+          "check if UI element is enabled"
         ],
         "reusable_helper_usage": [
-          "verifyElementIsEnable"
+          "verifyElementIsEnable(String locator)"
         ]
       },
       {
         "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "actions": [
-          "check_clickable_state"
+          "verify_clickable_state"
         ],
         "locators": [
           "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
@@ -58,16 +58,16 @@
         "waits": [],
         "assertions": [],
         "return_values": [
-          "boolean (false on exception)"
+          "boolean (true if element clickable, false on failure/exception)"
         ],
         "selenium_actions": [
           "verifyElementIsClickable"
         ],
         "ui_interactions": [
-          "verify_element_clickable"
+          "check if UI element is clickable"
         ],
         "reusable_helper_usage": [
-          "verifyElementIsClickable"
+          "verifyElementIsClickable(String locator)"
         ]
       },
       {
@@ -83,22 +83,22 @@
         ],
         "assertions": [],
         "return_values": [
-          "boolean (false on exception)"
+          "boolean (true if element visible within wait, false otherwise/exception)"
         ],
         "selenium_actions": [
           "verifyElementIsVisible"
         ],
         "ui_interactions": [
-          "wait_for_element_visible"
+          "wait until UI element is visible"
         ],
         "reusable_helper_usage": [
-          "verifyElementIsVisible"
+          "verifyElementIsVisible(String locator)"
         ]
       },
       {
         "method": "getElementOfIncidentDetailsPage",
         "actions": [
-          "get_webelement"
+          "fetch_webelement"
         ],
         "locators": [
           "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
@@ -106,16 +106,16 @@
         "waits": [],
         "assertions": [],
         "return_values": [
-          "WebElement or null on exception"
+          "WebElement instance or null on exception"
         ],
         "selenium_actions": [
           "getElement"
         ],
         "ui_interactions": [
-          "access_webelement"
+          "retrieve WebElement for locator"
         ],
         "reusable_helper_usage": [
-          "getElement"
+          "getElement(String locator)"
         ]
       }
     ]
