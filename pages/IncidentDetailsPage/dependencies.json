@@ -3,67 +3,67 @@
     "methods": [
       {
         "method": "getTextOfElementOnIncidentDetailsPage",
-        "depends_on_methods_internal": [
+        "depends_on_methods": [
           "getTextBy"
         ],
         "cross_page_calls": [],
         "helper_methods": [
-          "LOGGER.error"
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
+          "LOGGER.error"
         ]
       },
       {
         "method": "verifyElementIsEnableOfIncidentDetailsPage",
-        "depends_on_methods_internal": [
+        "depends_on_methods": [
           "verifyElementIsEnable"
         ],
         "cross_page_calls": [],
         "helper_methods": [
-          "LOGGER.error"
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
+          "LOGGER.error"
         ]
       },
       {
         "method": "verifyElementIsClickableOfIncidentDetailsPage",
-        "depends_on_methods_internal": [
+        "depends_on_methods": [
           "verifyElementIsClickable"
         ],
         "cross_page_calls": [],
         "helper_methods": [
-          "LOGGER.error"
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
+          "LOGGER.error"
         ]
       },
       {
         "method": "waitForElementOfIncidentDetailsPage",
-        "depends_on_methods_internal": [
+        "depends_on_methods": [
           "verifyElementIsVisible"
         ],
         "cross_page_calls": [],
         "helper_methods": [
-          "LOGGER.error"
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
+          "LOGGER.error"
         ]
       },
       {
         "method": "getElementOfIncidentDetailsPage",
-        "depends_on_methods_internal": [
+        "depends_on_methods": [
           "getElement"
         ],
         "cross_page_calls": [],
         "helper_methods": [
-          "LOGGER.error"
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
+          "LOGGER.error"
         ]
       }
     ]
