@@ -5,54 +5,46 @@
         "method": "getTextOfElementOnIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging"
+          "exception_handling_with_logging",
+          "read_only_accessor"
         ],
-        "notes": [
-          "Uses properties file key to resolve locator, wrapped in try/catch with error logging and null fallback."
-        ]
+        "notes": "Uses properties file key to resolve locator and safe access pattern with try-catch."
       },
       {
         "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging",
-          "state_verification_helper"
+          "exception_handling_with_logging",
+          "state_verification_wrapper"
         ],
-        "notes": [
-          "Delegates enabled-state verification to shared helper with robust error handling."
-        ]
+        "notes": "Wraps low-level enabled check with logging and safe default."
       },
       {
         "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging",
-          "state_verification_helper"
+          "exception_handling_with_logging",
+          "state_verification_wrapper"
         ],
-        "notes": [
-          "Encapsulates clickability check with logging and boolean fallback."
-        ]
+        "notes": "Wraps clickable verification with properties-based locator resolution."
       },
       {
         "method": "waitForElementOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging",
-          "wait_and_verify_visibility_pattern"
+          "exception_handling_with_logging",
+          "wait_and_verify_pattern"
         ],
-        "notes": [
-          "Combines implicit wait via verifyElementIsVisible with safe wrapper."
-        ]
+        "notes": "Encapsulates wait-for-visible behavior behind boolean return."
       },
       {
         "method": "getElementOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging"
+          "exception_handling_with_logging",
+          "webelement_accessor"
         ],
-        "notes": [
-          "Encapsulates raw WebElement retrieval behind key-based lookup with logging."
-        ]
+        "notes": "Provides safe accessor for WebElement via properties key."
       }
     ]
   }
