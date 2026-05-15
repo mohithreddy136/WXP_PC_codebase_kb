@@ -3,11 +3,11 @@
     "methods": [
       {
         "method": "getTextOfElementOnIncidentDetailsPage",
-        "depends_on_methods": [
+        "depends_on_methods_internal": [
           "getTextBy"
         ],
         "cross_page_calls": [],
-        "helper_usage": [
+        "helper_methods": [
           "LOGGER.error"
         ],
         "utility_dependencies": [
@@ -16,11 +16,11 @@
       },
       {
         "method": "verifyElementIsEnableOfIncidentDetailsPage",
-        "depends_on_methods": [
+        "depends_on_methods_internal": [
           "verifyElementIsEnable"
         ],
         "cross_page_calls": [],
-        "helper_usage": [
+        "helper_methods": [
           "LOGGER.error"
         ],
         "utility_dependencies": [
@@ -29,11 +29,11 @@
       },
       {
         "method": "verifyElementIsClickableOfIncidentDetailsPage",
-        "depends_on_methods": [
+        "depends_on_methods_internal": [
           "verifyElementIsClickable"
         ],
         "cross_page_calls": [],
-        "helper_usage": [
+        "helper_methods": [
           "LOGGER.error"
         ],
         "utility_dependencies": [
@@ -42,11 +42,11 @@
       },
       {
         "method": "waitForElementOfIncidentDetailsPage",
-        "depends_on_methods": [
+        "depends_on_methods_internal": [
           "verifyElementIsVisible"
         ],
         "cross_page_calls": [],
-        "helper_usage": [
+        "helper_methods": [
           "LOGGER.error"
         ],
         "utility_dependencies": [
@@ -55,11 +55,11 @@
       },
       {
         "method": "getElementOfIncidentDetailsPage",
-        "depends_on_methods": [
+        "depends_on_methods_internal": [
           "getElement"
         ],
         "cross_page_calls": [],
-        "helper_usage": [
+        "helper_methods": [
           "LOGGER.error"
         ],
         "utility_dependencies": [
