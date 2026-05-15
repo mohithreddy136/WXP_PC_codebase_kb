@@ -15,10 +15,10 @@
           "String text of located element or null on exception"
         ],
         "selenium_actions": [
-          "getText"
+          "getTextBy"
         ],
         "ui_interactions": [
-          "read_element_text"
+          "read_text"
         ],
         "reusable_helper_usage": [
           "getTextBy"
@@ -35,13 +35,13 @@
         "waits": [],
         "assertions": [],
         "return_values": [
-          "boolean enabled or false on exception"
+          "boolean enabled flag or false on exception"
         ],
         "selenium_actions": [
-          "isEnabled"
+          "verifyElementIsEnable"
         ],
         "ui_interactions": [
-          "check_element_enabled"
+          "check_enabled"
         ],
         "reusable_helper_usage": [
           "verifyElementIsEnable"
@@ -58,13 +58,13 @@
         "waits": [],
         "assertions": [],
         "return_values": [
-          "boolean clickable or false on exception"
+          "boolean clickable flag or false on exception"
         ],
         "selenium_actions": [
-          "expected_conditions_element_to_be_clickable"
+          "verifyElementIsClickable"
         ],
         "ui_interactions": [
-          "check_element_clickable"
+          "check_clickable"
         ],
         "reusable_helper_usage": [
           "verifyElementIsClickable"
@@ -83,13 +83,13 @@
         ],
         "assertions": [],
         "return_values": [
-          "boolean visible or false on exception"
+          "boolean visible flag or false on exception"
         ],
         "selenium_actions": [
-          "explicit_wait_visibility"
+          "verifyElementIsVisible"
         ],
         "ui_interactions": [
-          "wait_until_element_visible"
+          "wait_for_element"
         ],
         "reusable_helper_usage": [
           "verifyElementIsVisible"
@@ -98,7 +98,7 @@
       {
         "method": "getElementOfIncidentDetailsPage",
         "actions": [
-          "get_webelement"
+          "get_element"
         ],
         "locators": [
           "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
@@ -109,10 +109,10 @@
           "WebElement or null on exception"
         ],
         "selenium_actions": [
-          "findElement"
+          "getElement"
         ],
         "ui_interactions": [
-          "access_webelement"
+          "access_element"
         ],
         "reusable_helper_usage": [
           "getElement"
