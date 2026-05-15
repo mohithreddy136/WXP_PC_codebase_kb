@@ -5,46 +5,54 @@
         "method": "getTextOfElementOnIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "exception_handling_with_logging",
-          "read_only_accessor"
+          "safe_wrapper_with_logging"
         ],
-        "notes": "Uses properties file key to resolve locator and safe access pattern with try-catch."
+        "notes": [
+          "Wraps lower-level getTextBy with property-based locator resolution and try/catch logging."
+        ]
       },
       {
         "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "exception_handling_with_logging",
-          "state_verification_wrapper"
+          "safe_wrapper_with_logging",
+          "state_verification_pattern"
         ],
-        "notes": "Wraps low-level enabled check with logging and safe default."
+        "notes": [
+          "Boolean state verification with default false on failure."
+        ]
       },
       {
         "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "exception_handling_with_logging",
-          "state_verification_wrapper"
+          "safe_wrapper_with_logging",
+          "state_verification_pattern"
         ],
-        "notes": "Wraps clickable verification with properties-based locator resolution."
+        "notes": [
+          "Boolean clickable verification with default false on failure."
+        ]
       },
       {
         "method": "waitForElementOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "exception_handling_with_logging",
-          "wait_and_verify_pattern"
+          "safe_wrapper_with_logging",
+          "wait_and_verify_visibility_pattern"
         ],
-        "notes": "Encapsulates wait-for-visible behavior behind boolean return."
+        "notes": [
+          "Waits for visibility via verifyElementIsVisible and returns boolean."
+        ]
       },
       {
         "method": "getElementOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "exception_handling_with_logging",
-          "webelement_accessor"
+          "safe_wrapper_with_logging"
         ],
-        "notes": "Provides safe accessor for WebElement via properties key."
+        "notes": [
+          "Returns WebElement via generic getElement helper with logging on failure."
+        ]
       }
     ]
   }
