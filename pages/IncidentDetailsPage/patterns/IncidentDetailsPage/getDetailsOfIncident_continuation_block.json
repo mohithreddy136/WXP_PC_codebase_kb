@@ -1,0 +1,9 @@
+{
+  "method": "getDetailsOfIncident_continuation_block",
+  "pattern_detected": [
+    "read_only_details_aggregation"
+  ],
+  "notes": [
+    "Continuation of incident details aggregation block."
+  ]
+}
