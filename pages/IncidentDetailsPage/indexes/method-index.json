@@ -74,5 +74,9 @@
   "selectValueFromDropdownInTypePopup": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/selectValueFromDropdownInTypePopup.json"
+  },
+  "waitForElementToBeClickableOfIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/waitForElementToBeClickableOfIncidentDetailsPage.json"
   }
 }
