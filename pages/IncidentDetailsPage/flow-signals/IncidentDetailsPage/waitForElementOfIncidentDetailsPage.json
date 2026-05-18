@@ -1,0 +1,14 @@
+{
+  "method": "waitForElementOfIncidentDetailsPage",
+  "signals": [
+    "synchronize_with_ui",
+    "wait_for_incident_section_visibility"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "ui_element",
+    "page_section"
+  ],
+  "notes": "Provides synchronization step waiting for specific incident detail element visibility."
+}
