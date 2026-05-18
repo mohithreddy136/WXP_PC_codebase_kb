@@ -28,6 +28,7 @@
     "verifyDragAndDrop",
     "verifyHideAndShowLink",
     "getActualAarrayAfterDragAndDropOperation",
-    "getActualAarrayAfterDragAndDropOperationWithHiddenArea"
+    "getActualAarrayAfterDragAndDropOperationWithHiddenArea",
+    "headerTextVerificationOnReportPage"
   ]
 }
