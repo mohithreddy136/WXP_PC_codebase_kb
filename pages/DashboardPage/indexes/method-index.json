@@ -38,5 +38,9 @@
   "verifyChartsMessageAllIncidentsFixed": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyChartsMessageAllIncidentsFixed.json"
+  },
+  "verifyChartsHasNoDataOnDashBoardPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyChartsHasNoDataOnDashBoardPage.json"
   }
 }
