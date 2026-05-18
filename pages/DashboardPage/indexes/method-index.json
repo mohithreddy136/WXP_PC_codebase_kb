@@ -66,5 +66,9 @@
   "headerTextVerificationOnReportPageFrameDonutChartFlexi": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/headerTextVerificationOnReportPageFrameDonutChartFlexi.json"
+  },
+  "verifyLegendsAreHidden": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyLegendsAreHidden.json"
   }
 }
