@@ -1,0 +1,12 @@
+{
+  "method": "verifyElementIsClickableOfIncidentDetailsPage",
+  "pattern_detected": [
+    "state_verification_helper",
+    "clickability_check_pattern",
+    "page_property_key_lookup",
+    "safe_wrapper_with_logging"
+  ],
+  "notes": [
+    "Checks clickability using shared helper; consistent error logging."
+  ]
+}
