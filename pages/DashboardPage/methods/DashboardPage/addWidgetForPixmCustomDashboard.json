@@ -1,0 +1,13 @@
+{
+  "method": "addWidgetForPixmCustomDashboard",
+  "actions": [],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "flag"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": []
+}
