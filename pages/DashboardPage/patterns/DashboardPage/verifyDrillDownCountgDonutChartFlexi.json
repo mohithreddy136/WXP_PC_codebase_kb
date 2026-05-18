@@ -1,0 +1,8 @@
+{
+  "method": "verifyDrillDownCountgDonutChartFlexi",
+  "pattern_detected": [
+    "wait_and_click_pattern",
+    "dropdown_visibility_check",
+    "legend_toggle_workflow"
+  ]
+}
