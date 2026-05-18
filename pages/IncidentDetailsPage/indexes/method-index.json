@@ -6,5 +6,9 @@
   "verifyElementIsEnableOfIncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/verifyElementIsEnableOfIncidentDetailsPage.json"
+  },
+  "verifyElementIsClickableOfIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/verifyElementIsClickableOfIncidentDetailsPage.json"
   }
 }
