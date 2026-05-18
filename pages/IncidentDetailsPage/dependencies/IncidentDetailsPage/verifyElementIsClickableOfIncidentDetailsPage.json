@@ -1,0 +1,13 @@
+{
+  "method": "verifyElementIsClickableOfIncidentDetailsPage",
+  "depends_on_methods": [
+    "verifyElementIsClickable"
+  ],
+  "cross_page_calls": [],
+  "helper_method_usage": [
+    "LOGGER.error"
+  ],
+  "utility_dependencies": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty"
+  ]
+}
