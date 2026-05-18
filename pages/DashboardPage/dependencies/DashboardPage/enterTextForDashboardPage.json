@@ -1,0 +1,11 @@
+{
+  "method": "enterTextForDashboardPage",
+  "depends_on_methods": [
+    "getAttribute"
+  ],
+  "cross_page_calls": [],
+  "helper_dependencies": [
+    "dashboardPageProperties"
+  ],
+  "utility_dependencies": []
+}
