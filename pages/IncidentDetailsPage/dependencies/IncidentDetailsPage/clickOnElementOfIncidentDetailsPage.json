@@ -1,0 +1,13 @@
+{
+  "method": "clickOnElementOfIncidentDetailsPage",
+  "depends_on_methods": [
+    "verifyElementIsPresent"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "LOGGER"
+  ],
+  "utilities": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty"
+  ]
+}
