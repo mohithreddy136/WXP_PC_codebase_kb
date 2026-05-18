@@ -50,5 +50,9 @@
   "changeAssigneeOfIncident": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/changeAssigneeOfIncident.json"
+  },
+  "changeStatusOfIncident": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/changeStatusOfIncident.json"
   }
 }
