@@ -1,5 +1,6 @@
 {
   "IncidentDetailsPage": [
-    "getTextOfElementOnIncidentDetailsPage"
+    "getTextOfElementOnIncidentDetailsPage",
+    "verifyElementIsEnableOfIncidentDetailsPage"
   ]
 }
