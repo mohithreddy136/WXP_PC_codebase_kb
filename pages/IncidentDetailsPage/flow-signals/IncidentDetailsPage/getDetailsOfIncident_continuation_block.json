@@ -1,0 +1,15 @@
+{
+  "method": "getDetailsOfIncident_continuation_block",
+  "signals": [
+    "read_incident_overview"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "type",
+    "subtype",
+    "priority",
+    "status",
+    "created_on"
+  ]
+}
