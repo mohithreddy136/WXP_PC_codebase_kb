@@ -8,6 +8,7 @@
     "clickByJavaScriptOnDashboardPage",
     "enterTextForDashboardPage",
     "verifyElementIsClickableOfDashboardPage",
-    "switchToIframeofDashboardPage"
+    "switchToIframeofDashboardPage",
+    "verifyChartsMessageAllIncidentsFixed"
   ]
 }
