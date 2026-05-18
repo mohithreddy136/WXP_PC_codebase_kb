@@ -1,0 +1,11 @@
+{
+  "method": "getTextOfElementOnIncidentDetailsPage",
+  "pattern_detected": [
+    "page_property_key_lookup",
+    "safe_wrapper_with_logging",
+    "read_only_accessor"
+  ],
+  "notes": [
+    "Wraps lower-level text retrieval with properties lookup and exception handling."
+  ]
+}
