@@ -1,0 +1,37 @@
+{
+  "method": "getHeadCountAndLabel",
+  "actions": [
+    "conditional_check",
+    "wait_for_elements",
+    "locate_elements",
+    "iterate_elements",
+    "parse_text",
+    "populate_map",
+    "return_map"
+  ],
+  "locators": [
+    "headCountLocatorValue",
+    "labelLocatorValue",
+    "noDataKey",
+    "chartTitle"
+  ],
+  "waits": [
+    "waitForElementsOfDashboardPage(headCountLocatorValue)"
+  ],
+  "assertions": [
+    "chart_has_data_before_processing"
+  ],
+  "return_values": [
+    "HashMap<String,Integer> countLabel"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [
+    "read_bar_counts",
+    "read_axis_labels"
+  ],
+  "reusable_helper_usage": [
+    "verifyChartsHasNoDataOnDashBoardPageFlexi",
+    "waitForElementsOfDashboardPage",
+    "getElementsOfDashboardPage"
+  ]
+}
