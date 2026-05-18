@@ -50,5 +50,9 @@
   "verifyChartsHasNoDataDevicesEnrolledOnDashBoardPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyChartsHasNoDataDevicesEnrolledOnDashBoardPage.json"
+  },
+  "verifyTitleofChartOfDashboardPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyTitleofChartOfDashboardPage.json"
   }
 }
