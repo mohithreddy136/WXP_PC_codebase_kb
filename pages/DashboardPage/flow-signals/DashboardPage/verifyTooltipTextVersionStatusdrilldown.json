@@ -1,0 +1,15 @@
+{
+  "method": "verifyTooltipTextVersionStatusdrilldown",
+  "signals": [
+    "legend_iteration",
+    "tooltip_text_verification",
+    "donut_chart_drilldown"
+  ],
+  "domain": "dashboard_analytics",
+  "related_entities": [
+    "legend",
+    "tooltip",
+    "donut_chart",
+    "battery_swell"
+  ]
+}
