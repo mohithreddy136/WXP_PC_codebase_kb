@@ -1,0 +1,17 @@
+{
+  "method": "viewThreatDetailsRedirectionOnReportPage",
+  "pattern_detected": [
+    "dropdown_selection_workflow",
+    "wait_and_click_pattern",
+    "safe_click_pattern",
+    "localized_text_retrieval",
+    "scroll_before_click"
+  ],
+  "details": {
+    "wait_and_click_pattern": "sleeper(2000) before clicking confirm button",
+    "dropdown_selection_workflow": "selectCategoryForFlexibleDashboardPage + selectSubCategoryForFlexibleDashboardPage + selectOptionForFlexibleDashboardPage",
+    "safe_click_pattern": "verifyElementIsClickableOfDashboardPage before click",
+    "localized_text_retrieval": "getTextLanguage used for subcategory comparison",
+    "scroll_before_click": "scrollToDashboardPage used before interacting with confirm button in else branch"
+  }
+}
