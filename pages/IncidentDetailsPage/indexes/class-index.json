@@ -5,6 +5,7 @@
     "verifyElementIsClickableOfIncidentDetailsPage",
     "waitForElementOfIncidentDetailsPage",
     "getElementOfIncidentDetailsPage",
-    "clickOnElementOfIncidentDetailsPage"
+    "clickOnElementOfIncidentDetailsPage",
+    "clickByJavaScriptOnIncidentDetailsPage"
   ]
 }
