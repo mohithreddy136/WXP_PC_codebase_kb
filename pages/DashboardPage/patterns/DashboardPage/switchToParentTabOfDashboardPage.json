@@ -1,0 +1,11 @@
+{
+  "method": "switchToParentTabOfDashboardPage",
+  "pattern_detected": [
+    "wait_and_click_pattern",
+    "safe_click_pattern"
+  ],
+  "details": {
+    "wait_and_click_pattern": "sleeper(2000) after visualization click",
+    "safe_click_pattern": "verifyElementIsClickableOfDashboardPage before interaction"
+  }
+}
