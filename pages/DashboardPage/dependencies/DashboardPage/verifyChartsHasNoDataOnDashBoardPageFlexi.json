@@ -1,0 +1,17 @@
+{
+  "method": "verifyChartsHasNoDataOnDashBoardPageFlexi",
+  "depends_on_methods": [
+    "getTextLanguage",
+    "verifyElementIsVisibleDynamic",
+    "getTextOfDashboardPage",
+    "sleeper"
+  ],
+  "cross_page_calls": [],
+  "helper_dependencies": [
+    "dashboardPageProperties",
+    "LOGGER"
+  ],
+  "external_dependencies": [
+    "InputMismatchException"
+  ]
+}
