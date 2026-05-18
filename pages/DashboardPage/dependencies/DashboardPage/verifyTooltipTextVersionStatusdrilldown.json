@@ -1,0 +1,19 @@
+{
+  "method": "verifyTooltipTextVersionStatusdrilldown",
+  "depends_on_methods": [
+    "verifyElementsOfDashboardPage",
+    "verifyLabelHiddenWhenClickOnLegendsDonutBatterySwellChartFlexi",
+    "getElementsOfDashboardPage",
+    "waitForPageLoaded",
+    "sleeper",
+    "verifyTooltipTextOnDonutBatterySwellChartFlexi"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "sleeper",
+    "waitForPageLoaded"
+  ],
+  "utility_dependencies": [
+    "LOGGER"
+  ]
+}
