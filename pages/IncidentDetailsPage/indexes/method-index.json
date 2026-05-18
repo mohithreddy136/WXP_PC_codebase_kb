@@ -46,5 +46,9 @@
   "validateDeviceNameHyperLink": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/validateDeviceNameHyperLink.json"
+  },
+  "changeAssigneeOfIncident": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/changeAssigneeOfIncident.json"
   }
 }
