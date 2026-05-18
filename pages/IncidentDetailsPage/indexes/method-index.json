@@ -34,5 +34,9 @@
   "selectedValueFromSearchBoxInsideDevicePopup": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/selectedValueFromSearchBoxInsideDevicePopup.json"
+  },
+  "verifySearchValueOnIncidentInsidePopup": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/verifySearchValueOnIncidentInsidePopup.json"
   }
 }
