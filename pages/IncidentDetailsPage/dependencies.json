@@ -2,88 +2,75 @@
   {
     "methods": [
       {
-        "method": "getDetailsOfIncident",
+        "method": "selectOptionFromDropdownOnIncidentDetailsPage",
         "depends_on_methods": [
-          "getTextBy"
-        ],
-        "cross_page_calls": [],
-        "helper_methods": [
-          "getTextBy"
-        ],
-        "utilities": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
-        ],
-        "external_dependencies": [
-          "LOGGER"
-        ]
-      },
-      {
-        "method": "selectValueFromDropdownInPopup",
-        "depends_on_methods": [
-          "clickOnElementOfIncidentDetailsPage",
           "selectValueOnPopup"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
+        "helpers": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
-        "utilities": [
+        "external_dependencies": []
+      },
+      {
+        "method": "selectedValueFromSearchBoxInsidePopup",
+        "depends_on_methods": [
+          "enterText",
+          "sleeper",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getElementsTillAllElementsPresent",
+          "clickOnElementOfIncidentDetailsPage"
+        ],
+        "cross_page_calls": [],
+        "helpers": [
+          "getTextLanguage",
           "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
         "external_dependencies": [
-          "LOGGER"
+          "org.openqa.selenium.WebElement"
         ]
       },
       {
-        "method": "selectValueFromDropdownInTypePopup",
+        "method": "selectedValueFromSearchBoxInsideDevicePopup",
         "depends_on_methods": [
-          "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
+          "enterText",
+          "sleeper",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getElementsTillAllElementsPresent",
+          "clickOnElementOfIncidentDetailsPage"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
-        ],
-        "utilities": [
+        "helpers": [
+          "getTextLanguage",
           "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
         "external_dependencies": [
-          "LOGGER"
+          "org.openqa.selenium.WebElement"
         ]
       },
       {
-        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
+        "method": "verifySearchValueOnIncidentInsidePopup",
         "depends_on_methods": [
-          "compareTwoList"
+          "verifySearchFunctionalityInsidePopup"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "compareTwoList"
-        ],
-        "utilities": [
+        "helpers": [
           "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
-        "external_dependencies": [
-          "LOGGER"
-        ]
+        "external_dependencies": []
       },
       {
-        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
+        "method": "waitForElementToBeClickableOfIncidentDetailsPage",
         "depends_on_methods": [
-          "selectFirstValueFromDropdown"
+          "verifyElementIsClickable"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "selectFirstValueFromDropdown"
-        ],
-        "utilities": [
+        "helpers": [
           "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
-        "external_dependencies": [
-          "LOGGER"
-        ]
+        "external_dependencies": []
       }
     ]
   }
