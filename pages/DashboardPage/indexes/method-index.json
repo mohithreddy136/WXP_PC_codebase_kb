@@ -34,5 +34,9 @@
   "switchToIframeofDashboardPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/switchToIframeofDashboardPage.json"
+  },
+  "verifyChartsMessageAllIncidentsFixed": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyChartsMessageAllIncidentsFixed.json"
   }
 }
