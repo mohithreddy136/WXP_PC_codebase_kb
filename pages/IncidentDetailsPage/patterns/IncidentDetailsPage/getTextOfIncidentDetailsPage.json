@@ -1,0 +1,9 @@
+{
+  "method": "getTextOfIncidentDetailsPage",
+  "pattern_detected": [
+    "search_box_input_pattern"
+  ],
+  "details": {
+    "workflow": "enter text into search box using reusable helper"
+  }
+}
