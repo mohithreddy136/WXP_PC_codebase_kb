@@ -1,0 +1,6 @@
+{
+  "verifyElementsOfDashboardPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyElementsOfDashboardPage.json"
+  }
+}
