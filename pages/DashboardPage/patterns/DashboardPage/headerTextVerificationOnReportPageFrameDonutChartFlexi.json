@@ -1,0 +1,8 @@
+{
+  "method": "headerTextVerificationOnReportPageFrameDonutChartFlexi",
+  "pattern_detected": [
+    "drilldown_navigation_workflow",
+    "tabbed_report_workflow",
+    "error_short_circuit_on_mismatch"
+  ]
+}
