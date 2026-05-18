@@ -1,0 +1,14 @@
+{
+  "method": "selectValueFromDropdownInPopup",
+  "signals": [
+    "update_incident_field_via_popup"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "field",
+    "popup",
+    "dropdown",
+    "submit_action"
+  ]
+}
