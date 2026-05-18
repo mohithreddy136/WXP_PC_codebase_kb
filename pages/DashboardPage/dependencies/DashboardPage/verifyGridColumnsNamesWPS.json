@@ -1,0 +1,15 @@
+{
+  "method": "verifyGridColumnsNamesWPS",
+  "depends_on_methods": [
+    "getTextOfDashboardPage"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "Strings.isNullOrEmpty"
+  ],
+  "utility_dependencies": [
+    "LOGGER",
+    "labelCount",
+    "listOfLegends"
+  ]
+}
