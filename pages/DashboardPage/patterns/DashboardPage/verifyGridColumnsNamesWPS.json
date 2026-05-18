@@ -1,0 +1,8 @@
+{
+  "method": "verifyGridColumnsNamesWPS",
+  "pattern_detected": [
+    "chart_legend_iteration",
+    "tooltip_count_aggregation",
+    "null_safe_logging"
+  ]
+}
