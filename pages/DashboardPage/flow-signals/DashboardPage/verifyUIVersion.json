@@ -1,0 +1,23 @@
+{
+  "method": "verifyUIVersion",
+  "signals": [
+    "dashboard_widget_add",
+    "hardware_widget",
+    "bios_inventory_widget",
+    "battery_risk_widget",
+    "category_selection",
+    "subcategory_selection",
+    "option_selection"
+  ],
+  "domain": "dashboard_reporting",
+  "related_entities": [
+    "widget",
+    "category",
+    "subcategory",
+    "option",
+    "language",
+    "hardware",
+    "bios",
+    "battery"
+  ]
+}
