@@ -22,5 +22,9 @@
   "clickOnElementOfIncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/clickOnElementOfIncidentDetailsPage.json"
+  },
+  "clickByJavaScriptOnIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/clickByJavaScriptOnIncidentDetailsPage.json"
   }
 }
