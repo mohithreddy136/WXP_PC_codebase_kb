@@ -1,0 +1,13 @@
+{
+  "method": "getDetailsOfIncident",
+  "depends_on_methods": [
+    "getTextBy"
+  ],
+  "cross_page_calls": [],
+  "helper_dependencies": [
+    "incidentDetailsPagePropertiesPageProperties"
+  ],
+  "external_utilities": [
+    "ArrayList"
+  ]
+}
