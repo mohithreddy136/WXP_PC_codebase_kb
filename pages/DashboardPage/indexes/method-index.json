@@ -62,5 +62,9 @@
   "headerTextVerificationOnReportPageFrameFlexi": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/headerTextVerificationOnReportPageFrameFlexi.json"
+  },
+  "headerTextVerificationOnReportPageFrameDonutChartFlexi": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/headerTextVerificationOnReportPageFrameDonutChartFlexi.json"
   }
 }
