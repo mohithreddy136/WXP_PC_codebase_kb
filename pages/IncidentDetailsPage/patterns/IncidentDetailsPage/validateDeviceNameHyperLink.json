@@ -1,0 +1,9 @@
+{
+  "method": "validateDeviceNameHyperLink",
+  "pattern_detected": [
+    "search_selection_workflow",
+    "wait_and_type_pattern",
+    "localized_message_validation",
+    "safe_click_pattern (dropdown + cancel)"
+  ]
+}
