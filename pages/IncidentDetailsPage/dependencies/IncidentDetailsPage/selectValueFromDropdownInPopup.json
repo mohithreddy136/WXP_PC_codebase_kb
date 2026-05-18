@@ -1,0 +1,14 @@
+{
+  "method": "selectValueFromDropdownInPopup",
+  "depends_on_methods": [
+    "clickOnElementOfIncidentDetailsPage",
+    "selectValueOnPopup"
+  ],
+  "cross_page_calls": [],
+  "helper_dependencies": [
+    "incidentDetailsPagePropertiesPageProperties"
+  ],
+  "external_utilities": [
+    "ArrayList"
+  ]
+}
