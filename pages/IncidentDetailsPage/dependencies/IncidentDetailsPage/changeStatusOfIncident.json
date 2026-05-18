@@ -1,0 +1,11 @@
+{
+  "method": "changeStatusOfIncident",
+  "depends_on_methods": [
+    "verifySearchFunctionalityInsidePopup",
+    "LOGGER.error"
+  ],
+  "cross_page_calls": [],
+  "helpers": [
+    "search popup helper verifySearchFunctionalityInsidePopup"
+  ]
+}
