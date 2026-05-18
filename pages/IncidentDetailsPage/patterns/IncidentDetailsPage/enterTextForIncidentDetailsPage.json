@@ -1,0 +1,10 @@
+{
+  "method": "enterTextForIncidentDetailsPage",
+  "pattern_detected": [
+    "safe_click_pattern",
+    "pre-focus_before_typing_pattern (inferred)"
+  ],
+  "notes": [
+    "click before entering text; try/catch with logging"
+  ]
+}
