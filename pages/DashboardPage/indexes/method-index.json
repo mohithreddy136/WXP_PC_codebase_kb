@@ -106,5 +106,9 @@
   "verifyHideAndShowLink": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyHideAndShowLink.json"
+  },
+  "getActualAarrayAfterDragAndDropOperation": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/getActualAarrayAfterDragAndDropOperation.json"
   }
 }
