@@ -1,0 +1,13 @@
+{
+  "method": "changePriorityOfIncident",
+  "signals": [
+    "incident_list_text_read",
+    "incident_field_text_read"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "ui_list",
+    "ui_field"
+  ]
+}
