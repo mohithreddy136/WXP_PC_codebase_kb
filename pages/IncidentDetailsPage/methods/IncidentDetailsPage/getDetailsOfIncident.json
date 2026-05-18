@@ -1,23 +1,27 @@
 {
   "method": "getDetailsOfIncident",
   "actions": [
-    "get_text"
+    "read_text"
   ],
   "locators": [
-    "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+    "currentIncidentType",
+    "currentIncidentSubType",
+    "currentIncidentPriority",
+    "currentIncidentStatus",
+    "currentCreatedOn"
   ],
   "waits": [],
   "assertions": [],
   "return_values": [
-    "String (text content) or null on exception"
+    "ArrayList<String> of incident details"
   ],
   "selenium_actions": [
-    "getTextBy"
+    "getTextBy(...)"
   ],
   "ui_interactions": [
-    "read text from element"
+    "read_incident_metadata"
   ],
   "reusable_helper_usage": [
-    "getTextBy(String locator)"
+    "getTextBy(...)"
   ]
 }
