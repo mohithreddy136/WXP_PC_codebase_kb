@@ -1,0 +1,69 @@
+{
+  "method": "VerifyheaderTextOnReportPageFrameDonutSwellChartFlexi",
+  "actions": [
+    "wait_for_page_load",
+    "sleep",
+    "conditional_check",
+    "invoke_helper",
+    "get_elements",
+    "loop",
+    "wait_for_elements_dynamic",
+    "click",
+    "scroll",
+    "mouse_hover",
+    "get_text",
+    "string_replace",
+    "parse_int",
+    "switch_tab",
+    "comparison",
+    "log_info",
+    "return"
+  ],
+  "locators": [
+    "keyDrillDownLabelsAllHidden",
+    "labelsKey",
+    "legendDropdownKey",
+    "targetElement",
+    "tooltipTextKey",
+    "columnListKey"
+  ],
+  "waits": [
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPageDynamic"
+  ],
+  "assertions": [
+    "tooltipcount > 10"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "getElementsOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "scrollToDashboardPage",
+    "mouseHoverbyoffsett",
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage"
+  ],
+  "ui_interactions": [
+    "toggle_hidden_labels",
+    "open_legend_dropdown",
+    "click_legend_item",
+    "hover_on_chart_segment",
+    "open_report_in_new_tab"
+  ],
+  "reusable_helpers": [
+    "waitForPageLoaded",
+    "sleeper",
+    "verifyElementsOfDashboardPage",
+    "verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi",
+    "getElementsOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic",
+    "clickOnElementsOfDashboardPage",
+    "scrollToDashboardPage",
+    "mouseHoverbyoffsett",
+    "getTextOfDashboardPage",
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage"
+  ]
+}
