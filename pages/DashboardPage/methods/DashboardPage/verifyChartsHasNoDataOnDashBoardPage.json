@@ -1,0 +1,38 @@
+{
+  "method": "verifyChartsHasNoDataOnDashBoardPage",
+  "actions": [
+    "text_retrieval",
+    "localization_lookup",
+    "string_assembly",
+    "string_comparison",
+    "visibility_check",
+    "loop_over_elements",
+    "logging"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(noTextIdKey)"
+  ],
+  "waits": [
+    "verifyElementIsVisibleDynamic(..., 5)"
+  ],
+  "assertions": [
+    "noDataChartMessage equals localized 'no data' template for many chart types"
+  ],
+  "return_values": [
+    "boolean flag indicating if expected no-data message is shown for given chart type when no devices enrolled and no data"
+  ],
+  "selenium_actions": [
+    "verifyElementIsVisibleDynamic",
+    "getElementsOfDashboardPage",
+    "getTextBy"
+  ],
+  "ui_interactions": [
+    "read chart no-data label text for multiple chart types"
+  ],
+  "reusable_helper_usage": [
+    "getTextLanguage",
+    "verifyElementIsVisibleDynamic",
+    "getElementsOfDashboardPage",
+    "getTextBy"
+  ]
+}
