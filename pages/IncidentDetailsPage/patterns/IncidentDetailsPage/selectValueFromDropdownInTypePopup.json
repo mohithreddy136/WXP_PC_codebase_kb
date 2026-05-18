@@ -1,0 +1,12 @@
+{
+  "method": "selectValueFromDropdownInTypePopup",
+  "pattern_detected": [
+    "popup_interaction_workflow",
+    "dropdown_selection_workflow",
+    "multi_dropdown_selection_workflow",
+    "click_and_submit_pattern"
+  ],
+  "notes": [
+    "Handles both type and subtype dropdowns within same popup."
+  ]
+}
