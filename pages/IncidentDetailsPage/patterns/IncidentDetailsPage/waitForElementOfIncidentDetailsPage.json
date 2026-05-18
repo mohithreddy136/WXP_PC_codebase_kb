@@ -1,0 +1,11 @@
+{
+  "method": "waitForElementOfIncidentDetailsPage",
+  "pattern_detected": [
+    "wait_and_verify_visibility_pattern",
+    "page_property_key_lookup",
+    "safe_wrapper_with_logging"
+  ],
+  "notes": [
+    "Uses visibility verification as wait mechanism via helper."
+  ]
+}
