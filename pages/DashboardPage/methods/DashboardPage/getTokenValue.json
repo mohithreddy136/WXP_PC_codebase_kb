@@ -1,0 +1,21 @@
+{
+  "method": "getTokenValue",
+  "actions": [
+    "read_elements"
+  ],
+  "locators": [
+    "keyLegendLabel (used via getElementsTillAllElementsVisibleofDashboardPage)"
+  ],
+  "waits": [
+    "getElementsTillAllElementsVisibleofDashboardPage (implicit wait for all elements visible)"
+  ],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "locate_elements"
+  ],
+  "ui_interactions": [],
+  "reusable_helper_usage": [
+    "getElementsTillAllElementsVisibleofDashboardPage"
+  ]
+}
