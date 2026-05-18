@@ -1,0 +1,11 @@
+{
+  "method": "clickByJavaScriptOnIncidentDetailsPage",
+  "signals": [
+    "incident_details_element_click"
+  ],
+  "domain": "incident_management_ui",
+  "related_entities": [
+    "incident_details_page",
+    "ui_element"
+  ]
+}
