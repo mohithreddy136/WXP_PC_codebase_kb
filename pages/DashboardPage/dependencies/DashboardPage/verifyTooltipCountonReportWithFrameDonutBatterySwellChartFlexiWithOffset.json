@@ -1,0 +1,19 @@
+{
+  "method": "verifyTooltipCountonReportWithFrameDonutBatterySwellChartFlexiWithOffset",
+  "depends_on_methods": [
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPageDynamic",
+    "getElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage",
+    "sleeper"
+  ],
+  "cross_page_calls": [],
+  "helpers": [
+    "DashboardVariables.DASHBOARD_REPORTS_WAIT"
+  ],
+  "external_dependencies": [
+    "LOGGER",
+    "List",
+    "WebElement"
+  ]
+}
