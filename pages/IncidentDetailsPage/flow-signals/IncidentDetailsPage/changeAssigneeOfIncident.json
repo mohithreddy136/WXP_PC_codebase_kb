@@ -1,0 +1,13 @@
+{
+  "method": "changeAssigneeOfIncident",
+  "signals": [
+    "device_popup_search_result_click",
+    "device_identifier_parsing"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "device",
+    "search_result"
+  ]
+}
