@@ -1,0 +1,16 @@
+{
+  "method": "verifyLegendsAreHidden",
+  "signals": [
+    "legend_visibility_check",
+    "tooltip_to_rowcount_consistency_check",
+    "report_pagination_consistency_check"
+  ],
+  "domain": "dashboard_reporting",
+  "related_entities": [
+    "legend",
+    "tooltip",
+    "grid",
+    "pagination",
+    "report"
+  ]
+}
