@@ -1,0 +1,33 @@
+{
+  "method": "verifyChartsMessageAllIncidentsFixed",
+  "actions": [
+    "text_retrieval",
+    "localization_lookup",
+    "string_comparison",
+    "visibility_check",
+    "exception_throwing",
+    "logging"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(noTextIdKey)"
+  ],
+  "waits": [],
+  "assertions": [
+    "message equals localized 'you_are_doing_great' + 'there_are_no_incidents_with_open_status'"
+  ],
+  "return_values": [
+    "boolean flag indicating if expected no-incident message is shown for OPEN INCIDENTS chart"
+  ],
+  "selenium_actions": [
+    "verifyElementIsVisible",
+    "getTextBy"
+  ],
+  "ui_interactions": [
+    "read chart no-data label text"
+  ],
+  "reusable_helper_usage": [
+    "getTextLanguage",
+    "verifyElementIsVisible",
+    "getTextBy"
+  ]
+}
