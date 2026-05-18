@@ -25,6 +25,7 @@
     "getTokenValue",
     "getFirstWord",
     "verifyGridColumnsNamesWPS",
-    "verifyDragAndDrop"
+    "verifyDragAndDrop",
+    "verifyHideAndShowLink"
   ]
 }
