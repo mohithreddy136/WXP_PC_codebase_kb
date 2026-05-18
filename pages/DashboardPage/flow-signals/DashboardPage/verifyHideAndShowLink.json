@@ -1,0 +1,13 @@
+{
+  "method": "verifyHideAndShowLink",
+  "signals": [
+    "device_bulk_removal",
+    "toast_message_validation"
+  ],
+  "domain": "device_management",
+  "related_entities": [
+    "device",
+    "checkbox",
+    "toast_message"
+  ]
+}
