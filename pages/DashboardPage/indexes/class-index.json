@@ -33,6 +33,7 @@
     "viewThreatDetailsRedirectionOnReportPage",
     "switchToParentTabOfDashboardPage",
     "verifySwitchAccount",
-    "verifyUIVersion"
+    "verifyUIVersion",
+    "headerTextVerificationOnReportPageFrameDonutSwellChartFlexi"
   ]
 }
