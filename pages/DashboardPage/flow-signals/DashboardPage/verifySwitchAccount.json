@@ -1,0 +1,20 @@
+{
+  "method": "verifySwitchAccount",
+  "signals": [
+    "dashboard_widget_add",
+    "network_health_widget",
+    "network_inventory_widget",
+    "category_selection",
+    "subcategory_selection",
+    "option_selection"
+  ],
+  "domain": "dashboard_reporting",
+  "related_entities": [
+    "widget",
+    "category",
+    "subcategory",
+    "option",
+    "language",
+    "network"
+  ]
+}
