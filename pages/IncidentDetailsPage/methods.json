@@ -2,122 +2,177 @@
   {
     "methods": [
       {
-        "method": "getTextOfElementOnIncidentDetailsPage",
+        "method": "selectOptionFromDropdownOnIncidentDetailsPage",
         "actions": [
-          "get_text"
+          "select_dropdown",
+          "return"
         ],
         "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+          "incidentDetailsPagePropertiesPageProperties.getProperty(dropdownListKey)"
         ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "String text of located element or null on exception"
+          "String (selected value from popup) or null on exception"
         ],
         "selenium_actions": [
-          "getText"
+          "selectValueOnPopup"
         ],
         "ui_interactions": [
-          "read_text"
+          "dropdown selection via popup helper"
         ],
         "reusable_helper_usage": [
-          "getTextBy(String locator)"
+          "selectValueOnPopup",
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
-        "method": "verifyElementIsEnableOfIncidentDetailsPage",
+        "method": "selectedValueFromSearchBoxInsidePopup",
         "actions": [
-          "verify_enabled_state"
+          "enter_text",
+          "sleep",
+          "conditional_branch",
+          "list_iteration",
+          "click",
+          "string_parse",
+          "return"
         ],
         "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+          "incidentDetailsPagePropertiesPageProperties.getProperty(textKey)",
+          "incidentDetailsPagePropertiesPageProperties.getProperty(emptyTextKey)",
+          "incidentDetailsPagePropertiesPageProperties.getProperty(listKey)"
+        ],
+        "waits": [
+          "sleeper(5000)"
+        ],
+        "assertions": [],
+        "return_values": [
+          "String (parsed selected value) or null on exception"
+        ],
+        "selenium_actions": [
+          "enterText",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getElementsTillAllElementsPresent",
+          "WebElement.click"
+        ],
+        "ui_interactions": [
+          "search in popup",
+          "handle no-results message",
+          "select item from filtered list",
+          "close dropdown and cancel popup"
+        ],
+        "reusable_helper_usage": [
+          "enterText",
+          "sleeper",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getTextLanguage",
+          "clickOnElementOfIncidentDetailsPage",
+          "getElementsTillAllElementsPresent",
+          "LOGGER"
+        ]
+      },
+      {
+        "method": "selectedValueFromSearchBoxInsideDevicePopup",
+        "actions": [
+          "enter_text",
+          "sleep",
+          "conditional_branch",
+          "list_iteration",
+          "click",
+          "string_parse",
+          "return"
+        ],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(textKey)",
+          "incidentDetailsPagePropertiesPageProperties.getProperty(emptyTextKey)",
+          "incidentDetailsPagePropertiesPageProperties.getProperty(listKey)"
+        ],
+        "waits": [
+          "sleeper(5000)"
+        ],
+        "assertions": [],
+        "return_values": [
+          "String (parsed selected device value) or null on exception"
+        ],
+        "selenium_actions": [
+          "enterText",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getElementsTillAllElementsPresent",
+          "WebElement.click"
+        ],
+        "ui_interactions": [
+          "search in change-device popup",
+          "handle no-results message",
+          "select device from filtered list"
+        ],
+        "reusable_helper_usage": [
+          "enterText",
+          "sleeper",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getTextLanguage",
+          "clickOnElementOfIncidentDetailsPage",
+          "getElementsTillAllElementsPresent",
+          "LOGGER"
+        ]
+      },
+      {
+        "method": "verifySearchValueOnIncidentInsidePopup",
+        "actions": [
+          "delegate_call",
+          "return"
+        ],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(textKey)",
+          "incidentDetailsPagePropertiesPageProperties.getProperty(emptyTextKey)",
+          "incidentDetailsPagePropertiesPageProperties.getProperty(listKey)"
         ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "boolean enabled or false on exception"
+          "boolean (search success) or false on exception"
         ],
         "selenium_actions": [
-          "isEnabled"
+          "verifySearchFunctionalityInsidePopup"
         ],
         "ui_interactions": [
-          "check_enabled_state"
+          "search verification inside popup"
         ],
         "reusable_helper_usage": [
-          "verifyElementIsEnable(String locator)"
+          "verifySearchFunctionalityInsidePopup",
+          "incidentDetailsPagePropertiesPageProperties.getProperty",
+          "LOGGER"
         ]
       },
       {
-        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "method": "waitForElementToBeClickableOfIncidentDetailsPage",
         "actions": [
-          "verify_clickable_state"
-        ],
-        "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
-        ],
-        "waits": [],
-        "assertions": [],
-        "return_values": [
-          "boolean clickable or false on exception"
-        ],
-        "selenium_actions": [
-          "isDisplayed",
-          "isEnabled",
-          "clickability_check"
-        ],
-        "ui_interactions": [
-          "check_clickable_state"
-        ],
-        "reusable_helper_usage": [
-          "verifyElementIsClickable(String locator)"
-        ]
-      },
-      {
-        "method": "waitForElementOfIncidentDetailsPage",
-        "actions": [
-          "wait_for_visibility"
+          "wait_for_clickable",
+          "return"
         ],
         "locators": [
           "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
         ],
         "waits": [
-          "verifyElementIsVisible"
+          "verifyElementIsClickable"
         ],
         "assertions": [],
         "return_values": [
-          "boolean visible after wait or false on exception"
+          "boolean (element clickable) or false on exception"
         ],
         "selenium_actions": [
-          "explicit_wait_visibility"
+          "verifyElementIsClickable"
         ],
         "ui_interactions": [
-          "wait_for_element"
+          "wait for element to become clickable"
         ],
         "reusable_helper_usage": [
-          "verifyElementIsVisible(String locator)"
-        ]
-      },
-      {
-        "method": "getElementOfIncidentDetailsPage",
-        "actions": [
-          "get_webelement"
-        ],
-        "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
-        ],
-        "waits": [],
-        "assertions": [],
-        "return_values": [
-          "WebElement or null on exception"
-        ],
-        "selenium_actions": [
-          "findElement"
-        ],
-        "ui_interactions": [
-          "access_element"
-        ],
-        "reusable_helper_usage": [
-          "getElement(String locator)"
+          "verifyElementIsClickable",
+          "incidentDetailsPagePropertiesPageProperties.getProperty",
+          "LOGGER"
         ]
       }
     ]
