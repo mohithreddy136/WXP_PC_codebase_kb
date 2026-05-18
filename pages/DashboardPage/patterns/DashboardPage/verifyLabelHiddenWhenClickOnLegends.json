@@ -1,0 +1,9 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegends",
+  "pattern_detected": [
+    "wait_and_click_pattern",
+    "tooltip_to_report_cross_verification",
+    "drilldown_navigation_workflow",
+    "tabbed_report_workflow"
+  ]
+}
