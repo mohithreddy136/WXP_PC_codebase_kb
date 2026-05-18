@@ -1,0 +1,11 @@
+{
+  "method": "clickByJavaScriptOnDashboardPage",
+  "signals": [
+    "dashboard_text_read"
+  ],
+  "domain": "dashboard_ui",
+  "related_entities": [
+    "dashboard_element",
+    "text_content"
+  ]
+}
