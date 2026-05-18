@@ -138,5 +138,9 @@
   "addWidgetForPixmCustomDashboard": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/addWidgetForPixmCustomDashboard.json"
+  },
+  "headerTextVerificationOnReportPageFrameDonutSwellChartFlexi": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/headerTextVerificationOnReportPageFrameDonutSwellChartFlexi.json"
   }
 }
