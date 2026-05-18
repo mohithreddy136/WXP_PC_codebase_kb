@@ -1,26 +1,21 @@
 {
   "method": "verifySearchValueOnIncidentInsidePopup",
   "actions": [
-    "delegate",
-    "return"
+    "select_option_from_dropdown"
   ],
   "locators": [
-    "textKey",
-    "emptyTextKey",
-    "listKey"
+    "incidentDetailsPagePropertiesPageProperties.getProperty(dropdownListKey)"
   ],
   "waits": [],
   "assertions": [],
   "return_values": [
-    "boolean (search success/failure)"
+    "String"
   ],
   "selenium_actions": [
-    "verifySearchFunctionalityInsidePopup (wrapper utility)"
+    "dropdown_select_conditional"
   ],
   "ui_interactions": [
-    "verify search behavior inside incident popup list"
+    "dropdown_selection"
   ],
-  "reusable_helper_usage": [
-    "verifySearchFunctionalityInsidePopup"
-  ]
+  "reusable_helper_usage": []
 }
