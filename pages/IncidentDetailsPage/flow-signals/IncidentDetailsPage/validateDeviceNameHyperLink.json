@@ -1,0 +1,15 @@
+{
+  "method": "validateDeviceNameHyperLink",
+  "signals": [
+    "device_popup_search",
+    "no_results_handling",
+    "device_selection"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "device",
+    "search_popup",
+    "localization_message"
+  ]
+}
