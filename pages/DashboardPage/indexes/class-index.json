@@ -19,6 +19,7 @@
     "headerTextVerificationOnReportPageFrameDonutChartFlexi",
     "verifyLegendsAreHidden",
     "verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi",
-    "verifyCompaniesListOnHeaderHWInventory"
+    "verifyCompaniesListOnHeaderHWInventory",
+    "verifyCompaniesListOnHeaderFlexi"
   ]
 }
