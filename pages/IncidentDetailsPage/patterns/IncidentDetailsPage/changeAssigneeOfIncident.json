@@ -1,0 +1,8 @@
+{
+  "method": "changeAssigneeOfIncident",
+  "pattern_detected": [
+    "search_selection_workflow",
+    "list_iteration_and_match",
+    "exception_handling_with_logging"
+  ]
+}
