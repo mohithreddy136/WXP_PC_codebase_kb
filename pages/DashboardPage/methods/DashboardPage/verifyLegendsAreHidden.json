@@ -1,0 +1,58 @@
+{
+  "method": "verifyLegendsAreHidden",
+  "actions": [
+    "wait_for_page_load",
+    "sleep",
+    "conditional_check",
+    "list_iteration",
+    "click",
+    "mouse_hover",
+    "tab_switch",
+    "text_extraction",
+    "string_manipulation",
+    "pagination_parse"
+  ],
+  "locators": [
+    "keyDrillDownLabelsAllHidden",
+    "labelsKey",
+    "tooltipTextKey",
+    "paginationKey",
+    "columnListKey"
+  ],
+  "waits": [
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPage"
+  ],
+  "assertions": [
+    "tooltipcount equals last page number OR tooltipcount equals number of grid rows"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "click",
+    "getText",
+    "mouseHoverbyoffsett",
+    "mouseHoverbyoffsettClick"
+  ],
+  "ui_interactions": [
+    "legend_toggle",
+    "hover_on_chart",
+    "open_report_in_new_tab",
+    "pagination_read",
+    "grid_row_count"
+  ],
+  "reusable_helper_usage": [
+    "verifyElementsOfDashboardPage",
+    "verifyLabelHiddenWhenClickOnLegendsFlexi",
+    "getElementsOfDashboardPage",
+    "mouseHoverbyoffsett",
+    "waitForElementsOfDashboardPage",
+    "getTextOfDashboardPage",
+    "sleeper",
+    "waitForPageLoaded",
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
