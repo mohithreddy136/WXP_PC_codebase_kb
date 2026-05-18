@@ -15,6 +15,7 @@
     "verifyChartsHasNoDataDevicesEnrolledOnDashBoardPage",
     "verifyTitleofChartOfDashboardPage",
     "verifyLabelHiddenWhenClickOnLegends",
-    "headerTextVerificationOnReportPageFrameFlexi"
+    "headerTextVerificationOnReportPageFrameFlexi",
+    "headerTextVerificationOnReportPageFrameDonutChartFlexi"
   ]
 }
