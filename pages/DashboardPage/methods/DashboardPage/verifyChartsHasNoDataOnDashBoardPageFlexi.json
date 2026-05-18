@@ -1,0 +1,36 @@
+{
+  "method": "verifyChartsHasNoDataOnDashBoardPageFlexi",
+  "actions": [
+    "text_retrieval",
+    "localization_lookup",
+    "string_comparison",
+    "visibility_check",
+    "conditional_wait",
+    "logging"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(noTextIdKey)"
+  ],
+  "waits": [
+    "verifyElementIsVisibleDynamic(..., 5)",
+    "sleeper(2000)"
+  ],
+  "assertions": [
+    "noDataChartMessage equals localized 'nothing_going_on_here' for many chart types"
+  ],
+  "return_values": [
+    "boolean flag indicating if expected simplified no-data message is shown for given chart type"
+  ],
+  "selenium_actions": [
+    "verifyElementIsVisibleDynamic"
+  ],
+  "ui_interactions": [
+    "read chart no-data label text for multiple chart types"
+  ],
+  "reusable_helper_usage": [
+    "getTextLanguage",
+    "verifyElementIsVisibleDynamic",
+    "getTextOfDashboardPage",
+    "sleeper"
+  ]
+}
