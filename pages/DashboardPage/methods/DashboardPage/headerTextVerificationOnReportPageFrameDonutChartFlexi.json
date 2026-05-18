@@ -1,0 +1,32 @@
+{
+  "method": "headerTextVerificationOnReportPageFrameDonutChartFlexi",
+  "actions": [
+    "wait",
+    "tab_switch",
+    "list_iteration",
+    "conditional_check",
+    "logging",
+    "click"
+  ],
+  "locators": [
+    "labelsBackKey"
+  ],
+  "waits": [],
+  "assertions": [
+    "monthTextForOS tooltip/version match with report page"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "click"
+  ],
+  "ui_interactions": [
+    "navigate_back_from_report",
+    "drilldown_navigation"
+  ],
+  "reusable_helper_usage": [
+    "clickOnElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
