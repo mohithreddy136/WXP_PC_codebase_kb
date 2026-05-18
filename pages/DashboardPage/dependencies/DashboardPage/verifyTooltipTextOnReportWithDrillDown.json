@@ -1,0 +1,16 @@
+{
+  "method": "verifyTooltipTextOnReportWithDrillDown",
+  "depends_on_methods": [
+    "waitForPageLoaded",
+    "sleeper",
+    "verifyTooltipTextOnDonutBatterySwellChartFlexi"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "sleeper",
+    "waitForPageLoaded"
+  ],
+  "utility_dependencies": [
+    "LOGGER"
+  ]
+}
