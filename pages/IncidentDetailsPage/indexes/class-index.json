@@ -6,6 +6,7 @@
     "waitForElementOfIncidentDetailsPage",
     "getElementOfIncidentDetailsPage",
     "clickOnElementOfIncidentDetailsPage",
-    "clickByJavaScriptOnIncidentDetailsPage"
+    "clickByJavaScriptOnIncidentDetailsPage",
+    "enterTextForIncidentDetailsPage"
   ]
 }
