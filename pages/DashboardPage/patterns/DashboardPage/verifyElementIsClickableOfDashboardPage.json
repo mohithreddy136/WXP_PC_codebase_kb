@@ -1,0 +1,10 @@
+{
+  "method": "verifyElementIsClickableOfDashboardPage",
+  "pattern_detected": [
+    "safe_click_wrapper",
+    "property_key_to_locator"
+  ],
+  "notes": [
+    "Click operation abstracted behind helper with property-based locator. Actual safety (waits/retries) depends on helper implementation."
+  ]
+}
