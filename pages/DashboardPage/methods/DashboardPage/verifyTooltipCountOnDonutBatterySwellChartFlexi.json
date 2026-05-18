@@ -1,0 +1,52 @@
+{
+  "method": "verifyTooltipCountOnDonutBatterySwellChartFlexi",
+  "actions": [
+    "string_replace_regex",
+    "sleep",
+    "mouse_hover_click",
+    "switch_tab",
+    "wait_for_elements_dynamic",
+    "click",
+    "get_elements",
+    "text_contains_check",
+    "log_error",
+    "switch_tab_back",
+    "return"
+  ],
+  "locators": [
+    "targetElement",
+    "textKey",
+    "\"moreDetailsLink\""
+  ],
+  "waits": [
+    "waitForElementsOfDashboardPageDynamic"
+  ],
+  "assertions": [
+    "monthtext[0].text contains cleanText"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "getElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ],
+  "ui_interactions": [
+    "hover_on_chart_segment",
+    "navigate_to_more_details",
+    "validate_month_text",
+    "toggle_legend_item"
+  ],
+  "reusable_helpers": [
+    "sleeper",
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic",
+    "clickOnElementsOfDashboardPage",
+    "getElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
