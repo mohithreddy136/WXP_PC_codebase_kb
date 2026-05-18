@@ -12,6 +12,7 @@
     "verifyChartsMessageAllIncidentsFixed",
     "verifyChartsHasNoDataOnDashBoardPage",
     "verifyChartsHasNoDataOnDashBoardPageFlexi",
-    "verifyChartsHasNoDataDevicesEnrolledOnDashBoardPage"
+    "verifyChartsHasNoDataDevicesEnrolledOnDashBoardPage",
+    "verifyTitleofChartOfDashboardPage"
   ]
 }
