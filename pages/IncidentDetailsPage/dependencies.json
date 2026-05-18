@@ -2,57 +2,80 @@
   {
     "methods": [
       {
-        "method": "getTextOfElementOnIncidentDetailsPage",
+        "method": "selectOptionFromDropdownOnIncidentDetailsPage",
         "depends_on_methods": [
-          "getTextBy"
+          "selectValueOnPopup"
         ],
         "cross_page_calls": [],
         "helper_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
+          "incidentDetailsPagePropertiesPageProperties"
+        ],
+        "utility_dependencies": [
           "LOGGER"
         ]
       },
       {
-        "method": "verifyElementIsEnableOfIncidentDetailsPage",
+        "method": "selectedValueFromSearchBoxInsidePopup",
         "depends_on_methods": [
-          "verifyElementIsEnable"
+          "enterText",
+          "sleeper",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getTextLanguage",
+          "clickOnElementOfIncidentDetailsPage",
+          "getElementsTillAllElementsPresent"
         ],
         "cross_page_calls": [],
         "helper_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
+          "incidentDetailsPagePropertiesPageProperties"
+        ],
+        "utility_dependencies": [
+          "LOGGER",
+          "System.out"
+        ]
+      },
+      {
+        "method": "selectedValueFromSearchBoxInsideDevicePopup",
+        "depends_on_methods": [
+          "enterText",
+          "sleeper",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getTextLanguage",
+          "clickOnElementOfIncidentDetailsPage",
+          "getElementsTillAllElementsPresent"
+        ],
+        "cross_page_calls": [],
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties"
+        ],
+        "utility_dependencies": [
           "LOGGER"
         ]
       },
       {
-        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "method": "verifySearchValueOnIncidentInsidePopup",
+        "depends_on_methods": [
+          "verifySearchFunctionalityInsidePopup"
+        ],
+        "cross_page_calls": [],
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties"
+        ],
+        "utility_dependencies": [
+          "LOGGER"
+        ]
+      },
+      {
+        "method": "waitForElementToBeClickableOfIncidentDetailsPage",
         "depends_on_methods": [
           "verifyElementIsClickable"
         ],
         "cross_page_calls": [],
         "helper_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
-        ]
-      },
-      {
-        "method": "waitForElementOfIncidentDetailsPage",
-        "depends_on_methods": [
-          "verifyElementIsVisible"
+          "incidentDetailsPagePropertiesPageProperties"
         ],
-        "cross_page_calls": [],
-        "helper_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
-        ]
-      },
-      {
-        "method": "getElementOfIncidentDetailsPage",
-        "depends_on_methods": [
-          "getElement"
-        ],
-        "cross_page_calls": [],
-        "helper_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
+        "utility_dependencies": [
           "LOGGER"
         ]
       }
