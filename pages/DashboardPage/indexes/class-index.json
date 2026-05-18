@@ -32,6 +32,7 @@
     "headerTextVerificationOnReportPage",
     "viewThreatDetailsRedirectionOnReportPage",
     "switchToParentTabOfDashboardPage",
-    "verifySwitchAccount"
+    "verifySwitchAccount",
+    "verifyUIVersion"
   ]
 }
