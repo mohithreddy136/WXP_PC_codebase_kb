@@ -1,0 +1,15 @@
+{
+  "method": "validateDeviceNameHyperLink",
+  "depends_on_methods": [
+    "enterText",
+    "sleeper",
+    "verifyElementIsPresent",
+    "getTextBy",
+    "getTextLanguage",
+    "clickOnElementOfIncidentDetailsPage"
+  ],
+  "cross_page_calls": [],
+  "helpers": [
+    "localization helper via getTextLanguage"
+  ]
+}
