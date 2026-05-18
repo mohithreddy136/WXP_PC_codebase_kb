@@ -1,0 +1,13 @@
+{
+  "method": "getHiddenConfirmationModalPopup",
+  "actions": [],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean (documented, actual implementation not in fetched slice)"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": []
+}
