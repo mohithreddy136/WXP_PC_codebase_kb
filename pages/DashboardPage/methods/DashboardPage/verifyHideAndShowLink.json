@@ -1,0 +1,40 @@
+{
+  "method": "verifyHideAndShowLink",
+  "actions": [
+    "click",
+    "sleep",
+    "get_text",
+    "string_compare"
+  ],
+  "locators": [
+    "checkBoxKey",
+    "removeDeviceKey",
+    "removeButtonKey",
+    "removeDeviceMessage"
+  ],
+  "waits": [
+    "sleeper(2000)"
+  ],
+  "assertions": [
+    "toast_message_equals_expected_language_string"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "clickOnElementsOfDashboardPage",
+    "getTextOfDashboardPage"
+  ],
+  "ui_interactions": [
+    "select_device_checkbox",
+    "click_remove_device",
+    "confirm_removal",
+    "validate_toast_message"
+  ],
+  "reusable_helpers": [
+    "clickOnElementsOfDashboardPage",
+    "sleeper",
+    "getTextOfDashboardPage",
+    "getTextLanguage"
+  ]
+}
