@@ -1,0 +1,9 @@
+{
+  "method": "clickOnElementOfIncidentDetailsPage",
+  "pattern_detected": [
+    "safe_element_presence_check"
+  ],
+  "notes": [
+    "try/catch around presence verification; logs on exception"
+  ]
+}
