@@ -1,0 +1,14 @@
+{
+  "method": "verifyChartsMessageAllIncidentsFixed",
+  "signals": [
+    "dashboard_chart_validation",
+    "no_incidents_message_check",
+    "open_incidents_chart_guard"
+  ],
+  "domain": "device_analytics_dashboard",
+  "related_entities": [
+    "dashboard_chart",
+    "incident",
+    "localization_message"
+  ]
+}
