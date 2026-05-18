@@ -1,0 +1,11 @@
+{
+  "method": "enterTextForIncidentDetailsPage",
+  "signals": [
+    "incident_details_prepare_for_text_entry"
+  ],
+  "domain": "incident_management_ui",
+  "related_entities": [
+    "incident_details_page",
+    "search_box"
+  ]
+}
