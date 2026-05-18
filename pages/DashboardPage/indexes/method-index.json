@@ -10,5 +10,9 @@
   "waitForElementsOfDashboardPageDynamic": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/waitForElementsOfDashboardPageDynamic.json"
+  },
+  "waitForPresenceOfElementsOfDashboardPageDynamic": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/waitForPresenceOfElementsOfDashboardPageDynamic.json"
   }
 }
