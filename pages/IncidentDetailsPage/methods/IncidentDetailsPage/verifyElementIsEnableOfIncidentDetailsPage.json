@@ -1,0 +1,23 @@
+{
+  "method": "verifyElementIsEnableOfIncidentDetailsPage",
+  "actions": [
+    "check_enabled_state"
+  ],
+  "locators": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean enabled state or false on exception"
+  ],
+  "selenium_actions": [
+    "isEnabled"
+  ],
+  "ui_interactions": [
+    "verify_element_enabled"
+  ],
+  "reusable_helper_usage": [
+    "verifyElementIsEnable(...)"
+  ]
+}
