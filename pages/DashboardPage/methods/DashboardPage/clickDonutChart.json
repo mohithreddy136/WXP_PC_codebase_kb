@@ -1,0 +1,24 @@
+{
+  "method": "clickDonutChart",
+  "actions": [
+    "sleeper",
+    "click"
+  ],
+  "locators": [
+    "legendDropdownKey"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "click"
+  ],
+  "ui_interactions": [
+    "clickOnElementsOfDashboardPage(legendDropdownKey)",
+    "legendLabelElementList.get(count1).click()"
+  ],
+  "reusable_helpers": [
+    "sleeper",
+    "clickOnElementsOfDashboardPage"
+  ]
+}
