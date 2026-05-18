@@ -1,0 +1,15 @@
+{
+  "method": "verifyChartsHasNoDataOnDashBoardPageFlexi",
+  "signals": [
+    "dashboard_chart_validation",
+    "no_data_state_check",
+    "simplified_message_variant",
+    "multi_chart_type_support"
+  ],
+  "domain": "device_analytics_dashboard",
+  "related_entities": [
+    "dashboard_chart",
+    "device",
+    "localization_message"
+  ]
+}
