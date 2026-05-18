@@ -1,0 +1,6 @@
+{
+  "getTextOfElementOnIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getTextOfElementOnIncidentDetailsPage.json"
+  }
+}
