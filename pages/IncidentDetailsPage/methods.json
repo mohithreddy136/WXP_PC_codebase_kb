@@ -2,256 +2,122 @@
   {
     "methods": [
       {
-        "method": "changeAssigneeOfIncident",
+        "method": "getTextOfElementOnIncidentDetailsPage",
         "actions": [
-          "verify",
-          "wait_for_clickable",
-          "sleep",
-          "click",
-          "wait_for_page_load",
           "get_text"
         ],
         "locators": [
-          "editAssignedToPencilIcon",
-          "expandAssigntoDropdown",
-          "assignToPopupDropDownFirstOption",
-          "submitAssigntoButton",
-          "commentTab",
-          "firstComment"
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
         ],
-        "waits": [
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "sleeper"
-        ],
-        "assertions": [
-          "verifyElementOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage"
-        ],
+        "waits": [],
+        "assertions": [],
         "return_values": [
-          "String (firstComment text)"
+          "String text of located element or null on exception"
         ],
         "selenium_actions": [
-          "click",
-          "wait",
           "getText"
         ],
         "ui_interactions": [
-          "open assignee edit popup",
-          "expand assignee dropdown",
-          "select first assignee option",
-          "submit assignee change",
-          "open comments tab",
-          "read first comment"
+          "read_text"
         ],
-        "reusable_helpers_used": [
-          "verifyElementOfIncidentDetailsPage",
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "sleeper",
-          "clickOnElementOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "getTextOfElementOnIncidentDetailsPage"
+        "reusable_helper_usage": [
+          "getTextBy(String locator)"
         ]
       },
       {
-        "method": "changeStatusOfIncident",
+        "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "actions": [
-          "verify",
-          "wait_for_clickable",
-          "sleep",
-          "click",
-          "wait_for_page_load",
-          "get_text"
+          "verify_enabled_state"
         ],
         "locators": [
-          "editStatus",
-          "editStatusPopup",
-          "selectInverstigationStatus",
-          "submitStatusButton",
-          "commentTab",
-          "secondComment",
-          "firstComment"
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
         ],
-        "waits": [
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "sleeper"
-        ],
-        "assertions": [
-          "verifyElementOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage"
-        ],
+        "waits": [],
+        "assertions": [],
         "return_values": [
-          "String (firstComment text)"
+          "boolean enabled or false on exception"
         ],
         "selenium_actions": [
-          "click",
-          "wait",
-          "getText"
+          "isEnabled"
         ],
         "ui_interactions": [
-          "open status edit popup",
-          "select investigation status",
-          "submit status change",
-          "open comments tab",
-          "read comments"
+          "check_enabled_state"
         ],
-        "reusable_helpers_used": [
-          "verifyElementOfIncidentDetailsPage",
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage",
-          "sleeper",
-          "clickOnElementOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "getTextOfElementOnIncidentDetailsPage"
+        "reusable_helper_usage": [
+          "verifyElementIsEnable(String locator)"
         ]
       },
       {
-        "method": "changePriorityOfIncident",
+        "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "actions": [
-          "verify",
-          "wait_for_clickable",
-          "sleep",
-          "click",
-          "wait_for_page_load",
-          "get_text"
+          "verify_clickable_state"
         ],
         "locators": [
-          "editPriorityButton",
-          "changePriorityExpandDropdown",
-          "selectCriticalPriority",
-          "submitPriorityButton",
-          "commentTab",
-          "thirdComment",
-          "firstComment"
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
         ],
-        "waits": [
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "sleeper"
-        ],
-        "assertions": [
-          "verifyElementOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage"
-        ],
+        "waits": [],
+        "assertions": [],
         "return_values": [
-          "String (firstComment text)"
+          "boolean clickable or false on exception"
         ],
         "selenium_actions": [
-          "click",
-          "wait",
-          "getText"
+          "isDisplayed",
+          "isEnabled",
+          "clickability_check"
         ],
         "ui_interactions": [
-          "open priority edit popup",
-          "expand priority dropdown",
-          "select critical priority",
-          "submit priority change",
-          "open comments tab",
-          "read comments"
+          "check_clickable_state"
         ],
-        "reusable_helpers_used": [
-          "verifyElementOfIncidentDetailsPage",
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage",
-          "sleeper",
-          "clickOnElementOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "getTextOfElementOnIncidentDetailsPage"
+        "reusable_helper_usage": [
+          "verifyElementIsClickable(String locator)"
         ]
       },
       {
-        "method": "changeTypeSubtypeOfIncident",
+        "method": "waitForElementOfIncidentDetailsPage",
         "actions": [
-          "verify",
-          "wait_for_clickable",
-          "sleep",
-          "click",
-          "wait_for_page_load",
-          "get_text",
-          "map_put"
+          "wait_for_visibility"
         ],
         "locators": [
-          "editTypeButton",
-          "typeButtonDropdownArrow",
-          "selectType",
-          "subtypeExpand",
-          "selectSubType",
-          "submitTypeButton",
-          "fourthComment",
-          "secondComment",
-          "firstComment",
-          "commentTab"
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
         ],
         "waits": [
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "sleeper"
-        ],
-        "assertions": [
-          "verifyElementOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage"
-        ],
-        "return_values": [
-          "HashMap<String,String> (type, subType from comments)"
-        ],
-        "selenium_actions": [
-          "click",
-          "wait",
-          "getText"
-        ],
-        "ui_interactions": [
-          "open type edit popup",
-          "select type",
-          "expand subtype dropdown",
-          "select subtype",
-          "submit type/subtype change",
-          "open comments tab",
-          "read comments"
-        ],
-        "reusable_helpers_used": [
-          "verifyElementOfIncidentDetailsPage",
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage",
-          "sleeper",
-          "clickOnElementOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "getTextOfElementOnIncidentDetailsPage"
-        ]
-      },
-      {
-        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
-        "actions": [
-          "wait_for_invisible",
-          "verify_invisible"
-        ],
-        "locators": [
-          "dynamic via properties key"
-        ],
-        "waits": [
-          "verifyElementIsinvisibile"
+          "verifyElementIsVisible"
         ],
         "assertions": [],
         "return_values": [
-          "void"
+          "boolean visible after wait or false on exception"
         ],
         "selenium_actions": [
-          "wait"
+          "explicit_wait_visibility"
         ],
         "ui_interactions": [
-          "wait until element located by key becomes invisible"
+          "wait_for_element"
         ],
-        "reusable_helpers_used": [
-          "verifyElementIsinvisibile"
+        "reusable_helper_usage": [
+          "verifyElementIsVisible(String locator)"
+        ]
+      },
+      {
+        "method": "getElementOfIncidentDetailsPage",
+        "actions": [
+          "get_webelement"
+        ],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+        ],
+        "waits": [],
+        "assertions": [],
+        "return_values": [
+          "WebElement or null on exception"
+        ],
+        "selenium_actions": [
+          "findElement"
+        ],
+        "ui_interactions": [
+          "access_element"
+        ],
+        "reusable_helper_usage": [
+          "getElement(String locator)"
         ]
       }
     ]
