@@ -74,5 +74,9 @@
   "verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi.json"
+  },
+  "verifyCompaniesListOnHeaderHWInventory": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyCompaniesListOnHeaderHWInventory.json"
   }
 }
