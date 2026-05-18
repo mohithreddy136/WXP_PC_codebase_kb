@@ -1,0 +1,13 @@
+{
+  "method": "headerTextVerificationOnReportPageFrameFlexi",
+  "depends_on_methods": [
+    "verifyLegendsAreHidden",
+    "getElementsOfDashboardPage",
+    "mouseHoverbyoffsett",
+    "waitForElementsOfDashboardPage",
+    "switchToDifferentTabOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic",
+    "clickOnElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
