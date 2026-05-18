@@ -1,0 +1,14 @@
+{
+  "method": "verifyElementIsClickableOfIncidentDetailsPage",
+  "signals": [
+    "validate_actionability",
+    "pre_click_validation"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "ui_element",
+    "button_or_link"
+  ],
+  "notes": "Used as a precondition check to ensure an incident-related control is clickable."
+}
