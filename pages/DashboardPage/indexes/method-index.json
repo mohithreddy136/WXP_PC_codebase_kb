@@ -102,5 +102,9 @@
   "verifyDragAndDrop": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyDragAndDrop.json"
+  },
+  "verifyHideAndShowLink": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyHideAndShowLink.json"
   }
 }
