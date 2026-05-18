@@ -1,0 +1,8 @@
+{
+  "method": "verifyColumnsofAVRemediationList",
+  "pattern_detected": [
+    "wait_and_click_pattern",
+    "retry_click_with_dropdown_pattern",
+    "legend_toggle_workflow"
+  ]
+}
