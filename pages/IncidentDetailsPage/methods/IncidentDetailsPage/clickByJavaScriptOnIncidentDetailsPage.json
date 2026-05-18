@@ -1,0 +1,21 @@
+{
+  "method": "clickByJavaScriptOnIncidentDetailsPage",
+  "actions": [
+    "click"
+  ],
+  "locators": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "click"
+  ],
+  "ui_interactions": [
+    "click_element"
+  ],
+  "reusable_helper_usage": [
+    "click"
+  ]
+}
