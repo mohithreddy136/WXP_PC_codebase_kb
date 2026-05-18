@@ -1,0 +1,38 @@
+{
+  "method": "viewThreatDetailsRedirectionOnReportPage",
+  "actions": [
+    "click",
+    "verify_clickable",
+    "sleep",
+    "scroll"
+  ],
+  "locators": [
+    "addWidgetButton",
+    "widgetAddConfirmButton",
+    "visualizationForBatterry",
+    "widgetAddConfirmButton"
+  ],
+  "waits": [
+    "sleeper(2000)"
+  ],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "clickByJavaScriptOnDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "scrollToDashboardPage"
+  ],
+  "ui_interactions": [
+    "click add widget button",
+    "select category and subcategory",
+    "select option",
+    "confirm widget add"
+  ],
+  "reusable_helpers": [
+    "verifyElementIsClickableOfDashboardPage",
+    "selectCategoryForFlexibleDashboardPage",
+    "selectSubCategoryForFlexibleDashboardPage",
+    "selectOptionForFlexibleDashboardPage",
+    "getTextLanguage"
+  ]
+}
