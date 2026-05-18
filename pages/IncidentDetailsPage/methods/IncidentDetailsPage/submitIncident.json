@@ -1,0 +1,18 @@
+{
+  "method": "submitIncident",
+  "actions": [
+    "return",
+    "log_error"
+  ],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "String (possibly null)"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": [
+    "LOGGER.error"
+  ]
+}
