@@ -1,13 +1,11 @@
 {
   "method": "verifyElementIsEnableOfIncidentDetailsPage",
-  "depends_on_methods": [
-    "verifyElementIsEnable"
-  ],
+  "depends_on_methods": [],
   "cross_page_calls": [],
-  "helper_method_usage": [
-    "LOGGER.error"
+  "helper_methods": [
+    "LOGGER"
   ],
-  "utility_dependencies": [
+  "utilities": [
     "incidentDetailsPagePropertiesPageProperties.getProperty"
   ]
 }
