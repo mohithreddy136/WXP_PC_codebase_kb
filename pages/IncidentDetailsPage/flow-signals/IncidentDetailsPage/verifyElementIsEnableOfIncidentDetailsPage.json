@@ -1,0 +1,14 @@
+{
+  "method": "verifyElementIsEnableOfIncidentDetailsPage",
+  "signals": [
+    "validate_incident_field_enabled_state",
+    "guard_before_input"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "ui_element",
+    "form_field"
+  ],
+  "notes": "Supports flows that require checking if a field is enabled before interaction."
+}
