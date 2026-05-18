@@ -1,0 +1,10 @@
+{
+  "method": "verifyLegendsAreHidden",
+  "pattern_detected": [
+    "legend_toggle_and_verify_pattern",
+    "wait_and_click_pattern",
+    "tooltip_to_gridrow_count_verification",
+    "tooltip_to_pagination_verification",
+    "tabbed_report_workflow"
+  ]
+}
