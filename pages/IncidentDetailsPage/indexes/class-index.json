@@ -13,6 +13,7 @@
     "submitIncident",
     "validateDeviceNameHyperLink",
     "changeAssigneeOfIncident",
-    "changeStatusOfIncident"
+    "changeStatusOfIncident",
+    "changePriorityOfIncident"
   ]
 }
