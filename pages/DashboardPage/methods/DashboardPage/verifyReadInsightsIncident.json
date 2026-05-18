@@ -1,0 +1,68 @@
+{
+  "method": "verifyReadInsightsIncident",
+  "actions": [
+    "wait_for_page_load",
+    "sleep",
+    "click",
+    "wait_for_elements",
+    "enter_text",
+    "loop",
+    "text_equals_check",
+    "press_key",
+    "wait_for_presence",
+    "verify_element",
+    "return"
+  ],
+  "locators": [
+    "\"dashboardListDropdown\"",
+    "\"dashboardList\"",
+    "\"editButtonShareDash\"",
+    "\"shareWithDashboardOption\"",
+    "\"shareDashboardUserDropdown\"",
+    "\"shareDashboardUserDropdownSearchBox\"",
+    "\"shareDashboardUserDropdownList\"",
+    "\"shareButton\"",
+    "\"shareDashboardSuccessMessage\""
+  ],
+  "waits": [
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPage",
+    "waitForPresenceOfElementsOfDashboardPage"
+  ],
+  "assertions": [
+    "element.size() != 0",
+    "userElement.size() != 0",
+    "verifyElementsOfDashboardPage(\"shareDashboardSuccessMessage\")"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "waitForElementsOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "getElementsOfDashboardPage",
+    "enterTextForDashboardPage",
+    "pressKey"
+  ],
+  "ui_interactions": [
+    "open_dashboard_dropdown",
+    "select_dashboard_by_name",
+    "open_share_dialog",
+    "search_user_in_dropdown",
+    "select_user_from_list",
+    "dismiss_dropdown_with_escape",
+    "click_share_button",
+    "verify_share_success_message"
+  ],
+  "reusable_helpers": [
+    "waitForPageLoaded",
+    "sleeper",
+    "waitForElementsOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "getElementsOfDashboardPage",
+    "enterTextForDashboardPage",
+    "pressKey",
+    "waitForPresenceOfElementsOfDashboardPage",
+    "verifyElementsOfDashboardPage"
+  ]
+}
