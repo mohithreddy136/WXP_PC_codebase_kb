@@ -2,187 +2,163 @@
   {
     "methods": [
       {
-        "method": "getTextsOfIncidentDetailsPage",
+        "method": "getDetailsOfIncident",
         "actions": [
-          "get_text_list",
-          "error_logging"
-        ],
-        "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
-        ],
-        "waits": [],
-        "assertions": [],
-        "return_values": [
-          "ArrayList<String> of texts from elements located by key; null on exception"
-        ],
-        "selenium_actions": [
-          "indirect: getTextOfList (likely iterates WebElements and reads text)"
-        ],
-        "ui_interactions": [
-          "read multiple element texts"
-        ],
-        "reusable_helper_usage": [
-          "getTextOfList",
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER.error"
-        ]
-      },
-      {
-        "method": "getTextOfIncidentDetailsPage",
-        "actions": [
-          "get_text",
-          "propagate_exception"
-        ],
-        "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
-        ],
-        "waits": [],
-        "assertions": [],
-        "return_values": [
-          "String text of element located by key; throws Exception on failure"
-        ],
-        "selenium_actions": [
-          "indirect: getTextBy (likely WebElement#getText)"
-        ],
-        "ui_interactions": [
-          "read single element text"
-        ],
-        "reusable_helper_usage": [
-          "getTextBy",
-          "incidentDetailsPagePropertiesPageProperties"
-        ]
-      },
-      {
-        "method": "enrollDevice",
-        "actions": [
-          "instantiate_page_objects",
           "read_text",
-          "click",
-          "generate_company_pin",
-          "call_enrollment_api",
-          "error_logging"
+          "aggregate_values",
+          "return_list"
         ],
         "locators": [
-          "CompaniesPage.companyNameShow",
-          "CompaniesPage.companyEmailId",
-          "PreferencesPage.preferencesTab"
+          "incidentId",
+          "currentIncidentType",
+          "currentIncidentSubType",
+          "currentIncidentPriority",
+          "currentIncidentStatus",
+          "currentCreatedOn"
         ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "HashMap<String,String> deviceDetails from EnrollFakeDevice; null on exception"
+          "ArrayList<String> incidentDetailsPageInfo"
         ],
         "selenium_actions": [
-          "page object interactions via CompaniesPage and PreferencesPage (click, getText)"
+          "getTextBy"
         ],
         "ui_interactions": [
-          "navigate to preferences tab",
-          "read company name and email"
+          "read_incident_id",
+          "read_incident_type",
+          "read_incident_subtype",
+          "read_incident_priority",
+          "read_incident_status",
+          "read_created_on"
         ],
-        "reusable_helper_usage": [
-          "CompaniesPage.getInstance",
-          "CompaniesPage.getTextOfCompaniesPage",
-          "PreferencesPage.getInstance",
-          "PreferencesPage.clickOnElementsOfPreferencesPage",
-          "PreDefinedActions.getDriver",
-          "CompanyPin.generateCompanyPin",
-          "EnrollFakeDevice.enrollFakeDeviceForIncident",
-          "LOGGER.error"
+        "reusable_helpers_used": [
+          "getTextBy"
         ]
       },
       {
-        "method": "submitIncident",
+        "method": "selectValueFromDropdownInPopup",
         "actions": [
-          "instantiate_page_object",
-          "compose_incident_title",
-          "lookup_localized_text",
-          "submit_incident_via_api",
-          "error_logging"
+          "click",
+          "open_dropdown",
+          "select_dropdown_value",
+          "submit",
+          "return_selected_value"
         ],
         "locators": [
-          "DeviceDetailsPage API-related fields via deviceDetails map"
+          "editButtonKey",
+          "dropdownButtonKey",
+          "dropdownListKey",
+          "submitButtonKey"
         ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "String incidentId from submitCaseUsingAPI; null on exception"
+          "String text"
         ],
         "selenium_actions": [
-          "indirect: DeviceDetailsPage interactions; API submission helper"
+          "clickOnElementOfIncidentDetailsPage",
+          "selectValueOnPopup"
         ],
         "ui_interactions": [
-          "none (API-based submission)"
+          "open_edit_popup",
+          "open_dropdown",
+          "select_value_in_popup_dropdown",
+          "submit_popup"
         ],
-        "reusable_helper_usage": [
-          "DeviceDetailsPage.getInstance",
-          "PreDefinedActions.getDriver",
-          "getTextLanguage",
-          "DeviceDetailsPage.submitCaseUsingAPI",
-          "LOGGER.error"
+        "reusable_helpers_used": [
+          "clickOnElementOfIncidentDetailsPage",
+          "selectValueOnPopup"
         ]
       },
       {
-        "method": "validateDeviceNameHyperLink",
+        "method": "selectValueFromDropdownInTypePopup",
         "actions": [
-          "instantiate_page_objects",
           "click",
-          "select_all_checkboxes",
-          "save_configuration",
-          "reset_to_default",
-          "search_incident",
-          "open_incident_details",
-          "locate_element",
-          "attribute_check",
-          "element_visibility_check",
-          "conditional_return",
-          "error_logging"
+          "open_type_dropdown",
+          "select_type_value",
+          "open_subtype_dropdown",
+          "select_subtype_value",
+          "submit",
+          "return_list"
         ],
         "locators": [
-          "IncidentPage.tableConfigurationButton",
-          "TableConfigurationPage.columnCheckboxesOnPopup",
-          "TableConfigurationPage.listOfColumnsOnPopup",
-          "TableConfigurationPage.saveButton",
-          "TableConfigurationPage.resettodefault",
-          "IncidentPage.idSearchBox",
-          "IncidentPage.noelementsdisplaytext",
-          "IncidentPage.idlist",
-          "IncidentPage.incidentIdLink",
-          "IncidentDetailsPage.deviceName",
-          "IncidentDetailsPage.editDevieIcon"
+          "editButtonKey",
+          "dropdownTypeButtonKey",
+          "dropdownSubTypeButtonKey",
+          "dropdownListKey",
+          "submitButtonKey"
+        ],
+        "waits": [],
+        "assertions": [],
+        "return_values": [
+          "ArrayList<String> incidentTypeAndSubtypeInfo"
+        ],
+        "selenium_actions": [
+          "clickOnElementOfIncidentDetailsPage",
+          "selectValueOnPopup"
+        ],
+        "ui_interactions": [
+          "open_edit_popup",
+          "open_type_dropdown",
+          "select_type_value_in_popup",
+          "open_subtype_dropdown",
+          "select_subtype_value_in_popup",
+          "submit_popup"
+        ],
+        "reusable_helpers_used": [
+          "clickOnElementOfIncidentDetailsPage",
+          "selectValueOnPopup"
+        ]
+      },
+      {
+        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
+        "actions": [
+          "compare_lists",
+          "return_boolean"
+        ],
+        "locators": [
+          "key"
         ],
         "waits": [],
         "assertions": [
-          "implicit validation via verifySearchValueOnIncident"
+          "dropdown_options_match_expected"
         ],
         "return_values": [
-          "boolean: true if device name is neither hyperlink nor editable; false otherwise or on exception"
+          "boolean"
         ],
         "selenium_actions": [
-          "click",
-          "select_all_checkboxes_on_popup",
-          "search_and_verify",
-          "getElement",
-          "getAttribute",
-          "verifyElement"
+          "compareTwoList"
         ],
         "ui_interactions": [
-          "configure incident table columns",
-          "reset table configuration",
-          "search incident by id",
-          "open incident details",
-          "inspect device name field and edit icon"
+          "verify_dropdown_options"
         ],
-        "reusable_helper_usage": [
-          "IncidentPage.getInstance",
-          "TableConfigurationPage.getInstance",
-          "IncidentPage.clickOnElementsOfIncidentPage",
-          "TableConfigurationPage.selectAllCheckboxOfPopup",
-          "TableConfigurationPage.clickOnElementsOfTableConfigurationPage",
-          "IncidentPage.verifySearchValueOnIncident",
-          "getElementOfIncidentDetailsPage",
-          "verifyElementOfIncidentDetailsPage",
-          "PreDefinedActions.getDriver",
-          "LOGGER.error"
+        "reusable_helpers_used": [
+          "compareTwoList"
+        ]
+      },
+      {
+        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
+        "actions": [
+          "select_first_dropdown_value",
+          "return_selected_value"
+        ],
+        "locators": [
+          "dropdownListKey"
+        ],
+        "waits": [],
+        "assertions": [],
+        "return_values": [
+          "String"
+        ],
+        "selenium_actions": [
+          "selectFirstValueFromDropdown"
+        ],
+        "ui_interactions": [
+          "select_first_option_from_dropdown"
+        ],
+        "reusable_helpers_used": [
+          "selectFirstValueFromDropdown"
         ]
       }
     ]
