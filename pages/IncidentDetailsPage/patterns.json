@@ -2,57 +2,58 @@
   {
     "methods": [
       {
-        "method": "changeAssigneeOfIncident",
+        "method": "getTextOfElementOnIncidentDetailsPage",
         "pattern_detected": [
-          "dropdown_selection_workflow",
-          "popup_interaction_workflow",
-          "wait_and_click_pattern",
-          "safe_click_pattern",
-          "comment_validation_pattern"
+          "property_key_to_locator_resolution",
+          "exception_wrapped_helper_call"
         ],
-        "notes": "Uses explicit verify + wait + click with fixed Thread.sleep-based waits and reads comment as confirmation."
+        "notes": [
+          "Uses properties file key to resolve locator then delegates to shared getTextBy helper."
+        ]
       },
       {
-        "method": "changeStatusOfIncident",
+        "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "pattern_detected": [
-          "dropdown_selection_workflow",
-          "popup_interaction_workflow",
-          "wait_and_click_pattern",
-          "safe_click_pattern",
-          "comment_validation_pattern"
+          "property_key_to_locator_resolution",
+          "exception_wrapped_helper_call",
+          "state_verification_pattern"
         ],
-        "notes": "Status change via popup and dropdown, then comment tab verification."
+        "notes": [
+          "Boolean state verification via shared helper with exception-to-default-false handling."
+        ]
       },
       {
-        "method": "changePriorityOfIncident",
+        "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "pattern_detected": [
-          "dropdown_selection_workflow",
-          "popup_interaction_workflow",
-          "wait_and_click_pattern",
-          "safe_click_pattern",
-          "comment_validation_pattern"
+          "property_key_to_locator_resolution",
+          "exception_wrapped_helper_call",
+          "clickability_verification_pattern"
         ],
-        "notes": "Priority change with critical selection and comment verification."
+        "notes": [
+          "Clickability check delegated to shared helper with safe default false on error."
+        ]
       },
       {
-        "method": "changeTypeSubtypeOfIncident",
+        "method": "waitForElementOfIncidentDetailsPage",
         "pattern_detected": [
-          "dropdown_selection_workflow",
-          "popup_interaction_workflow",
-          "wait_and_click_pattern",
-          "safe_click_pattern",
-          "comment_validation_pattern",
-          "composite_value_assembly_pattern"
+          "property_key_to_locator_resolution",
+          "wait_and_verify_pattern",
+          "exception_wrapped_helper_call"
         ],
-        "notes": "Builds HashMap from multiple comment elements after type/subtype change."
+        "notes": [
+          "Waits for visibility via helper using locator from properties."
+        ]
       },
       {
-        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
+        "method": "getElementOfIncidentDetailsPage",
         "pattern_detected": [
-          "wait_for_invisibility_pattern",
-          "property_key_locator_pattern"
+          "property_key_to_locator_resolution",
+          "exception_wrapped_helper_call",
+          "webelement_access_pattern"
         ],
-        "notes": "Uses properties file key to resolve locator and wait for invisibility."
+        "notes": [
+          "Direct WebElement access via shared getElement helper."
+        ]
       }
     ]
   }
