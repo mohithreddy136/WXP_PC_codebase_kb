@@ -78,5 +78,9 @@
   "waitForElementToBeClickableOfIncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/waitForElementToBeClickableOfIncidentDetailsPage.json"
+  },
+  "getTextsOfIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getTextsOfIncidentDetailsPage.json"
   }
 }
