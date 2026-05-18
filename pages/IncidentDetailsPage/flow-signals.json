@@ -2,79 +2,64 @@
   {
     "methods": [
       {
-        "method": "changeAssigneeOfIncident",
+        "method": "getTextOfElementOnIncidentDetailsPage",
         "signals": [
-          "incident_update",
-          "assignee_change",
-          "comment_verification"
+          "read_incident_detail_field"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "assignee",
-          "comment"
-        ],
-        "notes": "Changes assignee of an incident and returns the latest comment text reflecting the change."
-      },
-      {
-        "method": "changeStatusOfIncident",
-        "signals": [
-          "incident_update",
-          "status_change",
-          "comment_verification"
-        ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "status",
-          "comment"
-        ],
-        "notes": "Changes status of an incident to investigation and returns comment text (first comment) after change."
-      },
-      {
-        "method": "changePriorityOfIncident",
-        "signals": [
-          "incident_update",
-          "priority_change",
-          "comment_verification"
-        ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "priority",
-          "comment"
-        ],
-        "notes": "Changes priority of an incident to critical and returns comment text after change."
-      },
-      {
-        "method": "changeTypeSubtypeOfIncident",
-        "signals": [
-          "incident_update",
-          "type_change",
-          "subtype_change",
-          "comment_verification"
-        ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "type",
-          "subtype",
-          "comment"
-        ],
-        "notes": "Changes type and subtype of an incident and returns them as a map derived from comments."
-      },
-      {
-        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
-        "signals": [
-          "ui_wait",
-          "element_invisibility"
-        ],
-        "domain": "ui_synchronization",
-        "related_entities": [
           "ui_element",
-          "locator"
+          "field_text"
+        ]
+      },
+      {
+        "method": "verifyElementIsEnableOfIncidentDetailsPage",
+        "signals": [
+          "check_incident_detail_field_enabled"
         ],
-        "notes": "Waits until a given incident details page element becomes invisible using its locator key."
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "ui_element",
+          "enabled_state"
+        ]
+      },
+      {
+        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "signals": [
+          "check_incident_detail_field_clickable"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "ui_element",
+          "clickable_state"
+        ]
+      },
+      {
+        "method": "waitForElementOfIncidentDetailsPage",
+        "signals": [
+          "wait_for_incident_detail_field_visibility"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "ui_element",
+          "visibility_state"
+        ]
+      },
+      {
+        "method": "getElementOfIncidentDetailsPage",
+        "signals": [
+          "retrieve_incident_detail_webelement"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "ui_element",
+          "webelement"
+        ]
       }
     ]
   }
