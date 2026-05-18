@@ -27,6 +27,7 @@
     "verifyGridColumnsNamesWPS",
     "verifyDragAndDrop",
     "verifyHideAndShowLink",
-    "getActualAarrayAfterDragAndDropOperation"
+    "getActualAarrayAfterDragAndDropOperation",
+    "getActualAarrayAfterDragAndDropOperationWithHiddenArea"
   ]
 }
