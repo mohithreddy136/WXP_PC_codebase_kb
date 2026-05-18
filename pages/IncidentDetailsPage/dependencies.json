@@ -2,101 +2,58 @@
   {
     "methods": [
       {
-        "method": "changeAssigneeOfIncident",
+        "method": "getTextOfElementOnIncidentDetailsPage",
         "depends_on_methods": [
-          "verifyElementOfIncidentDetailsPage",
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "sleeper",
-          "clickOnElementOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "getTextOfElementOnIncidentDetailsPage"
+          "getTextBy"
         ],
         "cross_page_calls": [],
-        "helpers": [
-          "sleeper",
-          "waitForPageLoaded"
-        ],
-        "utilities": [
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
           "LOGGER"
         ]
       },
       {
-        "method": "changeStatusOfIncident",
+        "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "depends_on_methods": [
-          "verifyElementOfIncidentDetailsPage",
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage",
-          "sleeper",
-          "clickOnElementOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "getTextOfElementOnIncidentDetailsPage"
+          "verifyElementIsEnable"
         ],
         "cross_page_calls": [],
-        "helpers": [
-          "sleeper",
-          "waitForPageLoaded"
-        ],
-        "utilities": [
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
           "LOGGER"
         ]
       },
       {
-        "method": "changePriorityOfIncident",
+        "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "depends_on_methods": [
-          "verifyElementOfIncidentDetailsPage",
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage",
-          "sleeper",
-          "clickOnElementOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "waitForElementOfIncidentDetailsPage",
-          "getTextOfElementOnIncidentDetailsPage"
+          "verifyElementIsClickable"
         ],
         "cross_page_calls": [],
-        "helpers": [
-          "sleeper",
-          "waitForPageLoaded"
-        ],
-        "utilities": [
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
           "LOGGER"
         ]
       },
       {
-        "method": "changeTypeSubtypeOfIncident",
+        "method": "waitForElementOfIncidentDetailsPage",
         "depends_on_methods": [
-          "verifyElementOfIncidentDetailsPage",
-          "waitForElementToBeClickableOfIncidentDetailsPage",
-          "verifyElementIsClickableOfIncidentDetailsPage",
-          "sleeper",
-          "clickOnElementOfIncidentDetailsPage",
-          "waitForPageLoaded",
-          "verifyElementOfIncidentDetailsPage",
-          "waitForElementOfIncidentDetailsPage",
-          "getTextOfElementOnIncidentDetailsPage"
+          "verifyElementIsVisible"
         ],
         "cross_page_calls": [],
-        "helpers": [
-          "sleeper",
-          "waitForPageLoaded"
-        ],
-        "utilities": [
-          "LOGGER",
-          "HashMap"
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
         ]
       },
       {
-        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
+        "method": "getElementOfIncidentDetailsPage",
         "depends_on_methods": [
-          "verifyElementIsinvisibile"
+          "getElement"
         ],
         "cross_page_calls": [],
-        "helpers": [],
-        "utilities": [
-          "LOGGER",
-          "incidentDetailsPagePropertiesPageProperties"
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
         ]
       }
     ]
