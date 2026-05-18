@@ -1,0 +1,33 @@
+{
+  "method": "selectValueFromDropdownInPopup",
+  "actions": [
+    "click",
+    "select_dropdown_value",
+    "submit"
+  ],
+  "locators": [
+    "editButtonKey",
+    "dropdownButtonKey",
+    "dropdownListKey",
+    "submitButtonKey"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "selected dropdown text or null on exception"
+  ],
+  "selenium_actions": [
+    "click",
+    "selectValueOnPopup(...)"
+  ],
+  "ui_interactions": [
+    "open_edit_popup",
+    "open_dropdown",
+    "select_value_in_popup",
+    "submit_popup"
+  ],
+  "reusable_helper_usage": [
+    "clickOnElementOfIncidentDetailsPage(...)",
+    "selectValueOnPopup(...)"
+  ]
+}
