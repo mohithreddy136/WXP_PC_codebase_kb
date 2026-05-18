@@ -130,5 +130,9 @@
   "verifySwitchAccount": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifySwitchAccount.json"
+  },
+  "verifyUIVersion": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyUIVersion.json"
   }
 }
