@@ -10,5 +10,9 @@
   "verifyElementIsClickableOfIncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/verifyElementIsClickableOfIncidentDetailsPage.json"
+  },
+  "waitForElementOfIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/waitForElementOfIncidentDetailsPage.json"
   }
 }
