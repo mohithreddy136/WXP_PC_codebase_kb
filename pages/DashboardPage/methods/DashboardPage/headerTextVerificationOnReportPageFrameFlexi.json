@@ -1,0 +1,51 @@
+{
+  "method": "headerTextVerificationOnReportPageFrameFlexi",
+  "actions": [
+    "mouse_hover",
+    "click",
+    "wait",
+    "tab_switch",
+    "list_iteration",
+    "conditional_check",
+    "logging"
+  ],
+  "locators": [
+    "labelsKey",
+    "keyDrillDownLabelsAllHidden",
+    "tooltipTextKey",
+    "moreDetailsLinkKey",
+    "operatingSystemKey",
+    "labelsBackKey"
+  ],
+  "waits": [
+    "waitForElementsOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic"
+  ],
+  "assertions": [
+    "monthTextForOS[0] contains osMajorVersion OR monthTextForOS[1] contains osMajorVersionName"
+  ],
+  "return_values": [],
+  "selenium_actions": [
+    "click",
+    "getText",
+    "mouseHoverbyoffsett",
+    "mouseHoverbyoffsettClick"
+  ],
+  "ui_interactions": [
+    "hover_on_chart",
+    "open_report_in_new_tab",
+    "navigate_back_from_report",
+    "drilldown_navigation",
+    "legend_visibility_verification"
+  ],
+  "reusable_helper_usage": [
+    "verifyLegendsAreHidden",
+    "getElementsOfDashboardPage",
+    "mouseHoverbyoffsett",
+    "waitForElementsOfDashboardPage",
+    "switchToDifferentTabOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic",
+    "clickOnElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
