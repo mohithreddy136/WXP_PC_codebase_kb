@@ -1,0 +1,11 @@
+{
+  "method": "verifyReadInsightsIncident",
+  "pattern_detected": [
+    "dropdown_selection_workflow",
+    "search_selection_workflow",
+    "modal_share_workflow",
+    "wait_and_click_pattern",
+    "success_message_verification_pattern"
+  ],
+  "notes": "Implements dashboard sharing flow with user search and success message verification."
+}
