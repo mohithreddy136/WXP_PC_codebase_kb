@@ -1,0 +1,11 @@
+{
+  "method": "waitForElementToBeClickableOfIncidentDetailsPage",
+  "actions": [],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": []
+}
