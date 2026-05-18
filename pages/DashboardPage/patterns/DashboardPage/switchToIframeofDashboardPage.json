@@ -1,0 +1,10 @@
+{
+  "method": "switchToIframeofDashboardPage",
+  "pattern_detected": [
+    "javascript_click_wrapper",
+    "property_key_to_locator"
+  ],
+  "notes": [
+    "JS click abstraction for elements that may not be interactable via standard click."
+  ]
+}
