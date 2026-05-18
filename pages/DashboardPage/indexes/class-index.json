@@ -23,6 +23,7 @@
     "verifyCompaniesListOnHeaderFlexi",
     "getHiddenConfirmationModalPopup",
     "getTokenValue",
-    "getFirstWord"
+    "getFirstWord",
+    "verifyGridColumnsNamesWPS"
   ]
 }
