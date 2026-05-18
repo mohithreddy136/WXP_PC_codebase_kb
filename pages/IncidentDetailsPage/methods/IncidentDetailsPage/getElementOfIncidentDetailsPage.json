@@ -1,0 +1,23 @@
+{
+  "method": "getElementOfIncidentDetailsPage",
+  "actions": [
+    "fetch_webelement"
+  ],
+  "locators": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "WebElement instance or null on exception"
+  ],
+  "selenium_actions": [
+    "findElement"
+  ],
+  "ui_interactions": [
+    "access_element_handle"
+  ],
+  "reusable_helper_usage": [
+    "getElement(...)"
+  ]
+}
