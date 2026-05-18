@@ -36,6 +36,7 @@
     "verifyUIVersion",
     "headerTextVerificationOnReportPageFrameDonutSwellChartFlexi",
     "VerifyheaderTextOnReportPageFrameDonutSwellChartFlexi",
-    "verifyTooltipCountonReportWithFrameDonutBatterySwellChartFlexiWithOffset"
+    "verifyTooltipCountonReportWithFrameDonutBatterySwellChartFlexiWithOffset",
+    "verifyTooltipCountOnDonutBatterySwellChartFlexi"
   ]
 }
