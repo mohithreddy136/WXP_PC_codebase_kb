@@ -66,5 +66,9 @@
   "getDetailsOfIncident_continuation_block": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getDetailsOfIncident_continuation_block.json"
+  },
+  "selectValueFromDropdownInPopup": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/selectValueFromDropdownInPopup.json"
   }
 }
