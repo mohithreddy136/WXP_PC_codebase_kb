@@ -1,14 +1,11 @@
 {
   "method": "getTextOfElementOnIncidentDetailsPage",
   "signals": [
-    "read_incident_field_text",
-    "ui_state_observation"
+    "incident_details_element_click_via_js"
   ],
-  "domain": "incident_management",
+  "domain": "incident_management_ui",
   "related_entities": [
-    "incident",
-    "ui_element",
-    "field_label"
-  ],
-  "notes": "Used to read text content from an incident details element identified by key."
+    "incident_details_page",
+    "ui_element"
+  ]
 }
