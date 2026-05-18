@@ -1,0 +1,16 @@
+{
+  "method": "VerifyheaderTextOnReportPageFrameDonutSwellChartFlexi",
+  "signals": [
+    "donut_chart_drilldown",
+    "tooltip_count_extraction",
+    "report_open_in_new_tab"
+  ],
+  "domain": "dashboard_analytics",
+  "related_entities": [
+    "dashboard",
+    "donut_chart",
+    "legend",
+    "tooltip",
+    "report"
+  ]
+}
