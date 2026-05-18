@@ -1,0 +1,17 @@
+{
+  "method": "headerTextVerificationOnReportPageFrameDonutChartFlexi",
+  "signals": [
+    "os_version_tooltip_validation",
+    "report_header_validation",
+    "drilldown_label_navigation"
+  ],
+  "domain": "dashboard_reporting",
+  "related_entities": [
+    "operating_system",
+    "os_major_version",
+    "os_major_version_name",
+    "report",
+    "tooltip",
+    "legend"
+  ]
+}
