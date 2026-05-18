@@ -35,6 +35,7 @@
     "verifySwitchAccount",
     "verifyUIVersion",
     "headerTextVerificationOnReportPageFrameDonutSwellChartFlexi",
-    "VerifyheaderTextOnReportPageFrameDonutSwellChartFlexi"
+    "VerifyheaderTextOnReportPageFrameDonutSwellChartFlexi",
+    "verifyTooltipCountonReportWithFrameDonutBatterySwellChartFlexiWithOffset"
   ]
 }
