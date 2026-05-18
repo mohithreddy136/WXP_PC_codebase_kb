@@ -1,0 +1,16 @@
+{
+  "method": "verifySwitchAccount",
+  "depends_on_methods": [
+    "clickOnElementsOfDashboardPage",
+    "selectCategoryForFlexibleDashboardPage",
+    "selectSubCategoryForFlexibleDashboardPage",
+    "selectOptionForFlexibleDashboardPage",
+    "clickByJavaScriptOnDashboardPage",
+    "verifyElementIsClickableOfDashboardPage",
+    "getTextLanguage"
+  ],
+  "cross_page_calls": [],
+  "utilities": [
+    "LOGGER"
+  ]
+}
