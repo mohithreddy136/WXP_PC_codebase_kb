@@ -10,6 +10,7 @@
     "verifyElementIsClickableOfDashboardPage",
     "switchToIframeofDashboardPage",
     "verifyChartsMessageAllIncidentsFixed",
-    "verifyChartsHasNoDataOnDashBoardPage"
+    "verifyChartsHasNoDataOnDashBoardPage",
+    "verifyChartsHasNoDataOnDashBoardPageFlexi"
   ]
 }
