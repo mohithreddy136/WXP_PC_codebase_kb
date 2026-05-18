@@ -5,53 +5,55 @@
         "method": "getTextOfElementOnIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging"
+          "exception_wrapped_helper_call"
         ],
         "notes": [
-          "Wraps lower-level getTextBy with property-based locator resolution and try/catch logging."
+          "Uses properties file to resolve locator key to actual locator string",
+          "Wraps low-level helper getTextBy with try/catch and logging"
         ]
       },
       {
         "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging",
+          "exception_wrapped_helper_call",
           "state_verification_pattern"
         ],
         "notes": [
-          "Boolean state verification with default false on failure."
+          "Encapsulates enabled-state verification behind page-level method"
         ]
       },
       {
         "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging",
-          "state_verification_pattern"
+          "exception_wrapped_helper_call",
+          "clickability_verification_pattern"
         ],
         "notes": [
-          "Boolean clickable verification with default false on failure."
+          "Encapsulates clickable-state verification behind page-level method"
         ]
       },
       {
         "method": "waitForElementOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging",
-          "wait_and_verify_visibility_pattern"
+          "wait_and_check_visibility_pattern",
+          "exception_wrapped_helper_call"
         ],
         "notes": [
-          "Waits for visibility via verifyElementIsVisible and returns boolean."
+          "Uses visibility verification as a wait mechanism"
         ]
       },
       {
         "method": "getElementOfIncidentDetailsPage",
         "pattern_detected": [
           "property_key_to_locator_resolution",
-          "safe_wrapper_with_logging"
+          "exception_wrapped_helper_call",
+          "element_access_helper_pattern"
         ],
         "notes": [
-          "Returns WebElement via generic getElement helper with logging on failure."
+          "Provides direct WebElement access via key-based lookup"
         ]
       }
     ]
