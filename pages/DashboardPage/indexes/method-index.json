@@ -58,5 +58,9 @@
   "verifyLabelHiddenWhenClickOnLegends": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelHiddenWhenClickOnLegends.json"
+  },
+  "headerTextVerificationOnReportPageFrameFlexi": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/headerTextVerificationOnReportPageFrameFlexi.json"
   }
 }
