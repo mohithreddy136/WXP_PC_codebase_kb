@@ -13,6 +13,7 @@
     "verifyChartsHasNoDataOnDashBoardPage",
     "verifyChartsHasNoDataOnDashBoardPageFlexi",
     "verifyChartsHasNoDataDevicesEnrolledOnDashBoardPage",
-    "verifyTitleofChartOfDashboardPage"
+    "verifyTitleofChartOfDashboardPage",
+    "verifyLabelHiddenWhenClickOnLegends"
   ]
 }
