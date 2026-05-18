@@ -8,6 +8,7 @@
     "clickOnElementOfIncidentDetailsPage",
     "clickByJavaScriptOnIncidentDetailsPage",
     "enterTextForIncidentDetailsPage",
-    "selectedValueFromSearchBoxInsideDevicePopup"
+    "selectedValueFromSearchBoxInsideDevicePopup",
+    "verifySearchValueOnIncidentInsidePopup"
   ]
 }
