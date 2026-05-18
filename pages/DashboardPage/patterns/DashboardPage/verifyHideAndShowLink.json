@@ -1,0 +1,8 @@
+{
+  "method": "verifyHideAndShowLink",
+  "pattern_detected": [
+    "wait_and_click_pattern",
+    "toast_validation_pattern",
+    "bulk_selection_removal_workflow"
+  ]
+}
