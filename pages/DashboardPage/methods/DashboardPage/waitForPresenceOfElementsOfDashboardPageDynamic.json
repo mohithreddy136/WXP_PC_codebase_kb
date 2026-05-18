@@ -1,0 +1,23 @@
+{
+  "method": "waitForPresenceOfElementsOfDashboardPageDynamic",
+  "actions": [
+    "verify_presence"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean"
+  ],
+  "selenium_actions": [
+    "verifyElementIsPresent"
+  ],
+  "ui_interactions": [
+    "check_element_presence"
+  ],
+  "reusable_helper_usage": [
+    "verifyElementIsPresent"
+  ]
+}
