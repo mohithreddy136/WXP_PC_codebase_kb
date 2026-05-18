@@ -1,0 +1,28 @@
+{
+  "method": "changeAssigneeOfIncident",
+  "actions": [
+    "iterate_list",
+    "conditional_click",
+    "substring",
+    "return",
+    "log_error"
+  ],
+  "locators": [
+    "listKey"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "String (parsed text or null)"
+  ],
+  "selenium_actions": [
+    "click"
+  ],
+  "ui_interactions": [
+    "iterate search results list",
+    "click matching entry"
+  ],
+  "reusable_helper_usage": [
+    "LOGGER.error"
+  ]
+}
