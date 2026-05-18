@@ -4,6 +4,7 @@
     "verifyElementIsEnableOfIncidentDetailsPage",
     "verifyElementIsClickableOfIncidentDetailsPage",
     "waitForElementOfIncidentDetailsPage",
-    "getElementOfIncidentDetailsPage"
+    "getElementOfIncidentDetailsPage",
+    "clickOnElementOfIncidentDetailsPage"
   ]
 }
