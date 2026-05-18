@@ -1,0 +1,13 @@
+{
+  "method": "verifyTitleofChartOfDashboardPage",
+  "depends_on_methods": [
+    "getTextLanguage",
+    "verifyElementIsVisible",
+    "getTextBy"
+  ],
+  "cross_page_calls": [],
+  "helper_dependencies": [
+    "dashboardPageProperties"
+  ],
+  "external_dependencies": []
+}
