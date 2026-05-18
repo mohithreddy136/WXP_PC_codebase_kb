@@ -1,0 +1,15 @@
+{
+  "method": "getActualAarrayAfterDragAndDropOperationWithHiddenArea",
+  "signals": [
+    "dropdown_search_filter",
+    "no_results_validation",
+    "filtered_list_loading"
+  ],
+  "domain": "dashboard_filtering",
+  "related_entities": [
+    "dropdown",
+    "search",
+    "list",
+    "no_results_message"
+  ]
+}
