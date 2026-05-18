@@ -1,0 +1,21 @@
+{
+  "method": "getTextOfIncidentDetailsPage",
+  "actions": [
+    "enter_text"
+  ],
+  "locators": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty(textKey)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "send_keys"
+  ],
+  "ui_interactions": [
+    "search_box_input"
+  ],
+  "reusable_helper_usage": [
+    "enterText"
+  ]
+}
