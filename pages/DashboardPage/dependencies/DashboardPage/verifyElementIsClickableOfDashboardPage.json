@@ -1,0 +1,11 @@
+{
+  "method": "verifyElementIsClickableOfDashboardPage",
+  "depends_on_methods": [
+    "click"
+  ],
+  "cross_page_calls": [],
+  "helper_dependencies": [
+    "dashboardPageProperties"
+  ],
+  "utility_dependencies": []
+}
