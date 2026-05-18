@@ -46,5 +46,9 @@
   "verifyChartsHasNoDataOnDashBoardPageFlexi": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyChartsHasNoDataOnDashBoardPageFlexi.json"
+  },
+  "verifyChartsHasNoDataDevicesEnrolledOnDashBoardPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyChartsHasNoDataDevicesEnrolledOnDashBoardPage.json"
   }
 }
