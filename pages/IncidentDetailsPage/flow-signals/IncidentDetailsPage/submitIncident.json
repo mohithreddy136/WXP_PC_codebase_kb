@@ -1,0 +1,13 @@
+{
+  "method": "submitIncident",
+  "signals": [
+    "device_popup_selection_result",
+    "search_result_return"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "device",
+    "search_popup"
+  ]
+}
