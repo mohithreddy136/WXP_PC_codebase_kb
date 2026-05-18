@@ -1,0 +1,27 @@
+{
+  "method": "switchToParentTabOfDashboardPage",
+  "actions": [
+    "click",
+    "verify_clickable",
+    "sleep"
+  ],
+  "locators": [
+    "visualizationForBatterry",
+    "widgetAddConfirmButton"
+  ],
+  "waits": [
+    "sleeper(2000)"
+  ],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "clickByJavaScriptOnDashboardPage"
+  ],
+  "ui_interactions": [
+    "click widget visualization",
+    "wait for confirm button"
+  ],
+  "reusable_helpers": [
+    "verifyElementIsClickableOfDashboardPage"
+  ]
+}
