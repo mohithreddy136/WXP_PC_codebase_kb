@@ -82,5 +82,9 @@
   "verifyCompaniesListOnHeaderFlexi": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyCompaniesListOnHeaderFlexi.json"
+  },
+  "getHiddenConfirmationModalPopup": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/getHiddenConfirmationModalPopup.json"
   }
 }
