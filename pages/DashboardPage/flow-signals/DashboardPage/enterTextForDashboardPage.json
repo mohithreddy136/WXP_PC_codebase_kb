@@ -1,0 +1,11 @@
+{
+  "method": "enterTextForDashboardPage",
+  "signals": [
+    "dashboard_attribute_read"
+  ],
+  "domain": "dashboard_ui",
+  "related_entities": [
+    "dashboard_element",
+    "attribute"
+  ]
+}
