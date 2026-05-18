@@ -26,5 +26,9 @@
   "enterTextForDashboardPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/enterTextForDashboardPage.json"
+  },
+  "verifyElementIsClickableOfDashboardPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyElementIsClickableOfDashboardPage.json"
   }
 }
