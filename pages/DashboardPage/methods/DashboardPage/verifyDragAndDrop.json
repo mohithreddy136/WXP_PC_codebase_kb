@@ -1,0 +1,20 @@
+{
+  "method": "verifyDragAndDrop",
+  "actions": [
+    "map_compare",
+    "stream_concat",
+    "collect_to_map"
+  ],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helpers": [
+    "Stream.concat",
+    "Collectors.toMap"
+  ]
+}
