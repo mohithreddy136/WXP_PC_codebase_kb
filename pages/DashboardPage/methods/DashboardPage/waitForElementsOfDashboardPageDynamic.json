@@ -1,0 +1,23 @@
+{
+  "method": "waitForElementsOfDashboardPageDynamic",
+  "actions": [
+    "wait_until_visible"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(key)"
+  ],
+  "waits": [
+    "waitUntilElementIsVisible"
+  ],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "waitUntilElementIsVisible"
+  ],
+  "ui_interactions": [
+    "wait_for_element_visibility"
+  ],
+  "reusable_helper_usage": [
+    "waitUntilElementIsVisible"
+  ]
+}
