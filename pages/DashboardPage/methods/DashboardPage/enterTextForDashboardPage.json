@@ -1,0 +1,23 @@
+{
+  "method": "enterTextForDashboardPage",
+  "actions": [
+    "get_attribute"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "String"
+  ],
+  "selenium_actions": [
+    "getAttribute"
+  ],
+  "ui_interactions": [
+    "attribute_read"
+  ],
+  "reusable_helper_usage": [
+    "getAttribute(String locator, String attributeName)"
+  ]
+}
