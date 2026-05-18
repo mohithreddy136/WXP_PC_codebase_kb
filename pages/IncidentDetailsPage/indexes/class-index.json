@@ -15,6 +15,7 @@
     "changeAssigneeOfIncident",
     "changeStatusOfIncident",
     "changePriorityOfIncident",
-    "getDetailsOfIncident"
+    "getDetailsOfIncident",
+    "getDetailsOfIncident_continuation_block"
   ]
 }
