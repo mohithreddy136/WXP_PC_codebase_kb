@@ -2,63 +2,88 @@
   {
     "methods": [
       {
-        "method": "getTextOfElementOnIncidentDetailsPage",
+        "method": "changeAssigneeOfIncident",
         "signals": [
-          "read_incident_detail_field"
+          "incident_update",
+          "assignee_change",
+          "comment_capture"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "ui_element",
-          "field_text"
+          "assignee",
+          "comment"
+        ],
+        "notes": [
+          "Returns comment text after assignee change"
         ]
       },
       {
-        "method": "verifyElementIsEnableOfIncidentDetailsPage",
+        "method": "changeStatusOfIncident",
         "signals": [
-          "check_incident_detail_field_enabled"
+          "incident_update",
+          "status_change",
+          "comment_capture"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "ui_element",
-          "enabled_state"
+          "status",
+          "comment"
+        ],
+        "notes": [
+          "Returns first comment text after status change; potential mismatch with secondComment verification"
         ]
       },
       {
-        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "method": "changePriorityOfIncident",
         "signals": [
-          "check_incident_detail_field_clickable"
+          "incident_update",
+          "priority_change",
+          "comment_capture"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "ui_element",
-          "clickable_state"
+          "priority",
+          "comment"
+        ],
+        "notes": [
+          "Returns first comment text after priority change; potential mismatch with thirdComment verification"
         ]
       },
       {
-        "method": "waitForElementOfIncidentDetailsPage",
+        "method": "changeTypeSubtypeOfIncident",
         "signals": [
-          "wait_for_incident_detail_field_visibility"
+          "incident_update",
+          "type_change",
+          "subtype_change",
+          "comment_capture"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "ui_element",
-          "visibility_state"
+          "type",
+          "subtype",
+          "comment"
+        ],
+        "notes": [
+          "Returns map of type/subType derived from comments"
         ]
       },
       {
-        "method": "getElementOfIncidentDetailsPage",
+        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
         "signals": [
-          "retrieve_incident_detail_webelement"
+          "ui_wait",
+          "element_invisibility"
         ],
-        "domain": "incident_management",
+        "domain": "ui_synchronization",
         "related_entities": [
-          "incident",
-          "ui_element",
-          "webelement"
+          "web_element",
+          "locator_key"
+        ],
+        "notes": [
+          "Non-throwing wait wrapper; logs on exception only"
         ]
       }
     ]
