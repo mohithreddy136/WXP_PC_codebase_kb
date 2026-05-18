@@ -1,0 +1,11 @@
+{
+  "method": "headerTextVerificationOnReportPageFrameDonutSwellChartFlexi",
+  "pattern_detected": [
+    "wait_and_scroll_before_interaction",
+    "hover_and_click_to_open_report",
+    "pagination_vs_tooltip_count_validation",
+    "tab_switching_workflow",
+    "legend_toggle_iteration"
+  ],
+  "notes": "Validates that tooltip count from donut chart does not exceed pagination count in report grid."
+}
