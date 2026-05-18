@@ -1,48 +1,29 @@
 {
   "method": "selectedValueFromSearchBoxInsideDevicePopup",
   "actions": [
-    "enter_text",
-    "sleep",
-    "conditional_flow",
-    "click",
-    "substring_extraction",
-    "return"
+    "verify_dropdown_options",
+    "select_first_option"
   ],
   "locators": [
-    "textKey",
-    "emptyTextKey",
-    "listKey",
-    "dropdownkey",
-    "cancelButtonKey"
+    "incidentDetailsPagePropertiesPageProperties.getProperty(key)",
+    "incidentDetailsPagePropertiesPageProperties.getProperty(dropdownListKey)"
   ],
-  "waits": [
-    "sleeper(5000)"
-  ],
+  "waits": [],
   "assertions": [],
   "return_values": [
-    "String (selected option text or null on exception)"
+    "boolean",
+    "String"
   ],
   "selenium_actions": [
-    "enterText",
-    "verifyElementIsPresent",
-    "getTextBy",
-    "getElementsTillAllElementsPresent",
-    "WebElement.getText",
-    "WebElement.click"
+    "list_comparison",
+    "dropdown_select_first"
   ],
   "ui_interactions": [
-    "type into search box inside device popup",
-    "handle 'no items available' state",
-    "select matching item from filtered list",
-    "close dropdown and cancel popup when no results"
+    "dropdown_verification",
+    "dropdown_selection"
   ],
   "reusable_helper_usage": [
-    "enterText",
-    "sleeper",
-    "verifyElementIsPresent",
-    "getTextBy",
-    "getElementsTillAllElementsPresent",
-    "clickOnElementOfIncidentDetailsPage",
-    "getTextLanguage"
+    "compareTwoList",
+    "selectFirstValueFromDropdown"
   ]
 }
