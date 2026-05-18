@@ -1,0 +1,15 @@
+{
+  "method": "waitForElementsOfDashboardPage",
+  "actions": [
+    "return_collection"
+  ],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "List<String> (inferred from keyValues)"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": []
+}
