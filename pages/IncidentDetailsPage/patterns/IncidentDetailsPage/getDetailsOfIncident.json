@@ -1,0 +1,9 @@
+{
+  "method": "getDetailsOfIncident",
+  "pattern_detected": [
+    "read_only_details_aggregation"
+  ],
+  "notes": [
+    "Collects multiple UI text fields into a single list for validation or reporting."
+  ]
+}
