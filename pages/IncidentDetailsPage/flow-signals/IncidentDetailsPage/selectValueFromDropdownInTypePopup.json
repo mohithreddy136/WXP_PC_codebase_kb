@@ -1,0 +1,15 @@
+{
+  "method": "selectValueFromDropdownInTypePopup",
+  "signals": [
+    "update_incident_type_and_subtype_via_popup"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "type",
+    "subtype",
+    "popup",
+    "dropdown",
+    "submit_action"
+  ]
+}
