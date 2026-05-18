@@ -2,68 +2,101 @@
   {
     "methods": [
       {
-        "method": "matchTextOfIncidentDetailsPage",
+        "method": "changeAssigneeOfIncident",
         "depends_on_methods": [
-          "verifyTextPresentOnElement"
+          "verifyElementOfIncidentDetailsPage",
+          "waitForElementToBeClickableOfIncidentDetailsPage",
+          "sleeper",
+          "clickOnElementOfIncidentDetailsPage",
+          "verifyElementIsClickableOfIncidentDetailsPage",
+          "waitForPageLoaded",
+          "waitForElementOfIncidentDetailsPage",
+          "getTextOfElementOnIncidentDetailsPage"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "verifyTextPresentOnElement"
+        "helpers": [
+          "sleeper",
+          "waitForPageLoaded"
         ],
         "utilities": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
+          "LOGGER"
         ]
       },
       {
-        "method": "verifyElementOfIncidentDetailsPage",
+        "method": "changeStatusOfIncident",
         "depends_on_methods": [
-          "verifyElementIsPresent"
+          "verifyElementOfIncidentDetailsPage",
+          "waitForElementToBeClickableOfIncidentDetailsPage",
+          "verifyElementIsClickableOfIncidentDetailsPage",
+          "sleeper",
+          "clickOnElementOfIncidentDetailsPage",
+          "waitForPageLoaded",
+          "waitForElementOfIncidentDetailsPage",
+          "getTextOfElementOnIncidentDetailsPage"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "verifyElementIsPresent"
+        "helpers": [
+          "sleeper",
+          "waitForPageLoaded"
         ],
         "utilities": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
+          "LOGGER"
         ]
       },
       {
-        "method": "clickOnElementOfIncidentDetailsPage",
+        "method": "changePriorityOfIncident",
         "depends_on_methods": [
-          "click"
+          "verifyElementOfIncidentDetailsPage",
+          "waitForElementToBeClickableOfIncidentDetailsPage",
+          "verifyElementIsClickableOfIncidentDetailsPage",
+          "sleeper",
+          "clickOnElementOfIncidentDetailsPage",
+          "waitForPageLoaded",
+          "waitForElementOfIncidentDetailsPage",
+          "getTextOfElementOnIncidentDetailsPage"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "click"
+        "helpers": [
+          "sleeper",
+          "waitForPageLoaded"
         ],
         "utilities": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
+          "LOGGER"
         ]
       },
       {
-        "method": "clickByJavaScriptOnIncidentDetailsPage",
+        "method": "changeTypeSubtypeOfIncident",
         "depends_on_methods": [
-          "clickByJavaScript"
+          "verifyElementOfIncidentDetailsPage",
+          "waitForElementToBeClickableOfIncidentDetailsPage",
+          "verifyElementIsClickableOfIncidentDetailsPage",
+          "sleeper",
+          "clickOnElementOfIncidentDetailsPage",
+          "waitForPageLoaded",
+          "verifyElementOfIncidentDetailsPage",
+          "waitForElementOfIncidentDetailsPage",
+          "getTextOfElementOnIncidentDetailsPage"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "clickByJavaScript"
+        "helpers": [
+          "sleeper",
+          "waitForPageLoaded"
         ],
         "utilities": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
+          "LOGGER",
+          "HashMap"
         ]
       },
       {
-        "method": "enterTextForIncidentDetailsPage",
+        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
         "depends_on_methods": [
-          "enterText"
+          "verifyElementIsinvisibile"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "enterText"
-        ],
+        "helpers": [],
         "utilities": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
+          "LOGGER",
+          "incidentDetailsPagePropertiesPageProperties"
         ]
       }
     ]
