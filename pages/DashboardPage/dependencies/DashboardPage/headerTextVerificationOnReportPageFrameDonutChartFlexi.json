@@ -1,0 +1,7 @@
+{
+  "method": "headerTextVerificationOnReportPageFrameDonutChartFlexi",
+  "depends_on_methods": [
+    "clickOnElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
