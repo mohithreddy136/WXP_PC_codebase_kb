@@ -1,11 +1,9 @@
 {
   "method": "verifyElementIsEnableOfIncidentDetailsPage",
   "pattern_detected": [
-    "state_verification_helper",
-    "page_property_key_lookup",
-    "safe_wrapper_with_logging"
+    "text_entry_workflow"
   ],
   "notes": [
-    "Encapsulates enabled-state check behind page object helper."
+    "intended to enter text into search box; Javadoc describes text entry"
   ]
 }
