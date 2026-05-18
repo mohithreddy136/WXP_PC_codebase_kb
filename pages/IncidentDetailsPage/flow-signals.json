@@ -2,63 +2,70 @@
   {
     "methods": [
       {
-        "method": "getTextOfElementOnIncidentDetailsPage",
+        "method": "getTextsOfIncidentDetailsPage",
         "signals": [
-          "read_incident_detail_field"
+          "read_incident_details_texts"
         ],
-        "domain": "incident_management",
+        "domain": "incident_management_ui",
         "related_entities": [
-          "incident",
           "incident_details_page",
-          "ui_field_text"
+          "ui_texts"
         ]
       },
       {
-        "method": "verifyElementIsEnableOfIncidentDetailsPage",
+        "method": "getTextOfIncidentDetailsPage",
         "signals": [
-          "check_incident_detail_field_enabled"
+          "read_single_incident_detail_text"
         ],
-        "domain": "incident_management",
+        "domain": "incident_management_ui",
         "related_entities": [
-          "incident",
           "incident_details_page",
-          "ui_field_state"
+          "ui_text"
         ]
       },
       {
-        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "method": "enrollDevice",
         "signals": [
-          "check_incident_detail_field_clickable"
+          "device_enrollment_setup",
+          "company_context_resolution",
+          "preferences_navigation"
         ],
-        "domain": "incident_management",
+        "domain": "device_management",
         "related_entities": [
-          "incident",
-          "incident_details_page",
-          "ui_field_state"
+          "company",
+          "device",
+          "preferences",
+          "company_pin"
         ]
       },
       {
-        "method": "waitForElementOfIncidentDetailsPage",
+        "method": "submitIncident",
         "signals": [
-          "wait_for_incident_detail_field_visibility"
+          "incident_creation_via_api",
+          "incident_localization_setup"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "incident_details_page",
-          "ui_field_visibility"
+          "device",
+          "localization",
+          "api"
         ]
       },
       {
-        "method": "getElementOfIncidentDetailsPage",
+        "method": "validateDeviceNameHyperLink",
         "signals": [
-          "access_incident_detail_webelement"
+          "incident_search_by_id",
+          "table_column_configuration",
+          "incident_details_navigation",
+          "device_field_non_interactive_validation"
         ],
-        "domain": "incident_management",
+        "domain": "incident_management_ui",
         "related_entities": [
           "incident",
+          "incident_table",
           "incident_details_page",
-          "webelement"
+          "device_field"
         ]
       }
     ]
