@@ -2,77 +2,76 @@
   {
     "methods": [
       {
-        "method": "selectOptionFromDropdownOnIncidentDetailsPage",
+        "method": "getTextsOfIncidentDetailsPage",
         "signals": [
-          "incident_dropdown_selection",
-          "popup_value_selection"
+          "read_incident_details_texts"
         ],
-        "domain": "incident_management",
+        "domain": "incident_management_ui",
         "related_entities": [
-          "incident",
-          "dropdown",
-          "popup",
-          "selection"
+          "incident_details_page",
+          "ui_text_list"
         ]
       },
       {
-        "method": "selectedValueFromSearchBoxInsidePopup",
+        "method": "getTextOfIncidentDetailsPage",
         "signals": [
-          "incident_popup_search",
-          "incident_popup_selection",
-          "no_results_handling"
+          "read_incident_detail_text"
         ],
-        "domain": "incident_management",
+        "domain": "incident_management_ui",
         "related_entities": [
-          "incident",
-          "popup",
-          "search",
-          "dropdown",
-          "selection",
-          "no_results_message"
+          "incident_details_page",
+          "ui_text"
         ]
       },
       {
-        "method": "selectedValueFromSearchBoxInsideDevicePopup",
+        "method": "enrollDevice",
         "signals": [
-          "incident_device_popup_search",
-          "incident_device_selection",
-          "no_results_handling"
+          "device_enrollment",
+          "test_data_setup"
+        ],
+        "domain": "device_management",
+        "related_entities": [
+          "company",
+          "device",
+          "company_pin",
+          "fake_device"
+        ],
+        "notes": [
+          "Enrolls a fake device for incident-related testing"
+        ]
+      },
+      {
+        "method": "submitIncident",
+        "signals": [
+          "incident_submission",
+          "api_case_creation"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
           "device",
-          "popup",
-          "search",
-          "selection",
-          "no_results_message"
+          "tenant",
+          "user"
+        ],
+        "notes": [
+          "Submits incident via API for given device"
         ]
       },
       {
-        "method": "verifySearchValueOnIncidentInsidePopup",
+        "method": "validateDeviceNameHyperLink",
         "signals": [
-          "incident_popup_search_verification"
+          "incident_device_field_validation",
+          "ui_non_editable_validation"
         ],
-        "domain": "incident_management",
+        "domain": "incident_management_ui",
         "related_entities": [
           "incident",
-          "popup",
-          "search",
-          "verification"
-        ]
-      },
-      {
-        "method": "waitForElementToBeClickableOfIncidentDetailsPage",
-        "signals": [
-          "incident_element_clickability_wait"
+          "device",
+          "incident_table",
+          "incident_details_page"
         ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "ui_element",
-          "clickability",
-          "wait"
+        "notes": [
+          "Validates device name field is not hyperlink and not editable for sales admin"
         ]
       }
     ]
