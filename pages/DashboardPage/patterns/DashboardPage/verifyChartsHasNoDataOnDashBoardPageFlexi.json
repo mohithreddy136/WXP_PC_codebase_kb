@@ -1,0 +1,11 @@
+{
+  "method": "verifyChartsHasNoDataOnDashBoardPageFlexi",
+  "pattern_detected": [
+    "localization_based_validation",
+    "no_data_message_verification",
+    "multi_chart_type_branching",
+    "wait_and_read_pattern",
+    "fixed_sleep_wait",
+    "exception_on_invalid_input"
+  ]
+}
