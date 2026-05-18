@@ -4,6 +4,7 @@
     "waitForElementsOfDashboardPage",
     "waitForElementsOfDashboardPageDynamic",
     "waitForPresenceOfElementsOfDashboardPageDynamic",
-    "clickOnElementsOfDashboardPage"
+    "clickOnElementsOfDashboardPage",
+    "clickByJavaScriptOnDashboardPage"
   ]
 }
