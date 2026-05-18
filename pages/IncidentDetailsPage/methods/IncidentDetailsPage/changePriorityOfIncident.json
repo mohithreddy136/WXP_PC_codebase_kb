@@ -1,0 +1,27 @@
+{
+  "method": "changePriorityOfIncident",
+  "actions": [
+    "delegate_call",
+    "return",
+    "log_error"
+  ],
+  "locators": [
+    "key"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "ArrayList<String> or null",
+    "String"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [
+    "read list texts",
+    "read element text"
+  ],
+  "reusable_helper_usage": [
+    "getTextOfList",
+    "getTextBy",
+    "LOGGER.error"
+  ]
+}
