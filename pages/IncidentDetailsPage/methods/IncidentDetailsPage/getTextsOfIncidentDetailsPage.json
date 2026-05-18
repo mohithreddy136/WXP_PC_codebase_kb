@@ -1,0 +1,37 @@
+{
+  "method": "getTextsOfIncidentDetailsPage",
+  "actions": [
+    "search_and_select_from_popup"
+  ],
+  "locators": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty(textKey)",
+    "incidentDetailsPagePropertiesPageProperties.getProperty(emptyTextKey)",
+    "incidentDetailsPagePropertiesPageProperties.getProperty(listKey)",
+    "incidentDetailsPagePropertiesPageProperties.getProperty(popupKey)",
+    "incidentDetailsPagePropertiesPageProperties.getProperty(dropdownkey)",
+    "incidentDetailsPagePropertiesPageProperties.getProperty(cancelButtonKey)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "String"
+  ],
+  "selenium_actions": [
+    "send_keys",
+    "list_interaction",
+    "popup_value_read",
+    "dropdown_toggle",
+    "button_click"
+  ],
+  "ui_interactions": [
+    "search_box_input",
+    "empty_state_verification",
+    "list_selection",
+    "popup_selection",
+    "dropdown_open_close",
+    "cancel_action"
+  ],
+  "reusable_helper_usage": [
+    "enterText"
+  ]
+}
