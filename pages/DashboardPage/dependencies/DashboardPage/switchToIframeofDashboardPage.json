@@ -1,0 +1,11 @@
+{
+  "method": "switchToIframeofDashboardPage",
+  "depends_on_methods": [
+    "clickByJavaScript"
+  ],
+  "cross_page_calls": [],
+  "helper_dependencies": [
+    "dashboardPageProperties"
+  ],
+  "utility_dependencies": []
+}
