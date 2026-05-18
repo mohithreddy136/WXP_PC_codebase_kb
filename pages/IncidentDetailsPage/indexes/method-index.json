@@ -14,5 +14,9 @@
   "waitForElementOfIncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/waitForElementOfIncidentDetailsPage.json"
+  },
+  "getElementOfIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getElementOfIncidentDetailsPage.json"
   }
 }
