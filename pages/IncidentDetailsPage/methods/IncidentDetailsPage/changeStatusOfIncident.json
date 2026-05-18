@@ -1,0 +1,26 @@
+{
+  "method": "changeStatusOfIncident",
+  "actions": [
+    "delegate_call",
+    "return",
+    "log_error"
+  ],
+  "locators": [
+    "textKey",
+    "emptyTextKey",
+    "listKey"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [
+    "search within popup"
+  ],
+  "reusable_helper_usage": [
+    "verifySearchFunctionalityInsidePopup",
+    "LOGGER.error"
+  ]
+}
