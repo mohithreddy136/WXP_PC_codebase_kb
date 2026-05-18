@@ -1,0 +1,35 @@
+{
+  "method": "verifyTooltipTextOnReportWithDrillDown",
+  "actions": [
+    "waitForPageLoaded",
+    "click",
+    "sleeper"
+  ],
+  "locators": [
+    "labelsKey",
+    "tooltipTextKey",
+    "textKey",
+    "keyDrillDownLabelsAllHidden",
+    "targetElement",
+    "legendDropdownKey"
+  ],
+  "waits": [
+    "waitForPageLoaded"
+  ],
+  "assertions": [],
+  "return_values": [
+    "true",
+    "false"
+  ],
+  "selenium_actions": [
+    "click"
+  ],
+  "ui_interactions": [
+    "listOfLegends.get(count1).click()"
+  ],
+  "reusable_helpers": [
+    "waitForPageLoaded",
+    "sleeper",
+    "verifyTooltipTextOnDonutBatterySwellChartFlexi"
+  ]
+}
