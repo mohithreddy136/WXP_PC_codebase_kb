@@ -1,0 +1,33 @@
+{
+  "method": "verifyTitleofChartOfDashboardPage",
+  "actions": [
+    "text_retrieval",
+    "localization_lookup",
+    "string_comparison",
+    "visibility_check"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(noTextIdKey)"
+  ],
+  "waits": [
+    "verifyElementIsVisible"
+  ],
+  "assertions": [
+    "message equals localized 'nothing_going_on_here' + 'system_is_collecting_data' for subscription_expiration chart"
+  ],
+  "return_values": [
+    "boolean flag indicating if expected no-data message is shown for subscription_expiration chart"
+  ],
+  "selenium_actions": [
+    "verifyElementIsVisible",
+    "getTextBy"
+  ],
+  "ui_interactions": [
+    "read chart no-data label text for subscription_expiration chart"
+  ],
+  "reusable_helper_usage": [
+    "getTextLanguage",
+    "verifyElementIsVisible",
+    "getTextBy"
+  ]
+}
