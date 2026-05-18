@@ -1,0 +1,28 @@
+{
+  "method": "getDetailsOfIncident_continuation_block",
+  "actions": [
+    "read_text",
+    "aggregate_values"
+  ],
+  "locators": [
+    "currentIncidentType",
+    "currentIncidentSubType",
+    "currentIncidentPriority",
+    "currentIncidentStatus",
+    "currentCreatedOn"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "ArrayList<String> incidentDetailsPageInfo"
+  ],
+  "selenium_actions": [
+    "getTextBy(...)"
+  ],
+  "ui_interactions": [
+    "read_incident_metadata"
+  ],
+  "reusable_helper_usage": [
+    "getTextBy(...)"
+  ]
+}
