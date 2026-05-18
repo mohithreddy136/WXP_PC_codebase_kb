@@ -1,0 +1,10 @@
+{
+  "method": "clickByJavaScriptOnDashboardPage",
+  "pattern_detected": [
+    "text_read_helper",
+    "property_key_to_locator"
+  ],
+  "notes": [
+    "Centralized text retrieval via helper using property-based locator."
+  ]
+}
