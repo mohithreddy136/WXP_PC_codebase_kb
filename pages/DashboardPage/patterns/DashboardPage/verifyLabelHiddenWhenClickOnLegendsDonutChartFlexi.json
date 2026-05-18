@@ -1,0 +1,8 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi",
+  "pattern_detected": [
+    "tooltip_to_pagination_verification",
+    "tooltip_to_gridrow_count_verification",
+    "tabbed_report_workflow"
+  ]
+}
