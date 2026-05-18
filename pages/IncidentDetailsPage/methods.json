@@ -2,177 +2,85 @@
   {
     "methods": [
       {
-        "method": "getTextsOfIncidentDetailsPage",
-        "actions": [
-          "get_text_list"
-        ],
-        "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
-        ],
+        "method": "ObjectReader",
+        "actions": [],
+        "locators": [],
         "waits": [],
         "assertions": [],
-        "return_values": [
-          "ArrayList<String> of texts",
-          "null on exception"
-        ],
-        "selenium_actions": [
-          "text_extraction_list"
-        ],
-        "ui_interactions": [
-          "read list of UI texts for given key"
-        ],
+        "return_values": [],
+        "selenium_actions": [],
+        "ui_interactions": [],
         "reusable_helper_usage": [
-          "getTextOfList(...)"
+          "ObjectReader",
+          "Properties"
         ]
       },
       {
-        "method": "getTextOfIncidentDetailsPage",
-        "actions": [
-          "get_text"
-        ],
-        "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
-        ],
+        "method": "getProperty",
+        "actions": [],
+        "locators": [],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "String text value"
+          "String (static field uiVersion from system property uiVersion)"
         ],
-        "selenium_actions": [
-          "text_extraction"
-        ],
-        "ui_interactions": [
-          "read single UI text for given key"
-        ],
+        "selenium_actions": [],
+        "ui_interactions": [],
         "reusable_helper_usage": [
-          "getTextBy(...)"
+          "System.getProperty"
         ]
       },
       {
-        "method": "enrollDevice",
+        "method": "getInstance",
         "actions": [
-          "navigate_companies_page",
-          "read_company_details",
-          "navigate_preferences_page",
-          "click",
-          "generate_company_pin",
-          "call_enroll_fake_device"
-        ],
-        "locators": [
-          "companyNameShow",
-          "companyEmailId",
-          "preferencesTab"
-        ],
-        "waits": [],
-        "assertions": [],
-        "return_values": [
-          "HashMap<String,String> deviceDetails",
-          "null on exception"
-        ],
-        "selenium_actions": [
-          "page_navigation",
-          "click"
-        ],
-        "ui_interactions": [
-          "open Companies page",
-          "read company name and email",
-          "open Preferences tab"
-        ],
-        "reusable_helper_usage": [
-          "PreDefinedActions.getDriver()",
-          "CompaniesPage.getInstance()",
-          "CompaniesPage.getTextOfCompaniesPage(...)",
-          "PreferencesPage.getInstance()",
-          "PreferencesPage.clickOnElementsOfPreferencesPage(...)",
-          "CompanyPin.generateCompanyPin(...)",
-          "EnrollFakeDevice.enrollFakeDeviceForIncident(...)"
-        ]
-      },
-      {
-        "method": "submitIncident",
-        "actions": [
-          "build_incident_title",
-          "lookup_localized_type",
-          "lookup_localized_subtype",
-          "submit_case_via_api"
+          "lazy_singleton_initialization"
         ],
         "locators": [],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "String incidentId",
-          "null on exception"
+          "IncidentDetailsPage singleton instance"
         ],
-        "selenium_actions": [
-          "page_navigation"
-        ],
-        "ui_interactions": [
-          "interact with DeviceDetailsPage contextually (API submission)"
-        ],
+        "selenium_actions": [],
+        "ui_interactions": [],
         "reusable_helper_usage": [
-          "PreDefinedActions.getDriver()",
-          "DeviceDetailsPage.getInstance()",
-          "getTextLanguage(...)",
-          "DeviceDetailsPage.submitCaseUsingAPI(...)"
+          "IncidentDetailsPage constructor",
+          "DRIVER (shared WebDriver)"
         ]
       },
       {
-        "method": "validateDeviceNameHyperLink",
+        "method": "IncidentDetailsPage",
         "actions": [
-          "open_table_configuration",
-          "select_all_columns",
-          "save_table_configuration",
-          "reset_to_default",
-          "search_incident_by_id",
-          "open_incident_details",
-          "locate_device_name_element",
-          "check_attribute",
-          "verify_element_presence"
+          "page_object_initialization",
+          "object_repository_load"
         ],
-        "locators": [
-          "tableConfigurationButton",
-          "columnCheckboxesOnPopup",
-          "listOfColumnsOnPopup",
-          "saveButton",
-          "resettodefault",
-          "idSearchBox",
-          "noelementsdisplaytext",
-          "idlist",
-          "incidentIdLink",
-          "deviceName",
-          "editDevieIcon"
-        ],
+        "locators": [],
         "waits": [],
-        "assertions": [
-          "device name is not hyperlink",
-          "device name is not editable"
-        ],
-        "return_values": [
-          "boolean (true if device name is neither hyperlink nor editable, else false)"
-        ],
-        "selenium_actions": [
-          "click",
-          "search",
-          "get_attribute",
-          "element_verification"
-        ],
-        "ui_interactions": [
-          "configure incident table columns",
-          "reset table configuration",
-          "search incident by id",
-          "open incident details",
-          "inspect device name field and edit icon"
-        ],
+        "assertions": [],
+        "return_values": [],
+        "selenium_actions": [],
+        "ui_interactions": [],
         "reusable_helper_usage": [
-          "PreDefinedActions.getDriver()",
-          "IncidentPage.getInstance()",
-          "TableConfigurationPage.getInstance()",
-          "IncidentPage.clickOnElementsOfIncidentPage(...)",
-          "TableConfigurationPage.selectAllCheckboxOfPopup(...)",
-          "TableConfigurationPage.clickOnElementsOfTableConfigurationPage(...)",
-          "IncidentPage.verifySearchValueOnIncident(...)",
-          "getElementOfIncidentDetailsPage(...)",
-          "verifyElementOfIncidentDetailsPage(...)"
+          "ObjectReader.getObjectRepository"
+        ]
+      },
+      {
+        "method": "getTextLanguage",
+        "actions": [
+          "load_language_properties",
+          "read_property"
+        ],
+        "locators": [],
+        "waits": [],
+        "assertions": [],
+        "return_values": [
+          "String (localized text for key)"
+        ],
+        "selenium_actions": [],
+        "ui_interactions": [],
+        "reusable_helper_usage": [
+          "ObjectReader.getLanguageObjectRepository",
+          "Properties.getProperty"
         ]
       }
     ]
