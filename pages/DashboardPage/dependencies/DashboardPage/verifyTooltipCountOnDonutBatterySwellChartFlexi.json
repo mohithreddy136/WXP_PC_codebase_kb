@@ -1,0 +1,21 @@
+{
+  "method": "verifyTooltipCountOnDonutBatterySwellChartFlexi",
+  "depends_on_methods": [
+    "sleeper",
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic",
+    "clickOnElementsOfDashboardPage",
+    "getElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ],
+  "cross_page_calls": [],
+  "helpers": [
+    "DashboardVariables.DASHBOARD_REPORTS_WAIT"
+  ],
+  "external_dependencies": [
+    "LOGGER",
+    "List",
+    "WebElement"
+  ]
+}
