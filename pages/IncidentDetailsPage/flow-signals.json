@@ -4,66 +4,70 @@
       {
         "method": "getTextOfElementOnIncidentDetailsPage",
         "signals": [
-          "read_incident_detail_field",
-          "ui_text_retrieval"
+          "read_incident_field_text",
+          "ui_read_operation"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
           "incident_details_page",
-          "ui_field"
+          "ui_element",
+          "field_text"
         ]
       },
       {
         "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "signals": [
-          "check_field_enabled_state",
-          "pre_interaction_validation"
+          "check_incident_field_enabled",
+          "ui_state_validation"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
           "incident_details_page",
-          "ui_field"
+          "ui_element",
+          "enabled_state"
         ]
       },
       {
         "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "signals": [
-          "check_field_clickable_state",
-          "pre_click_validation"
+          "check_incident_field_clickable",
+          "ui_state_validation"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
           "incident_details_page",
-          "ui_field"
+          "ui_element",
+          "clickable_state"
         ]
       },
       {
         "method": "waitForElementOfIncidentDetailsPage",
         "signals": [
-          "wait_for_field_visibility",
-          "synchronization_step"
+          "wait_for_incident_field_visibility",
+          "ui_synchronization"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
           "incident_details_page",
-          "ui_field"
+          "ui_element",
+          "visibility_state"
         ]
       },
       {
         "method": "getElementOfIncidentDetailsPage",
         "signals": [
-          "access_raw_webelement",
-          "low_level_ui_interaction"
+          "access_incident_field_element",
+          "ui_element_retrieval"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
           "incident_details_page",
-          "ui_field"
+          "ui_element"
         ]
       }
     ]
