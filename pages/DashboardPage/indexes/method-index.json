@@ -18,5 +18,9 @@
   "clickOnElementsOfDashboardPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/clickOnElementsOfDashboardPage.json"
+  },
+  "clickByJavaScriptOnDashboardPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/clickByJavaScriptOnDashboardPage.json"
   }
 }
