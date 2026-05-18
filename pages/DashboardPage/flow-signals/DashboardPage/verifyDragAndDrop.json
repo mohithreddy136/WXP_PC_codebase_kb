@@ -1,0 +1,13 @@
+{
+  "method": "verifyDragAndDrop",
+  "signals": [
+    "company_aggregation_verification",
+    "hashmap_equality_check"
+  ],
+  "domain": "dashboard_analytics",
+  "related_entities": [
+    "company",
+    "chart",
+    "aggregation"
+  ]
+}
