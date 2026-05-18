@@ -1,0 +1,13 @@
+{
+  "method": "getElementOfIncidentDetailsPage",
+  "signals": [
+    "access_raw_webelement",
+    "low_level_ui_interaction_entrypoint"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "ui_element"
+  ],
+  "notes": "Entry point for lower-level WebElement-driven interactions on incident details page."
+}
