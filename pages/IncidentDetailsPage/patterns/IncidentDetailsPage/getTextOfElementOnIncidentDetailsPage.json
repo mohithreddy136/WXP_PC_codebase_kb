@@ -1,11 +1,10 @@
 {
   "method": "getTextOfElementOnIncidentDetailsPage",
   "pattern_detected": [
-    "page_property_key_lookup",
-    "safe_wrapper_with_logging",
-    "read_only_accessor"
+    "safe_click_pattern",
+    "javascript_click_pattern"
   ],
   "notes": [
-    "Wraps lower-level text retrieval with properties lookup and exception handling."
+    "uses JS click helper with try/catch and logging"
   ]
 }
