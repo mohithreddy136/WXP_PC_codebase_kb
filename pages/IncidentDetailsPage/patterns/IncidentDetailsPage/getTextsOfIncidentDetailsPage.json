@@ -1,0 +1,11 @@
+{
+  "method": "getTextsOfIncidentDetailsPage",
+  "pattern_detected": [
+    "search_selection_workflow",
+    "popup_interaction_workflow",
+    "safe_try_catch_with_logging"
+  ],
+  "details": {
+    "workflow": "type in search box, handle empty state, select from filtered list, confirm via popup, manage dropdown and cancel"
+  }
+}
