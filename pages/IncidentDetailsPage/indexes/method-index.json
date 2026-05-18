@@ -62,5 +62,9 @@
   "getDetailsOfIncident": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getDetailsOfIncident.json"
+  },
+  "getDetailsOfIncident_continuation_block": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getDetailsOfIncident_continuation_block.json"
   }
 }
