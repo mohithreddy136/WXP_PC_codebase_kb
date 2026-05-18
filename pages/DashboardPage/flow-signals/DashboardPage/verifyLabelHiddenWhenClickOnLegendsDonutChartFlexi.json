@@ -1,0 +1,16 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi",
+  "signals": [
+    "tooltip_to_rowcount_consistency_check",
+    "report_pagination_consistency_check",
+    "legend_visibility_check"
+  ],
+  "domain": "dashboard_reporting",
+  "related_entities": [
+    "legend",
+    "tooltip",
+    "grid",
+    "pagination",
+    "report"
+  ]
+}
