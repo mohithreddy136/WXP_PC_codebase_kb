@@ -1,0 +1,7 @@
+{
+  "method": "clickDonutChart",
+  "pattern_detected": [
+    "retry_click_with_dropdown_pattern",
+    "wait_and_click_pattern"
+  ]
+}
