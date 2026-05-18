@@ -1,0 +1,34 @@
+{
+  "method": "driverChartHeaderTextVerificationOnReportPageFrame",
+  "actions": [
+    "click",
+    "loop",
+    "conditional_branch",
+    "log",
+    "switch_tab"
+  ],
+  "locators": [
+    "legendLabelElementList (chart legends)"
+  ],
+  "waits": [],
+  "assertions": [
+    "verifyTooltipCountonReportwithFrameSWInventory result used as assertion gate"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "click (Actions)",
+    "switchBackToPreviousTab"
+  ],
+  "ui_interactions": [
+    "toggle_legend_visibility",
+    "validate_tooltip_count_per_legend"
+  ],
+  "reusable_helper_usage": [
+    "verifyTooltipCountonReportwithFrameSWInventory",
+    "switchBackToPreviousTab",
+    "verifyDashboardLegendsVisible",
+    "LOGGER"
+  ]
+}
