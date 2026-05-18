@@ -1,0 +1,23 @@
+{
+  "method": "switchToIframeofDashboardPage",
+  "actions": [
+    "click_js"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "void"
+  ],
+  "selenium_actions": [
+    "JavascriptExecutor.click (wrapped in clickByJavaScript)"
+  ],
+  "ui_interactions": [
+    "javascript_click"
+  ],
+  "reusable_helper_usage": [
+    "clickByJavaScript(String locator)"
+  ]
+}
