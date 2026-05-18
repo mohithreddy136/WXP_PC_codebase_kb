@@ -18,6 +18,7 @@
     "getDetailsOfIncident",
     "getDetailsOfIncident_continuation_block",
     "selectValueFromDropdownInPopup",
-    "selectValueFromDropdownInTypePopup"
+    "selectValueFromDropdownInTypePopup",
+    "waitForElementToBeClickableOfIncidentDetailsPage"
   ]
 }
