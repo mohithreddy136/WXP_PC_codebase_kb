@@ -2,46 +2,57 @@
   {
     "methods": [
       {
-        "method": "getDetailsOfIncident",
+        "method": "changeAssigneeOfIncident",
         "pattern_detected": [
-          "page_read_aggregation",
-          "defensive_try_catch_logging"
-        ]
-      },
-      {
-        "method": "selectValueFromDropdownInPopup",
-        "pattern_detected": [
+          "dropdown_selection_workflow",
           "popup_interaction_workflow",
-          "dropdown_selection_workflow",
+          "wait_and_click_pattern",
           "safe_click_pattern",
-          "defensive_try_catch_logging"
-        ]
+          "comment_validation_pattern"
+        ],
+        "notes": "Uses explicit verify + wait + click with fixed Thread.sleep-based waits and reads comment as confirmation."
       },
       {
-        "method": "selectValueFromDropdownInTypePopup",
+        "method": "changeStatusOfIncident",
         "pattern_detected": [
+          "dropdown_selection_workflow",
           "popup_interaction_workflow",
-          "dropdown_selection_workflow",
-          "multi_dropdown_type_subtype_workflow",
+          "wait_and_click_pattern",
           "safe_click_pattern",
-          "defensive_try_catch_logging"
-        ]
+          "comment_validation_pattern"
+        ],
+        "notes": "Status change via popup and dropdown, then comment tab verification."
       },
       {
-        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
-        "pattern_detected": [
-          "dropdown_validation_workflow",
-          "list_comparison_validation",
-          "defensive_try_catch_logging"
-        ]
-      },
-      {
-        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
+        "method": "changePriorityOfIncident",
         "pattern_detected": [
           "dropdown_selection_workflow",
-          "first_option_selection",
-          "defensive_try_catch_logging"
-        ]
+          "popup_interaction_workflow",
+          "wait_and_click_pattern",
+          "safe_click_pattern",
+          "comment_validation_pattern"
+        ],
+        "notes": "Priority change with critical selection and comment verification."
+      },
+      {
+        "method": "changeTypeSubtypeOfIncident",
+        "pattern_detected": [
+          "dropdown_selection_workflow",
+          "popup_interaction_workflow",
+          "wait_and_click_pattern",
+          "safe_click_pattern",
+          "comment_validation_pattern",
+          "composite_value_assembly_pattern"
+        ],
+        "notes": "Builds HashMap from multiple comment elements after type/subtype change."
+      },
+      {
+        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
+        "pattern_detected": [
+          "wait_for_invisibility_pattern",
+          "property_key_locator_pattern"
+        ],
+        "notes": "Uses properties file key to resolve locator and wait for invisibility."
       }
     ]
   }
