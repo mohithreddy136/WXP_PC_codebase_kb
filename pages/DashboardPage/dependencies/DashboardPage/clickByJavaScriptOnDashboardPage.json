@@ -1,0 +1,11 @@
+{
+  "method": "clickByJavaScriptOnDashboardPage",
+  "depends_on_methods": [
+    "getTextBy"
+  ],
+  "cross_page_calls": [],
+  "helper_dependencies": [
+    "dashboardPageProperties"
+  ],
+  "utility_dependencies": []
+}
