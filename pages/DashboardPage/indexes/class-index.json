@@ -9,6 +9,7 @@
     "enterTextForDashboardPage",
     "verifyElementIsClickableOfDashboardPage",
     "switchToIframeofDashboardPage",
-    "verifyChartsMessageAllIncidentsFixed"
+    "verifyChartsMessageAllIncidentsFixed",
+    "verifyChartsHasNoDataOnDashBoardPage"
   ]
 }
