@@ -1,0 +1,15 @@
+{
+  "method": "verifyHideAndShowLink",
+  "depends_on_methods": [
+    "clickOnElementsOfDashboardPage",
+    "getTextOfDashboardPage",
+    "getTextLanguage"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "sleeper"
+  ],
+  "utility_dependencies": [
+    "dashboardPageProperties"
+  ]
+}
