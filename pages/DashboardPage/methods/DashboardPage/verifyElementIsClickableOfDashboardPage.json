@@ -1,0 +1,23 @@
+{
+  "method": "verifyElementIsClickableOfDashboardPage",
+  "actions": [
+    "click"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "void"
+  ],
+  "selenium_actions": [
+    "click"
+  ],
+  "ui_interactions": [
+    "click"
+  ],
+  "reusable_helper_usage": [
+    "click(String locator)"
+  ]
+}
