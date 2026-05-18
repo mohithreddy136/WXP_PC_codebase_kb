@@ -2,53 +2,68 @@
   {
     "methods": [
       {
-        "method": "ObjectReader",
-        "depends_on_classes": [
-          "ObjectReader",
-          "Properties"
-        ],
-        "depends_on_methods": []
-      },
-      {
-        "method": "getProperty",
-        "depends_on_classes": [
-          "System"
-        ],
+        "method": "matchTextOfIncidentDetailsPage",
         "depends_on_methods": [
-          "System.getProperty"
+          "verifyTextPresentOnElement"
+        ],
+        "cross_page_calls": [],
+        "helper_methods": [
+          "verifyTextPresentOnElement"
+        ],
+        "utilities": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
-        "method": "getInstance",
-        "depends_on_classes": [
-          "IncidentDetailsPage"
-        ],
+        "method": "verifyElementOfIncidentDetailsPage",
         "depends_on_methods": [
-          "IncidentDetailsPage constructor"
+          "verifyElementIsPresent"
         ],
-        "shared_dependencies": [
-          "DRIVER (WebDriver)"
+        "cross_page_calls": [],
+        "helper_methods": [
+          "verifyElementIsPresent"
+        ],
+        "utilities": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
-        "method": "IncidentDetailsPage",
-        "depends_on_classes": [
-          "ObjectReader",
-          "Properties"
-        ],
+        "method": "clickOnElementOfIncidentDetailsPage",
         "depends_on_methods": [
-          "ObjectReader.getObjectRepository"
+          "click"
+        ],
+        "cross_page_calls": [],
+        "helper_methods": [
+          "click"
+        ],
+        "utilities": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
-        "method": "getTextLanguage",
-        "depends_on_classes": [
-          "ObjectReader",
-          "Properties"
-        ],
+        "method": "clickByJavaScriptOnIncidentDetailsPage",
         "depends_on_methods": [
-          "ObjectReader.getLanguageObjectRepository",
-          "Properties.getProperty"
+          "clickByJavaScript"
+        ],
+        "cross_page_calls": [],
+        "helper_methods": [
+          "clickByJavaScript"
+        ],
+        "utilities": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
+        ]
+      },
+      {
+        "method": "enterTextForIncidentDetailsPage",
+        "depends_on_methods": [
+          "enterText"
+        ],
+        "cross_page_calls": [],
+        "helper_methods": [
+          "enterText"
+        ],
+        "utilities": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       }
     ]
