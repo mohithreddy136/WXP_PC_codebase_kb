@@ -1,0 +1,13 @@
+{
+  "method": "verifySwitchAccount",
+  "pattern_detected": [
+    "dropdown_selection_workflow",
+    "safe_click_pattern",
+    "localized_text_retrieval"
+  ],
+  "details": {
+    "dropdown_selection_workflow": "selectCategoryForFlexibleDashboardPage + selectSubCategoryForFlexibleDashboardPage + selectOptionForFlexibleDashboardPage",
+    "safe_click_pattern": "verifyElementIsClickableOfDashboardPage before click in some branches",
+    "localized_text_retrieval": "getTextLanguage used for subcategory comparison"
+  }
+}
