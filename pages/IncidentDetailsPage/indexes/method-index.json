@@ -30,5 +30,9 @@
   "enterTextForIncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/enterTextForIncidentDetailsPage.json"
+  },
+  "selectedValueFromSearchBoxInsideDevicePopup": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/selectedValueFromSearchBoxInsideDevicePopup.json"
   }
 }
