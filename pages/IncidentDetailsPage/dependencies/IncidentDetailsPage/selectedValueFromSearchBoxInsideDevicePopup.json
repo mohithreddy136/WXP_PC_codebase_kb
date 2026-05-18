@@ -1,0 +1,16 @@
+{
+  "method": "selectedValueFromSearchBoxInsideDevicePopup",
+  "depends_on_methods": [
+    "compareTwoList",
+    "selectFirstValueFromDropdown"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "compareTwoList",
+    "selectFirstValueFromDropdown"
+  ],
+  "utilities": [
+    "incidentDetailsPagePropertiesPageProperties",
+    "LOGGER"
+  ]
+}
