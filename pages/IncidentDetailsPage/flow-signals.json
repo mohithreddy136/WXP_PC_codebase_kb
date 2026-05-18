@@ -2,75 +2,74 @@
   {
     "methods": [
       {
-        "method": "getDetailsOfIncident",
+        "method": "selectOptionFromDropdownOnIncidentDetailsPage",
         "signals": [
-          "incident_details_read",
-          "incident_metadata_aggregation"
-        ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "incident_type",
-          "incident_subtype",
-          "priority",
-          "status",
-          "created_on"
-        ]
-      },
-      {
-        "method": "selectValueFromDropdownInPopup",
-        "signals": [
-          "incident_field_update",
-          "popup_dropdown_selection"
-        ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "field",
-          "popup",
-          "dropdown"
-        ]
-      },
-      {
-        "method": "selectValueFromDropdownInTypePopup",
-        "signals": [
-          "incident_type_update",
-          "incident_subtype_update",
-          "popup_dropdown_selection"
-        ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "type",
-          "subtype",
-          "popup",
-          "dropdown"
-        ]
-      },
-      {
-        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
-        "signals": [
-          "dropdown_configuration_validation",
-          "ui_option_verification"
+          "incident_dropdown_selection",
+          "popup_value_selection"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
           "dropdown",
-          "status_options"
-        ]
-      },
-      {
-        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
-        "signals": [
-          "default_option_selection",
-          "dropdown_interaction"
-        ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "dropdown",
+          "popup",
           "option"
+        ]
+      },
+      {
+        "method": "selectedValueFromSearchBoxInsidePopup",
+        "signals": [
+          "incident_popup_search",
+          "incident_popup_selection",
+          "no_results_handling"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "popup",
+          "search_box",
+          "dropdown_list",
+          "cancel_action"
+        ]
+      },
+      {
+        "method": "selectedValueFromSearchBoxInsideDevicePopup",
+        "signals": [
+          "device_popup_search",
+          "device_selection",
+          "no_results_handling"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "device",
+          "popup",
+          "search_box",
+          "dropdown_list"
+        ]
+      },
+      {
+        "method": "verifySearchValueOnIncidentInsidePopup",
+        "signals": [
+          "incident_popup_search_verification"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "popup",
+          "search_box",
+          "search_results"
+        ]
+      },
+      {
+        "method": "waitForElementToBeClickableOfIncidentDetailsPage",
+        "signals": [
+          "incident_element_clickability_wait"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "ui_element",
+          "click_action"
         ]
       }
     ]
