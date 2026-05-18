@@ -118,5 +118,9 @@
   "headerTextVerificationOnReportPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/headerTextVerificationOnReportPage.json"
+  },
+  "viewThreatDetailsRedirectionOnReportPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/viewThreatDetailsRedirectionOnReportPage.json"
   }
 }
