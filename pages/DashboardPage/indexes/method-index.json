@@ -14,5 +14,9 @@
   "waitForPresenceOfElementsOfDashboardPageDynamic": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/waitForPresenceOfElementsOfDashboardPageDynamic.json"
+  },
+  "clickOnElementsOfDashboardPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/clickOnElementsOfDashboardPage.json"
   }
 }
