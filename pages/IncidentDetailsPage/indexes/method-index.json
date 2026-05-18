@@ -58,5 +58,9 @@
   "changePriorityOfIncident": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/changePriorityOfIncident.json"
+  },
+  "getDetailsOfIncident": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getDetailsOfIncident.json"
   }
 }
