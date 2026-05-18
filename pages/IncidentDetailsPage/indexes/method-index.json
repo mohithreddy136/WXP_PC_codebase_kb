@@ -82,5 +82,9 @@
   "getTextsOfIncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getTextsOfIncidentDetailsPage.json"
+  },
+  "getTextOfIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getTextOfIncidentDetailsPage.json"
   }
 }
