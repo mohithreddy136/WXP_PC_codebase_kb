@@ -1,0 +1,48 @@
+{
+  "method": "verifyCompaniesListOnHeaderHWInventory",
+  "actions": [
+    "locate_elements",
+    "iterate_elements",
+    "click",
+    "switch_tab",
+    "wait_for_page_load",
+    "conditional_wait",
+    "click_link",
+    "read_text"
+  ],
+  "locators": [
+    "labelKey",
+    "moreDetailsLink",
+    "companyLocatorKey"
+  ],
+  "waits": [
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPageDynamic(moreDetailsLink,DASHBOARD_REPORTS_WAIT)",
+    "waitForElementsOfDashboardPage(moreDetailsLink)",
+    "waitForElementsOfDashboardPage(companyLocatorKey)"
+  ],
+  "assertions": [
+    "companyList_contains_all_expected_companies"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "WebElement.click",
+    "driver.switchTo().defaultContent"
+  ],
+  "ui_interactions": [
+    "click_chart_label",
+    "open_more_details_report",
+    "read_company_header_text"
+  ],
+  "reusable_helper_usage": [
+    "getElementsOfDashboardPage",
+    "switchToDifferentTabOfDashboardPage",
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPageDynamic",
+    "waitForElementsOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "getTextOfDashboardPage"
+  ]
+}
