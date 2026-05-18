@@ -1,0 +1,12 @@
+{
+  "method": "verifyDragAndDrop",
+  "depends_on_methods": [],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "Stream.concat",
+    "Collectors.toMap"
+  ],
+  "utility_dependencies": [
+    "aggregatedHash"
+  ]
+}
