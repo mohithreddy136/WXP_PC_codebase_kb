@@ -1,0 +1,6 @@
+{
+  "method": "getActualAarrayAfterDragAndDropOperation",
+  "pattern_detected": [
+    "filter_workflow_documentation_only"
+  ]
+}
