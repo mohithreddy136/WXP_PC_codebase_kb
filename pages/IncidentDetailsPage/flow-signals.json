@@ -2,75 +2,79 @@
   {
     "methods": [
       {
-        "method": "getDetailsOfIncident",
+        "method": "changeAssigneeOfIncident",
         "signals": [
-          "read_incident_details",
-          "fetch_incident_metadata"
+          "incident_update",
+          "assignee_change",
+          "comment_validation"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "incident_type",
-          "incident_subtype",
+          "assignee",
+          "comment"
+        ],
+        "business_intent": "Change the assignee of an incident and return the latest comment confirming the change."
+      },
+      {
+        "method": "changeStatusOfIncident",
+        "signals": [
+          "incident_update",
+          "status_change",
+          "comment_validation"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "status",
+          "comment"
+        ],
+        "business_intent": "Change the status of an incident to Investigation and return a comment as confirmation."
+      },
+      {
+        "method": "changePriorityOfIncident",
+        "signals": [
+          "incident_update",
+          "priority_change",
+          "comment_validation"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
           "priority",
-          "status",
-          "created_on"
-        ]
+          "comment"
+        ],
+        "business_intent": "Change the priority of an incident to Critical and return a comment as confirmation."
       },
       {
-        "method": "selectValueFromDropdownInPopup",
+        "method": "changeTypeSubtypeOfIncident",
         "signals": [
-          "update_incident_field_via_popup",
-          "select_single_dropdown_value"
+          "incident_update",
+          "type_change",
+          "subtype_change",
+          "comment_validation"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "popup",
-          "dropdown",
-          "field_value"
-        ]
+          "type",
+          "subtype",
+          "comment"
+        ],
+        "business_intent": "Change the type and subtype of an incident and return both values derived from comments."
       },
       {
-        "method": "selectValueFromDropdownInTypePopup",
+        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
         "signals": [
-          "update_incident_type_and_subtype",
-          "select_cascading_dropdown_values"
+          "ui_wait",
+          "element_invisibility"
         ],
-        "domain": "incident_management",
+        "domain": "ui_synchronization",
         "related_entities": [
-          "incident",
-          "incident_type",
-          "incident_subtype",
-          "popup",
-          "dropdown"
-        ]
-      },
-      {
-        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
-        "signals": [
-          "validate_dropdown_configuration",
-          "verify_status_options"
+          "web_element",
+          "locator_key"
         ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "status",
-          "dropdown",
-          "configuration"
-        ]
-      },
-      {
-        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
-        "signals": [
-          "auto_select_default_dropdown_option"
-        ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "dropdown",
-          "default_option"
-        ]
+        "business_intent": "Block execution until a specific UI element becomes invisible using a locator key."
       }
     ]
   }
