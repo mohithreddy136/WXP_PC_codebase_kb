@@ -1,0 +1,34 @@
+{
+  "method": "headerTextVerificationOnReportPage",
+  "actions": [
+    "click",
+    "verify_clickable",
+    "sleep"
+  ],
+  "locators": [
+    "visualizationForBatterry",
+    "widgetAddConfirmButton",
+    "addWidgetButton"
+  ],
+  "waits": [
+    "sleeper(2000)"
+  ],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "clickByJavaScriptOnDashboardPage",
+    "clickOnElementsOfDashboardPage"
+  ],
+  "ui_interactions": [
+    "click widget visualization",
+    "click add widget button",
+    "confirm widget add"
+  ],
+  "reusable_helpers": [
+    "verifyElementIsClickableOfDashboardPage",
+    "selectCategoryForFlexibleDashboardPage",
+    "selectSubCategoryForFlexibleDashboardPage",
+    "selectOptionForFlexibleDashboardPage",
+    "getTextLanguage"
+  ]
+}
