@@ -1,0 +1,12 @@
+{
+  "method": "clickDonutChart",
+  "signals": [
+    "legend_click_retry",
+    "donut_chart_interaction"
+  ],
+  "domain": "dashboard_analytics",
+  "related_entities": [
+    "legend",
+    "donut_chart"
+  ]
+}
