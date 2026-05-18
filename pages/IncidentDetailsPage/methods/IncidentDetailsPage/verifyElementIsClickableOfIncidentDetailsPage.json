@@ -1,0 +1,23 @@
+{
+  "method": "verifyElementIsClickableOfIncidentDetailsPage",
+  "actions": [
+    "check_clickable_state"
+  ],
+  "locators": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean clickable state or false on exception"
+  ],
+  "selenium_actions": [
+    "ExpectedConditions.elementToBeClickable / equivalent"
+  ],
+  "ui_interactions": [
+    "verify_element_clickable"
+  ],
+  "reusable_helper_usage": [
+    "verifyElementIsClickable(...)"
+  ]
+}
