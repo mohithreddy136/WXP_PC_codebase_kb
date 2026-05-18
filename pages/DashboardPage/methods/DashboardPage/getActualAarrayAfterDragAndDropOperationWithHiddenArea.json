@@ -1,0 +1,43 @@
+{
+  "method": "getActualAarrayAfterDragAndDropOperationWithHiddenArea",
+  "actions": [
+    "enter_text",
+    "sleep",
+    "get_text",
+    "conditional_branching",
+    "list_retrieval"
+  ],
+  "locators": [
+    "textKey",
+    "emptyTextKey",
+    "listKey"
+  ],
+  "waits": [
+    "sleeper(3000)"
+  ],
+  "assertions": [
+    "no_results_message_contains_search_text"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "enterText",
+    "verifyElementIsVisible",
+    "getTextBy",
+    "getElementsTillAllElementsVisible"
+  ],
+  "ui_interactions": [
+    "type_in_dropdown_search",
+    "handle_no_results_state",
+    "load_filtered_list_items"
+  ],
+  "reusable_helpers": [
+    "enterText",
+    "sleeper",
+    "verifyElementIsVisible",
+    "getTextBy",
+    "getTextLanguage",
+    "getElementsTillAllElementsVisible"
+  ]
+}
