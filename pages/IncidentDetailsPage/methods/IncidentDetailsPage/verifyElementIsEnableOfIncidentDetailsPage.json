@@ -1,23 +1,19 @@
 {
   "method": "verifyElementIsEnableOfIncidentDetailsPage",
   "actions": [
-    "check_enabled_state"
+    "enter_text"
   ],
   "locators": [
     "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
   ],
   "waits": [],
   "assertions": [],
-  "return_values": [
-    "boolean enabled state or false on exception"
-  ],
+  "return_values": [],
   "selenium_actions": [
-    "isEnabled"
+    "type/sendKeys (implied; body not fully visible)"
   ],
   "ui_interactions": [
-    "verify_element_enabled"
+    "enter_text_in_search_box"
   ],
-  "reusable_helper_usage": [
-    "verifyElementIsEnable(...)"
-  ]
+  "reusable_helper_usage": []
 }
