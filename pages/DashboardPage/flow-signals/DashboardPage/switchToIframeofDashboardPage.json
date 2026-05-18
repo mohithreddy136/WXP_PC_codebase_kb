@@ -1,0 +1,12 @@
+{
+  "method": "switchToIframeofDashboardPage",
+  "signals": [
+    "dashboard_element_js_click"
+  ],
+  "domain": "dashboard_ui",
+  "related_entities": [
+    "dashboard_element",
+    "click_action",
+    "javascript"
+  ]
+}
