@@ -26,6 +26,7 @@
     "getFirstWord",
     "verifyGridColumnsNamesWPS",
     "verifyDragAndDrop",
-    "verifyHideAndShowLink"
+    "verifyHideAndShowLink",
+    "getActualAarrayAfterDragAndDropOperation"
   ]
 }
