@@ -2,85 +2,122 @@
   {
     "methods": [
       {
-        "method": "ObjectReader",
-        "actions": [],
-        "locators": [],
+        "method": "matchTextOfIncidentDetailsPage",
+        "actions": [
+          "verify_text"
+        ],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+        ],
         "waits": [],
-        "assertions": [],
-        "return_values": [],
-        "selenium_actions": [],
-        "ui_interactions": [],
+        "assertions": [
+          "verifyTextPresentOnElement"
+        ],
+        "return_values": [
+          "boolean"
+        ],
+        "selenium_actions": [
+          "verifyTextPresentOnElement"
+        ],
+        "ui_interactions": [
+          "text_match_on_element"
+        ],
         "reusable_helper_usage": [
-          "ObjectReader",
-          "Properties"
+          "verifyTextPresentOnElement"
         ]
       },
       {
-        "method": "getProperty",
-        "actions": [],
-        "locators": [],
+        "method": "verifyElementOfIncidentDetailsPage",
+        "actions": [
+          "verify_presence"
+        ],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+        ],
+        "waits": [],
+        "assertions": [
+          "verifyElementIsPresent"
+        ],
+        "return_values": [
+          "boolean"
+        ],
+        "selenium_actions": [
+          "verifyElementIsPresent"
+        ],
+        "ui_interactions": [
+          "element_presence_check"
+        ],
+        "reusable_helper_usage": [
+          "verifyElementIsPresent"
+        ]
+      },
+      {
+        "method": "clickOnElementOfIncidentDetailsPage",
+        "actions": [
+          "click"
+        ],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+        ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "String (static field uiVersion from system property uiVersion)"
+          "void"
         ],
-        "selenium_actions": [],
-        "ui_interactions": [],
+        "selenium_actions": [
+          "click"
+        ],
+        "ui_interactions": [
+          "click_element"
+        ],
         "reusable_helper_usage": [
-          "System.getProperty"
+          "click"
         ]
       },
       {
-        "method": "getInstance",
+        "method": "clickByJavaScriptOnIncidentDetailsPage",
         "actions": [
-          "lazy_singleton_initialization"
+          "click_js"
         ],
-        "locators": [],
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+        ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "IncidentDetailsPage singleton instance"
+          "void"
         ],
-        "selenium_actions": [],
-        "ui_interactions": [],
+        "selenium_actions": [
+          "clickByJavaScript"
+        ],
+        "ui_interactions": [
+          "click_element_js"
+        ],
         "reusable_helper_usage": [
-          "IncidentDetailsPage constructor",
-          "DRIVER (shared WebDriver)"
+          "clickByJavaScript"
         ]
       },
       {
-        "method": "IncidentDetailsPage",
+        "method": "enterTextForIncidentDetailsPage",
         "actions": [
-          "page_object_initialization",
-          "object_repository_load"
+          "enter_text"
         ],
-        "locators": [],
-        "waits": [],
-        "assertions": [],
-        "return_values": [],
-        "selenium_actions": [],
-        "ui_interactions": [],
-        "reusable_helper_usage": [
-          "ObjectReader.getObjectRepository"
-        ]
-      },
-      {
-        "method": "getTextLanguage",
-        "actions": [
-          "load_language_properties",
-          "read_property"
+        "locators": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
         ],
-        "locators": [],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "String (localized text for key)"
+          "void"
         ],
-        "selenium_actions": [],
-        "ui_interactions": [],
+        "selenium_actions": [
+          "enterText"
+        ],
+        "ui_interactions": [
+          "enter_text_in_field"
+        ],
         "reusable_helper_usage": [
-          "ObjectReader.getLanguageObjectRepository",
-          "Properties.getProperty"
+          "enterText"
         ]
       }
     ]
