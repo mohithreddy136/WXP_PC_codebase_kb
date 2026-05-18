@@ -1,0 +1,9 @@
+{
+  "method": "verifyTitleofChartOfDashboardPage",
+  "pattern_detected": [
+    "localization_based_validation",
+    "no_data_message_verification",
+    "single_chart_type_branching",
+    "wait_and_read_pattern"
+  ]
+}
