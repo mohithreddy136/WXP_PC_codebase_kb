@@ -70,5 +70,9 @@
   "verifyLegendsAreHidden": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyLegendsAreHidden.json"
+  },
+  "verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi.json"
   }
 }
