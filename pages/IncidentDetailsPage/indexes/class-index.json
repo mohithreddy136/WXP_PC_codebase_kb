@@ -12,6 +12,7 @@
     "verifySearchValueOnIncidentInsidePopup",
     "submitIncident",
     "validateDeviceNameHyperLink",
-    "changeAssigneeOfIncident"
+    "changeAssigneeOfIncident",
+    "changeStatusOfIncident"
   ]
 }
