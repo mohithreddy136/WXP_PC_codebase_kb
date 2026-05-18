@@ -2,57 +2,44 @@
   {
     "methods": [
       {
-        "method": "getTextOfElementOnIncidentDetailsPage",
+        "method": "getTextsOfIncidentDetailsPage",
         "pattern_detected": [
-          "property_key_to_locator_resolution",
-          "exception_wrapped_helper_call"
-        ],
-        "notes": [
-          "Uses properties file key to resolve locator then delegates to shared getTextBy helper."
+          "read_only_text_list_helper",
+          "exception_swallowing_with_null_return"
         ]
       },
       {
-        "method": "verifyElementIsEnableOfIncidentDetailsPage",
+        "method": "getTextOfIncidentDetailsPage",
         "pattern_detected": [
-          "property_key_to_locator_resolution",
-          "exception_wrapped_helper_call",
-          "state_verification_pattern"
-        ],
-        "notes": [
-          "Boolean state verification via shared helper with exception-to-default-false handling."
+          "read_only_text_helper",
+          "exception_propagation"
         ]
       },
       {
-        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "method": "enrollDevice",
         "pattern_detected": [
-          "property_key_to_locator_resolution",
-          "exception_wrapped_helper_call",
-          "clickability_verification_pattern"
-        ],
-        "notes": [
-          "Clickability check delegated to shared helper with safe default false on error."
+          "page_object_usage",
+          "data_setup_workflow",
+          "api_enrollment_workflow",
+          "try_catch_with_null_on_failure"
         ]
       },
       {
-        "method": "waitForElementOfIncidentDetailsPage",
+        "method": "submitIncident",
         "pattern_detected": [
-          "property_key_to_locator_resolution",
-          "wait_and_verify_pattern",
-          "exception_wrapped_helper_call"
-        ],
-        "notes": [
-          "Waits for visibility via helper using locator from properties."
+          "api_incident_submission_workflow",
+          "localization_lookup_before_api_call",
+          "try_catch_with_null_on_failure"
         ]
       },
       {
-        "method": "getElementOfIncidentDetailsPage",
+        "method": "validateDeviceNameHyperLink",
         "pattern_detected": [
-          "property_key_to_locator_resolution",
-          "exception_wrapped_helper_call",
-          "webelement_access_pattern"
-        ],
-        "notes": [
-          "Direct WebElement access via shared getElement helper."
+          "table_configuration_workflow",
+          "search_selection_workflow",
+          "wait_and_click_pattern (implicit via page methods)",
+          "verification_via_dom_attributes",
+          "try_catch_with_false_on_failure"
         ]
       }
     ]
