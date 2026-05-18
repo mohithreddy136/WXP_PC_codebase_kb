@@ -1,0 +1,56 @@
+{
+  "method": "headerTextVerificationOnReportPageFrameDonutSwellChartFlexi",
+  "actions": [
+    "sleep",
+    "wait_for_page_load",
+    "scroll",
+    "mouse_hover_click",
+    "switch_tab",
+    "get_text",
+    "string_split",
+    "parse_int",
+    "comparison",
+    "log_error",
+    "click",
+    "return"
+  ],
+  "locators": [
+    "targetElement",
+    "columnListKey",
+    "paginationKey"
+  ],
+  "waits": [
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPageDynamic"
+  ],
+  "assertions": [
+    "tooltipcount == paginationCount",
+    "tooltipcount < paginationCount"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "scrollToDashboardPage",
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage",
+    "click (WebElement)"
+  ],
+  "ui_interactions": [
+    "hover_on_chart_segment",
+    "navigate_to_report_tab",
+    "read_pagination_text",
+    "toggle_legend_item"
+  ],
+  "reusable_helpers": [
+    "sleeper",
+    "waitForPageLoaded",
+    "scrollToDashboardPage",
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic",
+    "getTextOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
