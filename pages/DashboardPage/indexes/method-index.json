@@ -122,5 +122,9 @@
   "viewThreatDetailsRedirectionOnReportPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/viewThreatDetailsRedirectionOnReportPage.json"
+  },
+  "switchToParentTabOfDashboardPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/switchToParentTabOfDashboardPage.json"
   }
 }
