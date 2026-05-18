@@ -1,0 +1,23 @@
+{
+  "method": "getTextOfElementOnIncidentDetailsPage",
+  "actions": [
+    "fetch_text"
+  ],
+  "locators": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "String text of located element or null on exception"
+  ],
+  "selenium_actions": [
+    "getText"
+  ],
+  "ui_interactions": [
+    "read_element_text"
+  ],
+  "reusable_helper_usage": [
+    "getTextBy(...)"
+  ]
+}
