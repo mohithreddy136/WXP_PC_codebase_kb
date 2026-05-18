@@ -2,77 +2,101 @@
   {
     "methods": [
       {
-        "method": "getDetailsOfIncident",
+        "method": "changeAssigneeOfIncident",
         "depends_on_methods": [
-          "getTextBy"
+          "verifyElementOfIncidentDetailsPage",
+          "waitForElementToBeClickableOfIncidentDetailsPage",
+          "sleeper",
+          "clickOnElementOfIncidentDetailsPage",
+          "verifyElementIsClickableOfIncidentDetailsPage",
+          "waitForPageLoaded",
+          "waitForElementOfIncidentDetailsPage",
+          "getTextOfElementOnIncidentDetailsPage"
         ],
         "cross_page_calls": [],
-        "helper_method_usage": [
-          "getTextBy"
+        "helper_dependencies": [
+          "LOGGER"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
+          "waitForPageLoaded",
+          "sleeper"
         ]
       },
       {
-        "method": "selectValueFromDropdownInPopup",
+        "method": "changeStatusOfIncident",
         "depends_on_methods": [
+          "verifyElementOfIncidentDetailsPage",
+          "waitForElementToBeClickableOfIncidentDetailsPage",
+          "verifyElementIsClickableOfIncidentDetailsPage",
+          "sleeper",
           "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
+          "waitForPageLoaded",
+          "waitForElementOfIncidentDetailsPage",
+          "getTextOfElementOnIncidentDetailsPage"
         ],
         "cross_page_calls": [],
-        "helper_method_usage": [
-          "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
+        "helper_dependencies": [
+          "LOGGER"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
+          "waitForPageLoaded",
+          "sleeper"
         ]
       },
       {
-        "method": "selectValueFromDropdownInTypePopup",
+        "method": "changePriorityOfIncident",
         "depends_on_methods": [
+          "verifyElementOfIncidentDetailsPage",
+          "waitForElementToBeClickableOfIncidentDetailsPage",
+          "verifyElementIsClickableOfIncidentDetailsPage",
+          "sleeper",
           "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
+          "waitForPageLoaded",
+          "waitForElementOfIncidentDetailsPage",
+          "getTextOfElementOnIncidentDetailsPage"
         ],
         "cross_page_calls": [],
-        "helper_method_usage": [
-          "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
+        "helper_dependencies": [
+          "LOGGER"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
+          "waitForPageLoaded",
+          "sleeper"
         ]
       },
       {
-        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
+        "method": "changeTypeSubtypeOfIncident",
         "depends_on_methods": [
-          "compareTwoList"
+          "verifyElementOfIncidentDetailsPage",
+          "waitForElementToBeClickableOfIncidentDetailsPage",
+          "verifyElementIsClickableOfIncidentDetailsPage",
+          "sleeper",
+          "clickOnElementOfIncidentDetailsPage",
+          "waitForPageLoaded",
+          "waitForElementOfIncidentDetailsPage",
+          "getTextOfElementOnIncidentDetailsPage"
         ],
         "cross_page_calls": [],
-        "helper_method_usage": [
-          "compareTwoList"
+        "helper_dependencies": [
+          "LOGGER"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
+          "HashMap",
+          "waitForPageLoaded",
+          "sleeper"
         ]
       },
       {
-        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
+        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
         "depends_on_methods": [
-          "selectFirstValueFromDropdown"
+          "verifyElementIsinvisibile"
         ],
         "cross_page_calls": [],
-        "helper_method_usage": [
-          "selectFirstValueFromDropdown"
+        "helper_dependencies": [
+          "LOGGER"
         ],
         "utility_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties",
-          "LOGGER"
+          "incidentDetailsPagePropertiesPageProperties"
         ]
       }
     ]
