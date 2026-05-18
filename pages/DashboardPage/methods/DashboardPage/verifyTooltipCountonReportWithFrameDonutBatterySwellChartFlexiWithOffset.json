@@ -1,0 +1,47 @@
+{
+  "method": "verifyTooltipCountonReportWithFrameDonutBatterySwellChartFlexiWithOffset",
+  "actions": [
+    "parse_int",
+    "comparison",
+    "sleep",
+    "wait_for_page_load",
+    "get_elements",
+    "size_check",
+    "log_error",
+    "switch_tab",
+    "click",
+    "return"
+  ],
+  "locators": [
+    "columnListKey"
+  ],
+  "waits": [
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPageDynamic",
+    "waitForElementsOfDashboardPage"
+  ],
+  "assertions": [
+    "tooltipcount == paginationCount",
+    "tooltipcount < paginationCount",
+    "tooltipcount == listOfColumntext.size()"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "getElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage",
+    "click (WebElement)"
+  ],
+  "ui_interactions": [
+    "validate_report_row_count_against_tooltip",
+    "toggle_legend_item"
+  ],
+  "reusable_helpers": [
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPageDynamic",
+    "getElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage",
+    "sleeper"
+  ]
+}
