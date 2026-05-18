@@ -1,0 +1,26 @@
+{
+  "method": "getFirstWord",
+  "actions": [
+    "log",
+    "loop",
+    "click"
+  ],
+  "locators": [
+    "legendLabelElementList (resolved from keyLegendLabel elsewhere)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean (false in error path, none in success path within slice)"
+  ],
+  "selenium_actions": [
+    "click (via Actions.perform)"
+  ],
+  "ui_interactions": [
+    "hide_all_legends_under_software_inventory"
+  ],
+  "reusable_helper_usage": [
+    "LOGGER",
+    "Actions.click().perform()"
+  ]
+}
