@@ -1,0 +1,13 @@
+{
+  "method": "verifyElementsOfDashboardPage",
+  "actions": [
+    "add_to_collection"
+  ],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": []
+}
