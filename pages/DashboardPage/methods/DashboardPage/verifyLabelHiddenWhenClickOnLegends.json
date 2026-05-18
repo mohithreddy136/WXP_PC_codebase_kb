@@ -1,0 +1,53 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegends",
+  "actions": [
+    "mouse_hover",
+    "click",
+    "wait",
+    "tab_switch",
+    "list_iteration",
+    "conditional_check",
+    "logging"
+  ],
+  "locators": [
+    "tooltipTextMajorVersionKey",
+    "tooltipTextMajorVersionNameKey",
+    "labelsKey",
+    "moreDetailsLinkKey",
+    "operatingSystemKey",
+    "labelsBackKey"
+  ],
+  "waits": [
+    "waitForElementsOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic"
+  ],
+  "assertions": [
+    "monthTextForOS[0] contains osMajorVersion",
+    "monthTextForOS[1] contains osMajorVersionName",
+    "monthTextOtherForOS[0] contains osMajorVersion"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "click",
+    "getText",
+    "mouseHoverbyoffsettClick"
+  ],
+  "ui_interactions": [
+    "hover_on_chart",
+    "open_report_in_new_tab",
+    "navigate_back_from_report",
+    "drilldown_navigation"
+  ],
+  "reusable_helper_usage": [
+    "getTextOfDashboardPage",
+    "mouseHoverbyoffsettClick",
+    "waitForElementsOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic",
+    "switchToDifferentTabOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "getElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
