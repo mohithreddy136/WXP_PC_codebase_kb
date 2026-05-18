@@ -2,6 +2,7 @@
   "IncidentDetailsPage": [
     "getTextOfElementOnIncidentDetailsPage",
     "verifyElementIsEnableOfIncidentDetailsPage",
-    "verifyElementIsClickableOfIncidentDetailsPage"
+    "verifyElementIsClickableOfIncidentDetailsPage",
+    "waitForElementOfIncidentDetailsPage"
   ]
 }
