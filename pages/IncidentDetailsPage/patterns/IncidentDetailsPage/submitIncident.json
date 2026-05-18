@@ -1,0 +1,7 @@
+{
+  "method": "submitIncident",
+  "pattern_detected": [
+    "exception_handling_with_logging",
+    "defensive_null_return"
+  ]
+}
