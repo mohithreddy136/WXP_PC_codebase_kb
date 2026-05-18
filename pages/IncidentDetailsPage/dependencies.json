@@ -7,11 +7,9 @@
           "getTextBy"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
-        ],
-        "utility_dependencies": [
-          "LOGGER.error"
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
         ]
       },
       {
@@ -20,11 +18,9 @@
           "verifyElementIsEnable"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
-        ],
-        "utility_dependencies": [
-          "LOGGER.error"
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
         ]
       },
       {
@@ -33,11 +29,9 @@
           "verifyElementIsClickable"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
-        ],
-        "utility_dependencies": [
-          "LOGGER.error"
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
         ]
       },
       {
@@ -46,11 +40,9 @@
           "verifyElementIsVisible"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
-        ],
-        "utility_dependencies": [
-          "LOGGER.error"
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
         ]
       },
       {
@@ -59,11 +51,9 @@
           "getElement"
         ],
         "cross_page_calls": [],
-        "helper_methods": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty"
-        ],
-        "utility_dependencies": [
-          "LOGGER.error"
+        "helper_dependencies": [
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER"
         ]
       }
     ]
