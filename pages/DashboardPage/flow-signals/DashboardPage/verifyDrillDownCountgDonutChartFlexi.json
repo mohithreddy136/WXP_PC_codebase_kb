@@ -1,0 +1,14 @@
+{
+  "method": "verifyDrillDownCountgDonutChartFlexi",
+  "signals": [
+    "legend_visibility_toggle",
+    "donut_chart_visibility_check",
+    "battery_swell_chart_flexi"
+  ],
+  "domain": "dashboard_analytics",
+  "related_entities": [
+    "legend",
+    "donut_chart",
+    "battery_swell"
+  ]
+}
