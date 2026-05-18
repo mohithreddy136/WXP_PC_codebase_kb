@@ -1,0 +1,12 @@
+{
+  "method": "verifySearchValueOnIncidentInsidePopup",
+  "signals": [
+    "incident_dropdown_option_change"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "dropdown",
+    "selected_value"
+  ]
+}
