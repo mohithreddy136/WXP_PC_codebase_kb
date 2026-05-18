@@ -162,5 +162,9 @@
   "verifyColumnsofAVRemediationList": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyColumnsofAVRemediationList.json"
+  },
+  "clickDonutChart": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/clickDonutChart.json"
   }
 }
