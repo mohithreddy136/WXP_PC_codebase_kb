@@ -1,0 +1,13 @@
+{
+  "method": "waitForElementOfIncidentDetailsPage",
+  "depends_on_methods": [
+    "verifyElementIsVisible"
+  ],
+  "cross_page_calls": [],
+  "helper_method_usage": [
+    "LOGGER.error"
+  ],
+  "utility_dependencies": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty"
+  ]
+}
