@@ -1,0 +1,26 @@
+{
+  "method": "VerifyheaderTextOnReportPageFrameDonutSwellChartFlexi",
+  "depends_on_methods": [
+    "waitForPageLoaded",
+    "sleeper",
+    "verifyElementsOfDashboardPage",
+    "verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi",
+    "getElementsOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic",
+    "clickOnElementsOfDashboardPage",
+    "scrollToDashboardPage",
+    "mouseHoverbyoffsett",
+    "getTextOfDashboardPage",
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage"
+  ],
+  "cross_page_calls": [],
+  "helpers": [
+    "DashboardVariables.DASHBOARD_REPORTS_WAIT"
+  ],
+  "external_dependencies": [
+    "LOGGER",
+    "List",
+    "WebElement"
+  ]
+}
