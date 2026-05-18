@@ -26,5 +26,9 @@
   "clickByJavaScriptOnIncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/clickByJavaScriptOnIncidentDetailsPage.json"
+  },
+  "enterTextForIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/enterTextForIncidentDetailsPage.json"
   }
 }
