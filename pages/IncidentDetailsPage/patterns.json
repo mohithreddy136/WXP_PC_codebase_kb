@@ -2,54 +2,52 @@
   {
     "methods": [
       {
-        "method": "getDetailsOfIncident",
-        "pattern_detected": [
-          "read_only_details_aggregation",
-          "property_key_based_locators"
-        ],
-        "notes": [
-          "Method aggregates multiple UI text values into a single list for verification or reporting."
-        ]
-      },
-      {
-        "method": "selectValueFromDropdownInPopup",
+        "method": "selectOptionFromDropdownOnIncidentDetailsPage",
         "pattern_detected": [
           "dropdown_selection_workflow",
+          "property-driven_locator_resolution",
+          "exception_wrapped_helper_call"
+        ]
+      },
+      {
+        "method": "selectedValueFromSearchBoxInsidePopup",
+        "pattern_detected": [
+          "search_selection_workflow",
           "popup_interaction_workflow",
-          "safe_click_pattern"
-        ],
-        "notes": [
-          "Standard edit-popup -> open dropdown -> select value -> submit pattern."
+          "wait-and-click_pattern (via sleeper + click)",
+          "property-driven_locator_resolution",
+          "no_results_handling_pattern",
+          "loop_over_dynamic_list_pattern",
+          "exception_wrapped_workflow"
         ]
       },
       {
-        "method": "selectValueFromDropdownInTypePopup",
+        "method": "selectedValueFromSearchBoxInsideDevicePopup",
         "pattern_detected": [
-          "dropdown_selection_workflow",
+          "search_selection_workflow",
           "popup_interaction_workflow",
-          "multi_dropdown_selection_workflow",
-          "safe_click_pattern"
-        ],
-        "notes": [
-          "Handles both type and subtype dropdowns in a single popup interaction."
+          "wait-and-click_pattern (via sleeper + click)",
+          "property-driven_locator_resolution",
+          "no_results_handling_pattern",
+          "loop_over_dynamic_list_pattern",
+          "early_exit_on_match_pattern",
+          "exception_wrapped_workflow"
         ]
       },
       {
-        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
+        "method": "verifySearchValueOnIncidentInsidePopup",
         "pattern_detected": [
-          "dropdown_verification_workflow"
-        ],
-        "notes": [
-          "Compares actual dropdown options with expected list."
+          "delegated_search_verification_pattern",
+          "property-driven_locator_resolution",
+          "exception_wrapped_helper_call"
         ]
       },
       {
-        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
+        "method": "waitForElementToBeClickableOfIncidentDetailsPage",
         "pattern_detected": [
-          "dropdown_selection_workflow"
-        ],
-        "notes": [
-          "Always selects first available option from dropdown."
+          "wait_for_clickable_pattern",
+          "property-driven_locator_resolution",
+          "exception_wrapped_helper_call"
         ]
       }
     ]
