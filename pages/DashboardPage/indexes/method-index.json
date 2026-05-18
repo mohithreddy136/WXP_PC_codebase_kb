@@ -170,5 +170,9 @@
   "verifyDrillDownCountgDonutChartFlexi": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyDrillDownCountgDonutChartFlexi.json"
+  },
+  "verifyTooltipTextVersionStatusdrilldown": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyTooltipTextVersionStatusdrilldown.json"
   }
 }
