@@ -9,6 +9,7 @@
     "clickByJavaScriptOnIncidentDetailsPage",
     "enterTextForIncidentDetailsPage",
     "selectedValueFromSearchBoxInsideDevicePopup",
-    "verifySearchValueOnIncidentInsidePopup"
+    "verifySearchValueOnIncidentInsidePopup",
+    "submitIncident"
   ]
 }
