@@ -1,0 +1,9 @@
+{
+  "method": "getActualAarrayAfterDragAndDropOperationWithHiddenArea",
+  "pattern_detected": [
+    "search_selection_workflow",
+    "wait_and_type_pattern",
+    "no_results_handling_pattern",
+    "lazy_list_loading_pattern"
+  ]
+}
