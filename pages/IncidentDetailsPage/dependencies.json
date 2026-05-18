@@ -2,101 +2,88 @@
   {
     "methods": [
       {
-        "method": "getTextsOfIncidentDetailsPage",
+        "method": "getDetailsOfIncident",
         "depends_on_methods": [
-          "getTextOfList",
-          "incidentDetailsPagePropertiesPageProperties.getProperty",
-          "LOGGER.error"
+          "getTextBy"
         ],
         "cross_page_calls": [],
-        "helper_dependencies": [
-          "LOGGER",
-          "properties file for IncidentDetailsPage"
+        "helper_methods": [
+          "getTextBy"
         ],
-        "external_services": []
-      },
-      {
-        "method": "getTextOfIncidentDetailsPage",
-        "depends_on_methods": [
-          "getTextBy",
+        "utilities": [
           "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
+        "external_dependencies": [
+          "LOGGER"
+        ]
+      },
+      {
+        "method": "selectValueFromDropdownInPopup",
+        "depends_on_methods": [
+          "clickOnElementOfIncidentDetailsPage",
+          "selectValueOnPopup"
+        ],
         "cross_page_calls": [],
-        "helper_dependencies": [
-          "properties file for IncidentDetailsPage"
+        "helper_methods": [
+          "clickOnElementOfIncidentDetailsPage",
+          "selectValueOnPopup"
         ],
-        "external_services": []
-      },
-      {
-        "method": "enrollDevice",
-        "depends_on_methods": [
-          "CompaniesPage.getInstance",
-          "CompaniesPage.getTextOfCompaniesPage",
-          "PreferencesPage.getInstance",
-          "PreferencesPage.clickOnElementsOfPreferencesPage",
-          "CompanyPin.generateCompanyPin",
-          "EnrollFakeDevice.enrollFakeDeviceForIncident",
-          "PreDefinedActions.getDriver",
-          "LOGGER.error"
+        "utilities": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ],
-        "cross_page_calls": [
-          "CompaniesPage",
-          "PreferencesPage"
-        ],
-        "helper_dependencies": [
-          "CompanyPin",
-          "EnrollFakeDevice",
-          "PreDefinedActions",
+        "external_dependencies": [
           "LOGGER"
-        ],
-        "external_services": [
-          "EnrollFakeDevice backend enrollment API (indirect)"
         ]
       },
       {
-        "method": "submitIncident",
+        "method": "selectValueFromDropdownInTypePopup",
         "depends_on_methods": [
-          "DeviceDetailsPage.getInstance",
-          "DeviceDetailsPage.submitCaseUsingAPI",
-          "PreDefinedActions.getDriver",
-          "getTextLanguage",
-          "LOGGER.error"
+          "clickOnElementOfIncidentDetailsPage",
+          "selectValueOnPopup"
         ],
-        "cross_page_calls": [
-          "DeviceDetailsPage"
+        "cross_page_calls": [],
+        "helper_methods": [
+          "clickOnElementOfIncidentDetailsPage",
+          "selectValueOnPopup"
         ],
-        "helper_dependencies": [
-          "PreDefinedActions",
-          "localization helper getTextLanguage",
+        "utilities": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
+        ],
+        "external_dependencies": [
           "LOGGER"
-        ],
-        "external_services": [
-          "submitCaseUsingAPI incident API (indirect)"
         ]
       },
       {
-        "method": "validateDeviceNameHyperLink",
+        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
         "depends_on_methods": [
-          "IncidentPage.getInstance",
-          "TableConfigurationPage.getInstance",
-          "IncidentPage.clickOnElementsOfIncidentPage",
-          "TableConfigurationPage.selectAllCheckboxOfPopup",
-          "TableConfigurationPage.clickOnElementsOfTableConfigurationPage",
-          "IncidentPage.verifySearchValueOnIncident",
-          "getElementOfIncidentDetailsPage",
-          "verifyElementOfIncidentDetailsPage",
-          "PreDefinedActions.getDriver",
-          "LOGGER.error"
+          "compareTwoList"
         ],
-        "cross_page_calls": [
-          "IncidentPage",
-          "TableConfigurationPage"
+        "cross_page_calls": [],
+        "helper_methods": [
+          "compareTwoList"
         ],
-        "helper_dependencies": [
-          "PreDefinedActions",
+        "utilities": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
+        ],
+        "external_dependencies": [
           "LOGGER"
+        ]
+      },
+      {
+        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
+        "depends_on_methods": [
+          "selectFirstValueFromDropdown"
         ],
-        "external_services": []
+        "cross_page_calls": [],
+        "helper_methods": [
+          "selectFirstValueFromDropdown"
+        ],
+        "utilities": [
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
+        ],
+        "external_dependencies": [
+          "LOGGER"
+        ]
       }
     ]
   }
