@@ -78,5 +78,9 @@
   "verifyCompaniesListOnHeaderHWInventory": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyCompaniesListOnHeaderHWInventory.json"
+  },
+  "verifyCompaniesListOnHeaderFlexi": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyCompaniesListOnHeaderFlexi.json"
   }
 }
