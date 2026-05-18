@@ -1,0 +1,17 @@
+{
+  "method": "headerTextVerificationOnReportPageFrameDonutSwellChartFlexi",
+  "signals": [
+    "dashboard_report_validation",
+    "tooltip_vs_report_row_validation",
+    "device_disk_count_tolerance"
+  ],
+  "domain": "dashboard_analytics",
+  "related_entities": [
+    "dashboard",
+    "report",
+    "pagination",
+    "tooltip",
+    "device",
+    "disk"
+  ]
+}
