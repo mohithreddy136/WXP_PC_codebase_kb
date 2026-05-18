@@ -1,11 +1,10 @@
 {
   "method": "getElementOfIncidentDetailsPage",
   "pattern_detected": [
-    "webelement_accessor",
-    "page_property_key_lookup",
-    "safe_wrapper_with_logging"
+    "page_object_element_resolver",
+    "property_key_to_locator_mapping"
   ],
   "notes": [
-    "Provides direct WebElement while shielding callers from locator details."
+    "Centralized element lookup using properties file key."
   ]
 }
