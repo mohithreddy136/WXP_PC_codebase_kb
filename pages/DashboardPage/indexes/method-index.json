@@ -114,5 +114,9 @@
   "getActualAarrayAfterDragAndDropOperationWithHiddenArea": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/getActualAarrayAfterDragAndDropOperationWithHiddenArea.json"
+  },
+  "headerTextVerificationOnReportPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/headerTextVerificationOnReportPage.json"
   }
 }
