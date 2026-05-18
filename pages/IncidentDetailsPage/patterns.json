@@ -2,67 +2,45 @@
   {
     "methods": [
       {
-        "method": "changeAssigneeOfIncident",
+        "method": "getDetailsOfIncident",
         "pattern_detected": [
-          "dropdown_selection_workflow",
-          "wait_and_click_pattern",
-          "safe_click_pattern",
-          "comment_tab_navigation",
-          "page_load_wait_with_sleeper"
-        ],
-        "notes": [
-          "Uses verify + waitForElementToBeClickable + click sequence",
-          "Relies on fixed Thread.sleep-like sleeper calls"
+          "page_read_aggregation",
+          "defensive_try_catch_logging"
         ]
       },
       {
-        "method": "changeStatusOfIncident",
+        "method": "selectValueFromDropdownInPopup",
         "pattern_detected": [
-          "dropdown_selection_workflow",
           "popup_interaction_workflow",
-          "wait_and_click_pattern",
+          "dropdown_selection_workflow",
           "safe_click_pattern",
-          "comment_tab_navigation",
-          "page_load_wait_with_sleeper"
-        ],
-        "notes": [
-          "Status change via popup with explicit waits and sleeps"
+          "defensive_try_catch_logging"
         ]
       },
       {
-        "method": "changePriorityOfIncident",
+        "method": "selectValueFromDropdownInTypePopup",
+        "pattern_detected": [
+          "popup_interaction_workflow",
+          "dropdown_selection_workflow",
+          "multi_dropdown_type_subtype_workflow",
+          "safe_click_pattern",
+          "defensive_try_catch_logging"
+        ]
+      },
+      {
+        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
+        "pattern_detected": [
+          "dropdown_validation_workflow",
+          "list_comparison_validation",
+          "defensive_try_catch_logging"
+        ]
+      },
+      {
+        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
         "pattern_detected": [
           "dropdown_selection_workflow",
-          "wait_and_click_pattern",
-          "safe_click_pattern",
-          "comment_tab_navigation",
-          "page_load_wait_with_sleeper"
-        ],
-        "notes": [
-          "Priority dropdown selection with critical option"
-        ]
-      },
-      {
-        "method": "changeTypeSubtypeOfIncident",
-        "pattern_detected": [
-          "dropdown_selection_workflow",
-          "multi_step_selection_workflow",
-          "wait_and_click_pattern",
-          "safe_click_pattern",
-          "comment_tab_navigation",
-          "page_load_wait_with_sleeper"
-        ],
-        "notes": [
-          "Two-level type/subtype selection pattern"
-        ]
-      },
-      {
-        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
-        "pattern_detected": [
-          "explicit_invisibility_wait_pattern"
-        ],
-        "notes": [
-          "Wrapper around verifyElementIsinvisibile using properties lookup"
+          "first_option_selection",
+          "defensive_try_catch_logging"
         ]
       }
     ]
