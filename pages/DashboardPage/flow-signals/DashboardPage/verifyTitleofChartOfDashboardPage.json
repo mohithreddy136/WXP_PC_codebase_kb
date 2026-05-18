@@ -1,0 +1,14 @@
+{
+  "method": "verifyTitleofChartOfDashboardPage",
+  "signals": [
+    "dashboard_chart_validation",
+    "no_data_state_check",
+    "subscription_expiration_chart_validation"
+  ],
+  "domain": "device_analytics_dashboard",
+  "related_entities": [
+    "dashboard_chart",
+    "subscription",
+    "localization_message"
+  ]
+}
