@@ -1,0 +1,16 @@
+{
+  "method": "verifyChartsMessageAllIncidentsFixed",
+  "depends_on_methods": [
+    "getTextLanguage",
+    "verifyElementIsVisible",
+    "getTextBy"
+  ],
+  "cross_page_calls": [],
+  "helper_dependencies": [
+    "dashboardPageProperties",
+    "LOGGER"
+  ],
+  "external_dependencies": [
+    "InputMismatchException"
+  ]
+}
