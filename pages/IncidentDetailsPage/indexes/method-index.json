@@ -18,5 +18,9 @@
   "getElementOfIncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getElementOfIncidentDetailsPage.json"
+  },
+  "clickOnElementOfIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/clickOnElementOfIncidentDetailsPage.json"
   }
 }
