@@ -1,0 +1,13 @@
+{
+  "method": "switchToParentTabOfDashboardPage",
+  "signals": [
+    "dashboard_widget_visualization",
+    "widget_confirmation_wait"
+  ],
+  "domain": "dashboard_reporting",
+  "related_entities": [
+    "widget",
+    "visualization",
+    "confirmation_button"
+  ]
+}
