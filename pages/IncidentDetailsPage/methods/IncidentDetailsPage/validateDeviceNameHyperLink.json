@@ -1,0 +1,44 @@
+{
+  "method": "validateDeviceNameHyperLink",
+  "actions": [
+    "enter_text",
+    "sleep",
+    "conditional_click",
+    "return"
+  ],
+  "locators": [
+    "textKey",
+    "emptyTextKey",
+    "listKey",
+    "popupKey",
+    "dropdownkey",
+    "cancelButtonKey"
+  ],
+  "waits": [
+    "sleeper(5000)"
+  ],
+  "assertions": [
+    "empty_text contains localized noResults message"
+  ],
+  "return_values": [
+    "String (selected option or null)"
+  ],
+  "selenium_actions": [
+    "enterText",
+    "click"
+  ],
+  "ui_interactions": [
+    "type in search box",
+    "handle no-results message",
+    "click dropdown arrow",
+    "click cancel button"
+  ],
+  "reusable_helper_usage": [
+    "enterText",
+    "sleeper",
+    "verifyElementIsPresent",
+    "getTextBy",
+    "getTextLanguage",
+    "clickOnElementOfIncidentDetailsPage"
+  ]
+}
