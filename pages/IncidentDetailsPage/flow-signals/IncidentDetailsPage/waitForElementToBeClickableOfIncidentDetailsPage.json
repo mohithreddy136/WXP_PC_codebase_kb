@@ -1,0 +1,11 @@
+{
+  "method": "waitForElementToBeClickableOfIncidentDetailsPage",
+  "signals": [
+    "incident_interaction_error_handling"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "ui_element"
+  ]
+}
