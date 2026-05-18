@@ -1,0 +1,11 @@
+{
+  "method": "VerifyheaderTextOnReportPageFrameDonutSwellChartFlexi",
+  "pattern_detected": [
+    "wait_and_click_pattern",
+    "legend_dropdown_toggle_pattern",
+    "hover_to_read_tooltip_pattern",
+    "tooltip_value_parsing_pattern",
+    "drilldown_navigation_pattern"
+  ],
+  "notes": "Iterates over donut chart legends, optionally toggles dropdown, reads tooltip counts, and drills down into report."
+}
