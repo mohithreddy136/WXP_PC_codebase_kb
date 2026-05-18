@@ -134,5 +134,9 @@
   "verifyUIVersion": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyUIVersion.json"
+  },
+  "addWidgetForPixmCustomDashboard": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/addWidgetForPixmCustomDashboard.json"
   }
 }
