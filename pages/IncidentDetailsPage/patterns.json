@@ -2,47 +2,56 @@
   {
     "methods": [
       {
-        "method": "selectOptionFromDropdownOnIncidentDetailsPage",
+        "method": "getTextsOfIncidentDetailsPage",
         "pattern_detected": [
-          "dropdown_selection_workflow",
-          "popup_interaction_workflow",
-          "safe_try_catch_wrapper"
+          "text_extraction_helper"
+        ],
+        "notes": [
+          "Wrapper around generic list text extraction utility"
         ]
       },
       {
-        "method": "selectedValueFromSearchBoxInsidePopup",
+        "method": "getTextOfIncidentDetailsPage",
         "pattern_detected": [
+          "text_extraction_helper"
+        ],
+        "notes": [
+          "Wrapper around generic single element text extraction utility"
+        ]
+      },
+      {
+        "method": "enrollDevice",
+        "pattern_detected": [
+          "multi_page_navigation_workflow",
+          "api_test_data_setup",
+          "exception_swallow_with_logging"
+        ],
+        "notes": [
+          "Uses UI pages to gather data then calls backend helper to enroll fake device"
+        ]
+      },
+      {
+        "method": "submitIncident",
+        "pattern_detected": [
+          "api_submission_workflow",
+          "localization_lookup_before_action",
+          "exception_swallow_with_logging"
+        ],
+        "notes": [
+          "Builds localized incident metadata then submits via API helper"
+        ]
+      },
+      {
+        "method": "validateDeviceNameHyperLink",
+        "pattern_detected": [
+          "table_configuration_workflow",
           "search_selection_workflow",
-          "popup_interaction_workflow",
-          "wait_and_click_pattern",
-          "no_results_handling_pattern",
-          "safe_try_catch_wrapper"
-        ]
-      },
-      {
-        "method": "selectedValueFromSearchBoxInsideDevicePopup",
-        "pattern_detected": [
-          "search_selection_workflow",
-          "popup_interaction_workflow",
-          "wait_and_click_pattern",
-          "no_results_handling_pattern",
-          "safe_try_catch_wrapper"
-        ]
-      },
-      {
-        "method": "verifySearchValueOnIncidentInsidePopup",
-        "pattern_detected": [
-          "search_verification_workflow",
-          "safe_try_catch_wrapper",
-          "helper_delegation_pattern"
-        ]
-      },
-      {
-        "method": "waitForElementToBeClickableOfIncidentDetailsPage",
-        "pattern_detected": [
-          "wait_and_clickable_pattern",
-          "safe_try_catch_wrapper",
-          "explicit_wait_helper_pattern"
+          "waitless_click_sequence",
+          "attribute_based_validation",
+          "exception_swallow_with_logging"
+        ],
+        "notes": [
+          "Configures table, searches incident, opens details, validates device name is non-clickable and non-editable"
         ]
       }
     ]
