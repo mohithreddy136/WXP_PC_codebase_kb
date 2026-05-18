@@ -90,5 +90,9 @@
   "getTokenValue": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/getTokenValue.json"
+  },
+  "getFirstWord": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/getFirstWord.json"
   }
 }
