@@ -2,5 +2,9 @@
   "verifyElementsOfDashboardPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyElementsOfDashboardPage.json"
+  },
+  "waitForElementsOfDashboardPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/waitForElementsOfDashboardPage.json"
   }
 }
