@@ -6,6 +6,7 @@
     "waitForPresenceOfElementsOfDashboardPageDynamic",
     "clickOnElementsOfDashboardPage",
     "clickByJavaScriptOnDashboardPage",
-    "enterTextForDashboardPage"
+    "enterTextForDashboardPage",
+    "verifyElementIsClickableOfDashboardPage"
   ]
 }
