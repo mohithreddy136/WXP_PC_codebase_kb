@@ -2,44 +2,54 @@
   {
     "methods": [
       {
-        "method": "getTextsOfIncidentDetailsPage",
+        "method": "getDetailsOfIncident",
         "pattern_detected": [
-          "read_only_text_list_helper",
-          "exception_swallowing_with_null_return"
+          "read_only_details_aggregation",
+          "property_key_based_locators"
+        ],
+        "notes": [
+          "Method aggregates multiple UI text values into a single list for verification or reporting."
         ]
       },
       {
-        "method": "getTextOfIncidentDetailsPage",
+        "method": "selectValueFromDropdownInPopup",
         "pattern_detected": [
-          "read_only_text_helper",
-          "exception_propagation"
+          "dropdown_selection_workflow",
+          "popup_interaction_workflow",
+          "safe_click_pattern"
+        ],
+        "notes": [
+          "Standard edit-popup -> open dropdown -> select value -> submit pattern."
         ]
       },
       {
-        "method": "enrollDevice",
+        "method": "selectValueFromDropdownInTypePopup",
         "pattern_detected": [
-          "page_object_usage",
-          "data_setup_workflow",
-          "api_enrollment_workflow",
-          "try_catch_with_null_on_failure"
+          "dropdown_selection_workflow",
+          "popup_interaction_workflow",
+          "multi_dropdown_selection_workflow",
+          "safe_click_pattern"
+        ],
+        "notes": [
+          "Handles both type and subtype dropdowns in a single popup interaction."
         ]
       },
       {
-        "method": "submitIncident",
+        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
         "pattern_detected": [
-          "api_incident_submission_workflow",
-          "localization_lookup_before_api_call",
-          "try_catch_with_null_on_failure"
+          "dropdown_verification_workflow"
+        ],
+        "notes": [
+          "Compares actual dropdown options with expected list."
         ]
       },
       {
-        "method": "validateDeviceNameHyperLink",
+        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
         "pattern_detected": [
-          "table_configuration_workflow",
-          "search_selection_workflow",
-          "wait_and_click_pattern (implicit via page methods)",
-          "verification_via_dom_attributes",
-          "try_catch_with_false_on_failure"
+          "dropdown_selection_workflow"
+        ],
+        "notes": [
+          "Always selects first available option from dropdown."
         ]
       }
     ]
