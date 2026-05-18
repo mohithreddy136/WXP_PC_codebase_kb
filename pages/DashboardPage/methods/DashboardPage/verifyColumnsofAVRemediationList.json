@@ -1,0 +1,35 @@
+{
+  "method": "verifyColumnsofAVRemediationList",
+  "actions": [
+    "waitForPageLoaded",
+    "click",
+    "sleeper"
+  ],
+  "locators": [
+    "keyLegendLabel",
+    "legendDropdownKey"
+  ],
+  "waits": [
+    "waitForPageLoaded",
+    "getElementsTillAllElementsVisibleofDashboardPage"
+  ],
+  "assertions": [],
+  "return_values": [
+    "true",
+    "false"
+  ],
+  "selenium_actions": [
+    "click"
+  ],
+  "ui_interactions": [
+    "legendLabelElementList.get(count1).click()",
+    "clickOnElementsOfDashboardPage(legendDropdownKey)"
+  ],
+  "reusable_helpers": [
+    "getElementsTillAllElementsVisibleofDashboardPage",
+    "verifyElementsOfDashboardPage",
+    "waitForPageLoaded",
+    "sleeper",
+    "clickOnElementsOfDashboardPage"
+  ]
+}
