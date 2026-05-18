@@ -4,10 +4,8 @@
     "getElement"
   ],
   "cross_page_calls": [],
-  "helper_method_usage": [
-    "LOGGER.error"
+  "helper_dependencies": [
+    "incidentDetailsPagePropertiesPageProperties"
   ],
-  "utility_dependencies": [
-    "incidentDetailsPagePropertiesPageProperties.getProperty"
-  ]
+  "external_utilities": []
 }
