@@ -2,91 +2,53 @@
   {
     "methods": [
       {
-        "method": "getTextsOfIncidentDetailsPage",
+        "method": "ObjectReader",
+        "depends_on_classes": [
+          "ObjectReader",
+          "Properties"
+        ],
+        "depends_on_methods": []
+      },
+      {
+        "method": "getProperty",
+        "depends_on_classes": [
+          "System"
+        ],
         "depends_on_methods": [
-          "getTextOfList"
-        ],
-        "cross_page_calls": [],
-        "helper_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties"
-        ],
-        "utility_dependencies": [
-          "LOGGER"
+          "System.getProperty"
         ]
       },
       {
-        "method": "getTextOfIncidentDetailsPage",
+        "method": "getInstance",
+        "depends_on_classes": [
+          "IncidentDetailsPage"
+        ],
         "depends_on_methods": [
-          "getTextBy"
+          "IncidentDetailsPage constructor"
         ],
-        "cross_page_calls": [],
-        "helper_dependencies": [
-          "incidentDetailsPagePropertiesPageProperties"
-        ],
-        "utility_dependencies": []
-      },
-      {
-        "method": "enrollDevice",
-        "depends_on_methods": [
-          "CompaniesPage.getInstance",
-          "CompaniesPage.getTextOfCompaniesPage",
-          "PreferencesPage.getInstance",
-          "PreferencesPage.clickOnElementsOfPreferencesPage",
-          "CompanyPin.generateCompanyPin",
-          "EnrollFakeDevice.enrollFakeDeviceForIncident"
-        ],
-        "cross_page_calls": [
-          "CompaniesPage",
-          "PreferencesPage"
-        ],
-        "helper_dependencies": [
-          "PreDefinedActions.getDriver"
-        ],
-        "utility_dependencies": [
-          "LOGGER",
-          "HashMap"
+        "shared_dependencies": [
+          "DRIVER (WebDriver)"
         ]
       },
       {
-        "method": "submitIncident",
+        "method": "IncidentDetailsPage",
+        "depends_on_classes": [
+          "ObjectReader",
+          "Properties"
+        ],
         "depends_on_methods": [
-          "DeviceDetailsPage.getInstance",
-          "DeviceDetailsPage.submitCaseUsingAPI",
-          "getTextLanguage"
-        ],
-        "cross_page_calls": [
-          "DeviceDetailsPage"
-        ],
-        "helper_dependencies": [
-          "PreDefinedActions.getDriver"
-        ],
-        "utility_dependencies": [
-          "LOGGER",
-          "HashMap"
+          "ObjectReader.getObjectRepository"
         ]
       },
       {
-        "method": "validateDeviceNameHyperLink",
+        "method": "getTextLanguage",
+        "depends_on_classes": [
+          "ObjectReader",
+          "Properties"
+        ],
         "depends_on_methods": [
-          "IncidentPage.getInstance",
-          "IncidentPage.clickOnElementsOfIncidentPage",
-          "IncidentPage.verifySearchValueOnIncident",
-          "TableConfigurationPage.getInstance",
-          "TableConfigurationPage.selectAllCheckboxOfPopup",
-          "TableConfigurationPage.clickOnElementsOfTableConfigurationPage",
-          "getElementOfIncidentDetailsPage",
-          "verifyElementOfIncidentDetailsPage"
-        ],
-        "cross_page_calls": [
-          "IncidentPage",
-          "TableConfigurationPage"
-        ],
-        "helper_dependencies": [
-          "PreDefinedActions.getDriver"
-        ],
-        "utility_dependencies": [
-          "LOGGER",
-          "WebElement"
+          "ObjectReader.getLanguageObjectRepository",
+          "Properties.getProperty"
         ]
       }
     ]
