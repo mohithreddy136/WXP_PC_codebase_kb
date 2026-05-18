@@ -2,57 +2,58 @@
   {
     "methods": [
       {
-        "method": "changeAssigneeOfIncident",
+        "method": "getTextOfElementOnIncidentDetailsPage",
         "pattern_detected": [
-          "wait_and_click_pattern",
-          "popup_interaction_workflow",
-          "dropdown_selection_workflow",
-          "safe_click_pattern",
-          "comment_verification_after_update"
+          "property_key_to_locator_resolution",
+          "exception_wrapped_helper_call"
         ],
-        "notes": "Uses verify + waitForElementToBeClickable + sleeper before click; interacts with assignee edit popup and dropdown, then validates via comments."
+        "notes": [
+          "Uses properties file key to resolve locator then delegates to shared getTextBy helper."
+        ]
       },
       {
-        "method": "changeStatusOfIncident",
+        "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "pattern_detected": [
-          "wait_and_click_pattern",
-          "popup_interaction_workflow",
-          "dropdown_selection_workflow",
-          "safe_click_pattern",
-          "comment_verification_after_update"
+          "property_key_to_locator_resolution",
+          "exception_wrapped_helper_call",
+          "state_verification_pattern"
         ],
-        "notes": "Status change via popup and dropdown with verify/wait/sleeper before clicks; validates via comments tab."
+        "notes": [
+          "Boolean state verification via shared helper with try/catch and default false."
+        ]
       },
       {
-        "method": "changePriorityOfIncident",
+        "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "pattern_detected": [
-          "wait_and_click_pattern",
-          "popup_interaction_workflow",
-          "dropdown_selection_workflow",
-          "safe_click_pattern",
-          "comment_verification_after_update"
+          "property_key_to_locator_resolution",
+          "exception_wrapped_helper_call",
+          "clickability_verification_pattern"
         ],
-        "notes": "Priority change using dropdown in popup; heavy use of waits and verification before clicks."
+        "notes": [
+          "Clickability check via shared helper with safe fallback."
+        ]
       },
       {
-        "method": "changeTypeSubtypeOfIncident",
+        "method": "waitForElementOfIncidentDetailsPage",
         "pattern_detected": [
-          "wait_and_click_pattern",
-          "popup_interaction_workflow",
-          "dropdown_selection_workflow",
-          "multi_step_selection_workflow",
-          "safe_click_pattern",
-          "comment_verification_after_update"
+          "property_key_to_locator_resolution",
+          "wait_and_verify_visibility_pattern",
+          "exception_wrapped_helper_call"
         ],
-        "notes": "Two-level dropdown (type and subtype) with waits and verifications; returns map built from comments."
+        "notes": [
+          "Waits for visibility using shared verifyElementIsVisible helper."
+        ]
       },
       {
-        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
+        "method": "getElementOfIncidentDetailsPage",
         "pattern_detected": [
-          "explicit_wait_pattern",
-          "visibility_control"
+          "property_key_to_locator_resolution",
+          "element_retrieval_helper_pattern",
+          "exception_wrapped_helper_call"
         ],
-        "notes": "Wrapper around invisibility wait using page properties locator resolution."
+        "notes": [
+          "Returns WebElement via shared getElement helper with null fallback."
+        ]
       }
     ]
   }
