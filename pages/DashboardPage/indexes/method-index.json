@@ -158,5 +158,9 @@
   "verifyReadInsightsIncident": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyReadInsightsIncident.json"
+  },
+  "verifyColumnsofAVRemediationList": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyColumnsofAVRemediationList.json"
   }
 }
