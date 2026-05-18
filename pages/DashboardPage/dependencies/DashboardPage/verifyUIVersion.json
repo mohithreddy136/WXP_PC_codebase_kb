@@ -1,0 +1,15 @@
+{
+  "method": "verifyUIVersion",
+  "depends_on_methods": [
+    "selectOptionForFlexibleDashboardPage",
+    "clickByJavaScriptOnDashboardPage",
+    "verifyElementIsClickableOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "waitUntilElementIsVisibleOfDashboardPage",
+    "getTextLanguage"
+  ],
+  "cross_page_calls": [],
+  "utilities": [
+    "LOGGER"
+  ]
+}
