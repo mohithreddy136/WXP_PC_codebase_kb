@@ -98,5 +98,9 @@
   "verifyGridColumnsNamesWPS": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyGridColumnsNamesWPS.json"
+  },
+  "verifyDragAndDrop": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyDragAndDrop.json"
   }
 }
