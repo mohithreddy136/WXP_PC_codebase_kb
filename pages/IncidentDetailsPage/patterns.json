@@ -2,41 +2,57 @@
   {
     "methods": [
       {
-        "method": "matchTextOfIncidentDetailsPage",
+        "method": "changeAssigneeOfIncident",
         "pattern_detected": [
-          "assertion_helper_pattern"
+          "wait_and_click_pattern",
+          "popup_interaction_workflow",
+          "dropdown_selection_workflow",
+          "safe_click_pattern",
+          "comment_verification_after_update"
         ],
-        "notes": "Uses shared verification helper for text matching."
+        "notes": "Uses verify + waitForElementToBeClickable + sleeper before click; interacts with assignee edit popup and dropdown, then validates via comments."
       },
       {
-        "method": "verifyElementOfIncidentDetailsPage",
+        "method": "changeStatusOfIncident",
         "pattern_detected": [
-          "assertion_helper_pattern"
+          "wait_and_click_pattern",
+          "popup_interaction_workflow",
+          "dropdown_selection_workflow",
+          "safe_click_pattern",
+          "comment_verification_after_update"
         ],
-        "notes": "Uses shared verification helper for presence check."
+        "notes": "Status change via popup and dropdown with verify/wait/sleeper before clicks; validates via comments tab."
       },
       {
-        "method": "clickOnElementOfIncidentDetailsPage",
+        "method": "changePriorityOfIncident",
         "pattern_detected": [
-          "safe_click_wrapper_pattern"
+          "wait_and_click_pattern",
+          "popup_interaction_workflow",
+          "dropdown_selection_workflow",
+          "safe_click_pattern",
+          "comment_verification_after_update"
         ],
-        "notes": "Click wrapped in try/catch with logging."
+        "notes": "Priority change using dropdown in popup; heavy use of waits and verification before clicks."
       },
       {
-        "method": "clickByJavaScriptOnIncidentDetailsPage",
+        "method": "changeTypeSubtypeOfIncident",
         "pattern_detected": [
-          "safe_click_wrapper_pattern",
-          "javascript_click_pattern"
+          "wait_and_click_pattern",
+          "popup_interaction_workflow",
+          "dropdown_selection_workflow",
+          "multi_step_selection_workflow",
+          "safe_click_pattern",
+          "comment_verification_after_update"
         ],
-        "notes": "JS click wrapped in try/catch with logging."
+        "notes": "Two-level dropdown (type and subtype) with waits and verifications; returns map built from comments."
       },
       {
-        "method": "enterTextForIncidentDetailsPage",
+        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
         "pattern_detected": [
-          "input_entry_pattern",
-          "safe_action_wrapper_pattern"
+          "explicit_wait_pattern",
+          "visibility_control"
         ],
-        "notes": "Text entry wrapped in try/catch with logging."
+        "notes": "Wrapper around invisibility wait using page properties locator resolution."
       }
     ]
   }
