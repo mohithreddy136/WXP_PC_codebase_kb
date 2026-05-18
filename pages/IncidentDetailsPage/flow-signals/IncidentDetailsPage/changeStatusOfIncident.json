@@ -1,0 +1,11 @@
+{
+  "method": "changeStatusOfIncident",
+  "signals": [
+    "incident_popup_search_validation"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "search_popup"
+  ]
+}
