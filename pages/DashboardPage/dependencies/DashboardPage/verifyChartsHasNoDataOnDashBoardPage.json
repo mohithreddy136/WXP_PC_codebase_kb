@@ -1,0 +1,19 @@
+{
+  "method": "verifyChartsHasNoDataOnDashBoardPage",
+  "depends_on_methods": [
+    "getTextLanguage",
+    "verifyElementIsVisibleDynamic",
+    "getElementsOfDashboardPage",
+    "getTextBy"
+  ],
+  "cross_page_calls": [],
+  "helper_dependencies": [
+    "dashboardPageProperties",
+    "LOGGER"
+  ],
+  "external_dependencies": [
+    "List",
+    "WebElement",
+    "InputMismatchException"
+  ]
+}
