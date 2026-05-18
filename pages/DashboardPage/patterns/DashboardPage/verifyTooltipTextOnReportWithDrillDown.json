@@ -1,0 +1,8 @@
+{
+  "method": "verifyTooltipTextOnReportWithDrillDown",
+  "pattern_detected": [
+    "legend_iteration_workflow",
+    "tooltip_verification_workflow",
+    "wait_and_click_pattern"
+  ]
+}
