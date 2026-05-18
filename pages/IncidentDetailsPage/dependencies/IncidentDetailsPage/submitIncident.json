@@ -1,0 +1,8 @@
+{
+  "method": "submitIncident",
+  "depends_on_methods": [
+    "LOGGER.error"
+  ],
+  "cross_page_calls": [],
+  "helpers": []
+}
