@@ -2,65 +2,79 @@
   {
     "methods": [
       {
-        "method": "ObjectReader",
+        "method": "changeAssigneeOfIncident",
         "signals": [
-          "page_repository_setup"
+          "incident_update",
+          "assignee_change",
+          "comment_verification"
         ],
-        "domain": "ui_automation_framework",
+        "domain": "incident_management",
         "related_entities": [
-          "object_repository",
-          "incident_details_page"
-        ]
+          "incident",
+          "assignee",
+          "comment"
+        ],
+        "notes": "Changes assignee of an incident and returns the latest comment text reflecting the change."
       },
       {
-        "method": "getProperty",
+        "method": "changeStatusOfIncident",
         "signals": [
-          "ui_version_resolution"
+          "incident_update",
+          "status_change",
+          "comment_verification"
         ],
-        "domain": "configuration_management",
+        "domain": "incident_management",
         "related_entities": [
-          "system_property",
-          "ui_version"
-        ]
+          "incident",
+          "status",
+          "comment"
+        ],
+        "notes": "Changes status of an incident to investigation and returns comment text (first comment) after change."
       },
       {
-        "method": "getInstance",
+        "method": "changePriorityOfIncident",
         "signals": [
-          "page_instance_acquisition",
-          "driver_bound_page_creation"
+          "incident_update",
+          "priority_change",
+          "comment_verification"
         ],
-        "domain": "ui_automation_framework",
+        "domain": "incident_management",
         "related_entities": [
-          "incident_details_page",
-          "webdriver",
-          "singleton_instance"
-        ]
+          "incident",
+          "priority",
+          "comment"
+        ],
+        "notes": "Changes priority of an incident to critical and returns comment text after change."
       },
       {
-        "method": "IncidentDetailsPage",
+        "method": "changeTypeSubtypeOfIncident",
         "signals": [
-          "page_initialization",
-          "repository_binding"
+          "incident_update",
+          "type_change",
+          "subtype_change",
+          "comment_verification"
         ],
-        "domain": "ui_automation_framework",
+        "domain": "incident_management",
         "related_entities": [
-          "incident_details_page",
-          "object_repository"
-        ]
+          "incident",
+          "type",
+          "subtype",
+          "comment"
+        ],
+        "notes": "Changes type and subtype of an incident and returns them as a map derived from comments."
       },
       {
-        "method": "getTextLanguage",
+        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
         "signals": [
-          "localized_text_resolution",
-          "language_file_loading"
+          "ui_wait",
+          "element_invisibility"
         ],
-        "domain": "i18n",
+        "domain": "ui_synchronization",
         "related_entities": [
-          "language",
-          "locale_folder",
-          "text_key",
-          "properties_file"
-        ]
+          "ui_element",
+          "locator"
+        ],
+        "notes": "Waits until a given incident details page element becomes invisible using its locator key."
       }
     ]
   }
