@@ -1,0 +1,11 @@
+{
+  "method": "selectValueFromDropdownInPopup",
+  "pattern_detected": [
+    "popup_interaction_workflow",
+    "dropdown_selection_workflow",
+    "click_and_submit_pattern"
+  ],
+  "notes": [
+    "Open edit popup, open dropdown, select value, submit."
+  ]
+}
