@@ -1,0 +1,58 @@
+{
+  "method": "verifyCompaniesListOnHeaderFlexi",
+  "actions": [
+    "locate_elements",
+    "conditional_check",
+    "click",
+    "sleep",
+    "mouse_hover_click",
+    "switch_tab",
+    "wait_for_page_load",
+    "click_link",
+    "read_text",
+    "iterate_elements"
+  ],
+  "locators": [
+    "labelKey",
+    "targetElement",
+    "moreDetailsLink",
+    "companyLocatorKey",
+    "keyDrillDownLabelsAllHidden"
+  ],
+  "waits": [
+    "sleeper(3000)",
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPage(moreDetailsLink)",
+    "waitForElementsOfDashboardPage(companyLocatorKey)"
+  ],
+  "assertions": [
+    "companyList_contains_all_expected_companies"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "WebElement.click",
+    "driver.switchTo().defaultContent"
+  ],
+  "ui_interactions": [
+    "click_chart_label",
+    "toggle_hidden_labels_if_needed",
+    "hover_on_chart_bar_and_click",
+    "open_more_details_report",
+    "read_company_header_text"
+  ],
+  "reusable_helper_usage": [
+    "getElementsOfDashboardPage",
+    "verifyElementsOfDashboardPage",
+    "verifyLabelHiddenWhenClickOnLegendsFlexi",
+    "sleeper",
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage",
+    "waitForPageLoaded",
+    "waitForElementsOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "getTextOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
