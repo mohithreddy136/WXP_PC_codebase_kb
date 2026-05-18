@@ -1,0 +1,11 @@
+{
+  "method": "verifyTooltipCountOnDonutBatterySwellChartFlexi",
+  "pattern_detected": [
+    "hover_and_click_to_open_report",
+    "more_details_navigation_pattern",
+    "text_match_validation",
+    "tab_switching_workflow",
+    "legend_toggle_iteration"
+  ],
+  "notes": "Validates that month text in detailed report matches cleaned tooltip text from chart."
+}
