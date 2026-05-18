@@ -1,0 +1,18 @@
+{
+  "method": "verifyColumnsofAVRemediationList",
+  "depends_on_methods": [
+    "getElementsTillAllElementsVisibleofDashboardPage",
+    "verifyElementsOfDashboardPage",
+    "waitForPageLoaded",
+    "sleeper",
+    "clickOnElementsOfDashboardPage"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "sleeper",
+    "waitForPageLoaded"
+  ],
+  "utility_dependencies": [
+    "LOGGER"
+  ]
+}
