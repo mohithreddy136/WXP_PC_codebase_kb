@@ -2,163 +2,181 @@
   {
     "methods": [
       {
-        "method": "getDetailsOfIncident",
+        "method": "selectOptionFromDropdownOnIncidentDetailsPage",
         "actions": [
-          "read_text",
-          "aggregate_values",
-          "return_list"
+          "select_dropdown",
+          "return"
         ],
         "locators": [
-          "incidentId",
-          "currentIncidentType",
-          "currentIncidentSubType",
-          "currentIncidentPriority",
-          "currentIncidentStatus",
-          "currentCreatedOn"
+          "incidentDetailsPagePropertiesPageProperties.getProperty(dropdownListKey)"
         ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "ArrayList<String> incidentDetailsPageInfo"
+          "String (selected value from popup) or null on exception"
         ],
         "selenium_actions": [
-          "getTextBy"
+          "selectValueOnPopup (likely uses click/select)"
         ],
         "ui_interactions": [
-          "read_incident_id",
-          "read_incident_type",
-          "read_incident_subtype",
-          "read_incident_priority",
-          "read_incident_status",
-          "read_created_on"
+          "dropdown selection inside incident details popup"
         ],
-        "reusable_helpers_used": [
-          "getTextBy"
+        "reusable_helpers": [
+          "selectValueOnPopup",
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
-        "method": "selectValueFromDropdownInPopup",
+        "method": "selectedValueFromSearchBoxInsidePopup",
         "actions": [
+          "enter_text",
+          "sleep",
+          "conditional_branch",
+          "list_iteration",
           "click",
-          "open_dropdown",
-          "select_dropdown_value",
-          "submit",
-          "return_selected_value"
+          "string_parse",
+          "return"
         ],
         "locators": [
-          "editButtonKey",
-          "dropdownButtonKey",
-          "dropdownListKey",
-          "submitButtonKey"
+          "textKey (search box)",
+          "emptyTextKey (no items message)",
+          "listKey (filtered list)",
+          "dropdownkey (dropdown arrow)",
+          "cancelButtonKey (cancel button)"
         ],
-        "waits": [],
+        "waits": [
+          "sleeper(5000)"
+        ],
         "assertions": [],
         "return_values": [
-          "String text"
+          "String (parsed selected value) or null on exception"
         ],
         "selenium_actions": [
-          "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
+          "enterText",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getElementsTillAllElementsPresent",
+          "WebElement.getText",
+          "WebElement.click"
         ],
         "ui_interactions": [
-          "open_edit_popup",
-          "open_dropdown",
-          "select_value_in_popup_dropdown",
-          "submit_popup"
+          "search in popup list",
+          "handle no-results message",
+          "select item from filtered list",
+          "close dropdown and popup on no results"
         ],
-        "reusable_helpers_used": [
+        "reusable_helpers": [
+          "enterText",
+          "sleeper",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getElementsTillAllElementsPresent",
           "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
+          "getTextLanguage",
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
-        "method": "selectValueFromDropdownInTypePopup",
+        "method": "selectedValueFromSearchBoxInsideDevicePopup",
         "actions": [
+          "enter_text",
+          "sleep",
+          "conditional_branch",
+          "list_iteration",
           "click",
-          "open_type_dropdown",
-          "select_type_value",
-          "open_subtype_dropdown",
-          "select_subtype_value",
-          "submit",
-          "return_list"
+          "string_parse",
+          "return"
         ],
         "locators": [
-          "editButtonKey",
-          "dropdownTypeButtonKey",
-          "dropdownSubTypeButtonKey",
-          "dropdownListKey",
-          "submitButtonKey"
+          "textKey (search box)",
+          "emptyTextKey (no items message)",
+          "listKey (filtered list)",
+          "dropdownkey (dropdown arrow)",
+          "cancelButtonKey (cancel button)"
+        ],
+        "waits": [
+          "sleeper(5000)"
+        ],
+        "assertions": [],
+        "return_values": [
+          "String (parsed selected device value) or null on exception"
+        ],
+        "selenium_actions": [
+          "enterText",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getElementsTillAllElementsPresent",
+          "WebElement.getText",
+          "WebElement.click"
+        ],
+        "ui_interactions": [
+          "search in change-device popup list",
+          "handle no-results message",
+          "select device from filtered list"
+        ],
+        "reusable_helpers": [
+          "enterText",
+          "sleeper",
+          "verifyElementIsPresent",
+          "getTextBy",
+          "getElementsTillAllElementsPresent",
+          "clickOnElementOfIncidentDetailsPage",
+          "getTextLanguage",
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
+        ]
+      },
+      {
+        "method": "verifySearchValueOnIncidentInsidePopup",
+        "actions": [
+          "delegate_call",
+          "return"
+        ],
+        "locators": [
+          "textKey (search box)",
+          "emptyTextKey (no items message)",
+          "listKey (filtered list)"
         ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "ArrayList<String> incidentTypeAndSubtypeInfo"
+          "boolean (search success) or false on exception"
         ],
         "selenium_actions": [
-          "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
+          "verifySearchFunctionalityInsidePopup (composite search+assert helper)"
         ],
         "ui_interactions": [
-          "open_edit_popup",
-          "open_type_dropdown",
-          "select_type_value_in_popup",
-          "open_subtype_dropdown",
-          "select_subtype_value_in_popup",
-          "submit_popup"
+          "search and verify results inside incident popup"
         ],
-        "reusable_helpers_used": [
-          "clickOnElementOfIncidentDetailsPage",
-          "selectValueOnPopup"
+        "reusable_helpers": [
+          "verifySearchFunctionalityInsidePopup",
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       },
       {
-        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
+        "method": "waitForElementToBeClickableOfIncidentDetailsPage",
         "actions": [
-          "compare_lists",
-          "return_boolean"
+          "wait_for_clickable",
+          "return"
         ],
         "locators": [
-          "key"
+          "key (generic element locator)"
         ],
-        "waits": [],
-        "assertions": [
-          "dropdown_options_match_expected"
+        "waits": [
+          "verifyElementIsClickable"
         ],
-        "return_values": [
-          "boolean"
-        ],
-        "selenium_actions": [
-          "compareTwoList"
-        ],
-        "ui_interactions": [
-          "verify_dropdown_options"
-        ],
-        "reusable_helpers_used": [
-          "compareTwoList"
-        ]
-      },
-      {
-        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
-        "actions": [
-          "select_first_dropdown_value",
-          "return_selected_value"
-        ],
-        "locators": [
-          "dropdownListKey"
-        ],
-        "waits": [],
         "assertions": [],
         "return_values": [
-          "String"
+          "boolean (element clickable) or false on exception"
         ],
         "selenium_actions": [
-          "selectFirstValueFromDropdown"
+          "verifyElementIsClickable"
         ],
         "ui_interactions": [
-          "select_first_option_from_dropdown"
+          "wait for element to become clickable on incident details page"
         ],
-        "reusable_helpers_used": [
-          "selectFirstValueFromDropdown"
+        "reusable_helpers": [
+          "verifyElementIsClickable",
+          "incidentDetailsPagePropertiesPageProperties.getProperty"
         ]
       }
     ]
