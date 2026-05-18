@@ -1,0 +1,25 @@
+{
+  "method": "clickOnElementsOfDashboardPage",
+  "actions": [
+    "verify_selected_state"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [
+    "element_is_selected"
+  ],
+  "return_values": [
+    "boolean"
+  ],
+  "selenium_actions": [
+    "isSelected (wrapped in verifyElementIsSelected)"
+  ],
+  "ui_interactions": [
+    "state_verification"
+  ],
+  "reusable_helper_usage": [
+    "verifyElementIsSelected(String locator)"
+  ]
+}
