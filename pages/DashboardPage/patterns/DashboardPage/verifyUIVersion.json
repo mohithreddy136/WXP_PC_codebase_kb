@@ -1,0 +1,15 @@
+{
+  "method": "verifyUIVersion",
+  "pattern_detected": [
+    "dropdown_selection_workflow",
+    "wait_and_click_pattern",
+    "safe_click_pattern",
+    "localized_text_retrieval"
+  ],
+  "details": {
+    "dropdown_selection_workflow": "selectCategoryForFlexibleDashboardPage + selectSubCategoryForFlexibleDashboardPage + selectOptionForFlexibleDashboardPage",
+    "wait_and_click_pattern": "waitUntilElementIsVisibleOfDashboardPage used before clicking confirm button",
+    "safe_click_pattern": "verifyElementIsClickableOfDashboardPage before click in some branches",
+    "localized_text_retrieval": "getTextLanguage used for subcategory comparison"
+  }
+}
