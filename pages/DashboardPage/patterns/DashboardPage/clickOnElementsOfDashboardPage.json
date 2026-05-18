@@ -1,0 +1,10 @@
+{
+  "method": "clickOnElementsOfDashboardPage",
+  "pattern_detected": [
+    "state_verification_helper",
+    "property_key_to_locator"
+  ],
+  "notes": [
+    "Uses property file indirection to resolve locator and a shared verification helper."
+  ]
+}
