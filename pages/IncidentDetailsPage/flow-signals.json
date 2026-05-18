@@ -2,72 +2,77 @@
   {
     "methods": [
       {
-        "method": "getTextOfElementOnIncidentDetailsPage",
+        "method": "selectOptionFromDropdownOnIncidentDetailsPage",
         "signals": [
-          "read_incident_field_text",
-          "ui_read_operation"
+          "incident_dropdown_selection",
+          "popup_value_selection"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "incident_details_page",
-          "ui_element",
-          "field_text"
+          "dropdown",
+          "popup",
+          "selection"
         ]
       },
       {
-        "method": "verifyElementIsEnableOfIncidentDetailsPage",
+        "method": "selectedValueFromSearchBoxInsidePopup",
         "signals": [
-          "check_incident_field_enabled",
-          "ui_state_validation"
+          "incident_popup_search",
+          "incident_popup_selection",
+          "no_results_handling"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "incident_details_page",
-          "ui_element",
-          "enabled_state"
+          "popup",
+          "search",
+          "dropdown",
+          "selection",
+          "no_results_message"
         ]
       },
       {
-        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "method": "selectedValueFromSearchBoxInsideDevicePopup",
         "signals": [
-          "check_incident_field_clickable",
-          "ui_state_validation"
+          "incident_device_popup_search",
+          "incident_device_selection",
+          "no_results_handling"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "incident_details_page",
-          "ui_element",
-          "clickable_state"
+          "device",
+          "popup",
+          "search",
+          "selection",
+          "no_results_message"
         ]
       },
       {
-        "method": "waitForElementOfIncidentDetailsPage",
+        "method": "verifySearchValueOnIncidentInsidePopup",
         "signals": [
-          "wait_for_incident_field_visibility",
-          "ui_synchronization"
+          "incident_popup_search_verification"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "incident_details_page",
-          "ui_element",
-          "visibility_state"
+          "popup",
+          "search",
+          "verification"
         ]
       },
       {
-        "method": "getElementOfIncidentDetailsPage",
+        "method": "waitForElementToBeClickableOfIncidentDetailsPage",
         "signals": [
-          "access_incident_field_element",
-          "ui_element_retrieval"
+          "incident_element_clickability_wait"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "incident_details_page",
-          "ui_element"
+          "ui_element",
+          "clickability",
+          "wait"
         ]
       }
     ]
