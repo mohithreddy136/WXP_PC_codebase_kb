@@ -1,0 +1,14 @@
+{
+  "method": "getTextOfElementOnIncidentDetailsPage",
+  "signals": [
+    "read_incident_field_text",
+    "ui_state_observation"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "ui_element",
+    "field_label"
+  ],
+  "notes": "Used to read text content from an incident details element identified by key."
+}
