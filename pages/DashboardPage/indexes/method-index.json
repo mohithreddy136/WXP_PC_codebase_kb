@@ -54,5 +54,9 @@
   "verifyTitleofChartOfDashboardPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyTitleofChartOfDashboardPage.json"
+  },
+  "verifyLabelHiddenWhenClickOnLegends": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelHiddenWhenClickOnLegends.json"
   }
 }
