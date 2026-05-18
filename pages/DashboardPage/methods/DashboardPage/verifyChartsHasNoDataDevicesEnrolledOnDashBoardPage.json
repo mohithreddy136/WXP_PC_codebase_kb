@@ -1,0 +1,34 @@
+{
+  "method": "verifyChartsHasNoDataDevicesEnrolledOnDashBoardPage",
+  "actions": [
+    "text_retrieval",
+    "localization_lookup",
+    "string_comparison",
+    "visibility_check",
+    "logging"
+  ],
+  "locators": [
+    "dashboardPageProperties.getProperty(noTextIdKey)"
+  ],
+  "waits": [
+    "verifyElementIsVisible"
+  ],
+  "assertions": [
+    "message equals localized 'nothing_going_on_here' + 'system_is_collecting_data' for many chart types"
+  ],
+  "return_values": [
+    "boolean flag indicating if expected no-data message is shown for given chart type when at least one device enrolled"
+  ],
+  "selenium_actions": [
+    "verifyElementIsVisible",
+    "getTextBy"
+  ],
+  "ui_interactions": [
+    "read chart no-data label text for multiple chart types"
+  ],
+  "reusable_helper_usage": [
+    "getTextLanguage",
+    "verifyElementIsVisible",
+    "getTextBy"
+  ]
+}
