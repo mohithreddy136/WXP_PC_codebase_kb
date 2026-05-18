@@ -6,5 +6,9 @@
   "waitForElementsOfDashboardPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/waitForElementsOfDashboardPage.json"
+  },
+  "waitForElementsOfDashboardPageDynamic": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/waitForElementsOfDashboardPageDynamic.json"
   }
 }
