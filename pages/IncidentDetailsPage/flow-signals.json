@@ -2,70 +2,75 @@
   {
     "methods": [
       {
-        "method": "getTextsOfIncidentDetailsPage",
+        "method": "getDetailsOfIncident",
         "signals": [
-          "read_incident_details_texts"
-        ],
-        "domain": "incident_management_ui",
-        "related_entities": [
-          "incident_details_page",
-          "ui_texts"
-        ]
-      },
-      {
-        "method": "getTextOfIncidentDetailsPage",
-        "signals": [
-          "read_single_incident_detail_text"
-        ],
-        "domain": "incident_management_ui",
-        "related_entities": [
-          "incident_details_page",
-          "ui_text"
-        ]
-      },
-      {
-        "method": "enrollDevice",
-        "signals": [
-          "device_enrollment_setup",
-          "company_context_resolution",
-          "preferences_navigation"
-        ],
-        "domain": "device_management",
-        "related_entities": [
-          "company",
-          "device",
-          "preferences",
-          "company_pin"
-        ]
-      },
-      {
-        "method": "submitIncident",
-        "signals": [
-          "incident_creation_via_api",
-          "incident_localization_setup"
+          "incident_details_read",
+          "incident_metadata_aggregation"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "device",
-          "localization",
-          "api"
+          "incident_type",
+          "incident_subtype",
+          "priority",
+          "status",
+          "created_on"
         ]
       },
       {
-        "method": "validateDeviceNameHyperLink",
+        "method": "selectValueFromDropdownInPopup",
         "signals": [
-          "incident_search_by_id",
-          "table_column_configuration",
-          "incident_details_navigation",
-          "device_field_non_interactive_validation"
+          "incident_field_update",
+          "popup_dropdown_selection"
         ],
-        "domain": "incident_management_ui",
+        "domain": "incident_management",
         "related_entities": [
           "incident",
-          "incident_table",
-          "incident_details_page",
-          "device_field"
+          "field",
+          "popup",
+          "dropdown"
+        ]
+      },
+      {
+        "method": "selectValueFromDropdownInTypePopup",
+        "signals": [
+          "incident_type_update",
+          "incident_subtype_update",
+          "popup_dropdown_selection"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "type",
+          "subtype",
+          "popup",
+          "dropdown"
+        ]
+      },
+      {
+        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
+        "signals": [
+          "dropdown_configuration_validation",
+          "ui_option_verification"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "dropdown",
+          "status_options"
+        ]
+      },
+      {
+        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
+        "signals": [
+          "default_option_selection",
+          "dropdown_interaction"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "dropdown",
+          "option"
         ]
       }
     ]
