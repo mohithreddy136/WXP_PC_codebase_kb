@@ -1,0 +1,9 @@
+{
+  "method": "waitForElementToBeClickableOfIncidentDetailsPage",
+  "pattern_detected": [
+    "error_logging_only"
+  ],
+  "details": {
+    "error_handling": "LOGGER.error with null return"
+  }
+}
