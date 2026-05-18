@@ -1,0 +1,11 @@
+{
+  "method": "getTextOfIncidentDetailsPage",
+  "signals": [
+    "incident_search_text_entry"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "search_box"
+  ]
+}
