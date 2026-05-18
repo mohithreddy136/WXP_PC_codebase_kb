@@ -7,19 +7,19 @@
     "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
   ],
   "waits": [
-    "implicit_wait_or_explicit_wait_inside_verifyElementIsVisible"
+    "verifyElementIsVisible"
   ],
   "assertions": [],
   "return_values": [
-    "boolean visibility result or false on exception"
+    "boolean (visible after wait)"
   ],
   "selenium_actions": [
-    "wait.until(visibilityOfElementLocated) / equivalent"
+    "verifyElementIsVisible"
   ],
   "ui_interactions": [
-    "wait_for_element_visible"
+    "wait for element to be visible"
   ],
   "reusable_helper_usage": [
-    "verifyElementIsVisible(...)"
+    "verifyElementIsVisible(String locator)"
   ]
 }
