@@ -22,5 +22,9 @@
   "clickByJavaScriptOnDashboardPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/clickByJavaScriptOnDashboardPage.json"
+  },
+  "enterTextForDashboardPage": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/enterTextForDashboardPage.json"
   }
 }
