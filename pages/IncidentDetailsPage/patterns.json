@@ -2,39 +2,41 @@
   {
     "methods": [
       {
-        "method": "ObjectReader",
+        "method": "matchTextOfIncidentDetailsPage",
         "pattern_detected": [
-          "page_object_repository_reference"
-        ]
+          "assertion_helper_pattern"
+        ],
+        "notes": "Uses shared verification helper for text matching."
       },
       {
-        "method": "getProperty",
+        "method": "verifyElementOfIncidentDetailsPage",
         "pattern_detected": [
-          "config_from_system_property",
-          "ui_version_switching"
-        ]
+          "assertion_helper_pattern"
+        ],
+        "notes": "Uses shared verification helper for presence check."
       },
       {
-        "method": "getInstance",
+        "method": "clickOnElementOfIncidentDetailsPage",
         "pattern_detected": [
-          "double_checked_locking_singleton",
-          "lazy_initialization",
-          "shared_webdriver_singleton_page"
-        ]
+          "safe_click_wrapper_pattern"
+        ],
+        "notes": "Click wrapped in try/catch with logging."
       },
       {
-        "method": "IncidentDetailsPage",
+        "method": "clickByJavaScriptOnIncidentDetailsPage",
         "pattern_detected": [
-          "page_object_constructor_initialization",
-          "object_repository_loading"
-        ]
+          "safe_click_wrapper_pattern",
+          "javascript_click_pattern"
+        ],
+        "notes": "JS click wrapped in try/catch with logging."
       },
       {
-        "method": "getTextLanguage",
+        "method": "enterTextForIncidentDetailsPage",
         "pattern_detected": [
-          "i18n_language_properties_lookup",
-          "key_based_text_resolution"
-        ]
+          "input_entry_pattern",
+          "safe_action_wrapper_pattern"
+        ],
+        "notes": "Text entry wrapped in try/catch with logging."
       }
     ]
   }
