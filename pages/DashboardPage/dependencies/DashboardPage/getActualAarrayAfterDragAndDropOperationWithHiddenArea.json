@@ -1,0 +1,18 @@
+{
+  "method": "getActualAarrayAfterDragAndDropOperationWithHiddenArea",
+  "depends_on_methods": [
+    "enterText",
+    "verifyElementIsVisible",
+    "getTextBy",
+    "getTextLanguage",
+    "getElementsTillAllElementsVisible"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "sleeper"
+  ],
+  "utility_dependencies": [
+    "dashboardPageProperties",
+    "LanguageCode"
+  ]
+}
