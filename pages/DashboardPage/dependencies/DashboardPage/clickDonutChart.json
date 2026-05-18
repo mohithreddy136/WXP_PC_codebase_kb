@@ -1,0 +1,12 @@
+{
+  "method": "clickDonutChart",
+  "depends_on_methods": [
+    "sleeper",
+    "clickOnElementsOfDashboardPage"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "sleeper"
+  ],
+  "utility_dependencies": []
+}
