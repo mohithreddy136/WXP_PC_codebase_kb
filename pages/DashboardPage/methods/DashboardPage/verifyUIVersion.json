@@ -1,0 +1,38 @@
+{
+  "method": "verifyUIVersion",
+  "actions": [
+    "click",
+    "verify_clickable",
+    "wait_for_visible",
+    "select_dropdown"
+  ],
+  "locators": [
+    "visualizationForBatterry",
+    "spinnerOnWidgetAdd",
+    "widgetAddConfirmButton",
+    "addWidgetButton"
+  ],
+  "waits": [
+    "waitUntilElementIsVisibleOfDashboardPage(\"spinnerOnWidgetAdd\")"
+  ],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "clickByJavaScriptOnDashboardPage",
+    "clickOnElementsOfDashboardPage"
+  ],
+  "ui_interactions": [
+    "click add widget button",
+    "select category and subcategory",
+    "select option",
+    "confirm widget add"
+  ],
+  "reusable_helpers": [
+    "selectCategoryForFlexibleDashboardPage",
+    "selectSubCategoryForFlexibleDashboardPage",
+    "selectOptionForFlexibleDashboardPage",
+    "waitUntilElementIsVisibleOfDashboardPage",
+    "verifyElementIsClickableOfDashboardPage",
+    "getTextLanguage"
+  ]
+}
