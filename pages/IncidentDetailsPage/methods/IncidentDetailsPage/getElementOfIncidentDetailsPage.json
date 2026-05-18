@@ -1,7 +1,7 @@
 {
   "method": "getElementOfIncidentDetailsPage",
   "actions": [
-    "fetch_webelement"
+    "check_enabled_state"
   ],
   "locators": [
     "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
@@ -9,15 +9,15 @@
   "waits": [],
   "assertions": [],
   "return_values": [
-    "WebElement instance or null on exception"
+    "boolean (enabled state)"
   ],
   "selenium_actions": [
-    "findElement"
+    "verifyElementIsEnable"
   ],
   "ui_interactions": [
-    "access_element_handle"
+    "check element is enabled"
   ],
   "reusable_helper_usage": [
-    "getElement(...)"
+    "verifyElementIsEnable(String locator)"
   ]
 }
