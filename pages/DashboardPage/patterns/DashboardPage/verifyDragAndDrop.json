@@ -1,0 +1,6 @@
+{
+  "method": "verifyDragAndDrop",
+  "pattern_detected": [
+    "map_aggregation_via_streams"
+  ]
+}
