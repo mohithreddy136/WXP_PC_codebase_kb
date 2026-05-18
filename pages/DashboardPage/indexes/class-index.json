@@ -39,6 +39,7 @@
     "verifyTooltipCountonReportWithFrameDonutBatterySwellChartFlexiWithOffset",
     "verifyTooltipCountOnDonutBatterySwellChartFlexi",
     "verifyReadInsightsIncident",
-    "verifyColumnsofAVRemediationList"
+    "verifyColumnsofAVRemediationList",
+    "clickDonutChart"
   ]
 }
