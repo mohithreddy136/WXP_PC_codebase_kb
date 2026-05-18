@@ -1,0 +1,16 @@
+{
+  "method": "getTextsOfIncidentDetailsPage",
+  "signals": [
+    "incident_popup_search_and_select",
+    "incident_popup_value_confirmation"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "popup",
+    "search_box",
+    "dropdown",
+    "list_item",
+    "cancel_action"
+  ]
+}
