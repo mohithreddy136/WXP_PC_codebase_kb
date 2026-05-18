@@ -1,0 +1,9 @@
+{
+  "method": "clickByJavaScriptOnIncidentDetailsPage",
+  "pattern_detected": [
+    "safe_click_pattern"
+  ],
+  "notes": [
+    "try/catch around click; logs on exception"
+  ]
+}
