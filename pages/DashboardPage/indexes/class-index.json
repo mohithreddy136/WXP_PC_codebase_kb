@@ -17,6 +17,7 @@
     "verifyLabelHiddenWhenClickOnLegends",
     "headerTextVerificationOnReportPageFrameFlexi",
     "headerTextVerificationOnReportPageFrameDonutChartFlexi",
-    "verifyLegendsAreHidden"
+    "verifyLegendsAreHidden",
+    "verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi"
   ]
 }
