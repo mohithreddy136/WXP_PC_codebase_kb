@@ -174,5 +174,9 @@
   "verifyTooltipTextVersionStatusdrilldown": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyTooltipTextVersionStatusdrilldown.json"
+  },
+  "verifyTooltipTextOnReportWithDrillDown": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyTooltipTextOnReportWithDrillDown.json"
   }
 }
