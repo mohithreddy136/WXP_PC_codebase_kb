@@ -1,0 +1,23 @@
+{
+  "method": "clickOnElementOfIncidentDetailsPage",
+  "actions": [
+    "verify_element_presence"
+  ],
+  "locators": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean (element present)"
+  ],
+  "selenium_actions": [
+    "verifyElementIsPresent"
+  ],
+  "ui_interactions": [
+    "element_presence_check"
+  ],
+  "reusable_helper_usage": [
+    "verifyElementIsPresent"
+  ]
+}
