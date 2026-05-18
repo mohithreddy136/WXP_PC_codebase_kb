@@ -1,0 +1,12 @@
+{
+  "method": "getActualAarrayAfterDragAndDropOperation",
+  "signals": [
+    "filter_functionality_verification"
+  ],
+  "domain": "dashboard_filtering",
+  "related_entities": [
+    "dropdown",
+    "filter",
+    "column"
+  ]
+}
