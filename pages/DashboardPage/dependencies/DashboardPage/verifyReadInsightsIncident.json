@@ -1,0 +1,22 @@
+{
+  "method": "verifyReadInsightsIncident",
+  "depends_on_methods": [
+    "waitForPageLoaded",
+    "sleeper",
+    "waitForElementsOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "getElementsOfDashboardPage",
+    "enterTextForDashboardPage",
+    "pressKey",
+    "waitForPresenceOfElementsOfDashboardPage",
+    "verifyElementsOfDashboardPage"
+  ],
+  "cross_page_calls": [],
+  "helpers": [],
+  "external_dependencies": [
+    "LOGGER",
+    "List",
+    "WebElement",
+    "Keys"
+  ]
+}
