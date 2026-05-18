@@ -1,0 +1,10 @@
+{
+  "method": "verifyTooltipCountonReportWithFrameDonutBatterySwellChartFlexiWithOffset",
+  "pattern_detected": [
+    "pagination_vs_tooltip_count_validation",
+    "fallback_to_rowcount_validation",
+    "tab_switching_workflow",
+    "legend_toggle_iteration"
+  ],
+  "notes": "Compares tooltip count with pagination count or row count when pagination is not visible."
+}
