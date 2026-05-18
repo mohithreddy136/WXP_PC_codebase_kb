@@ -30,6 +30,7 @@
     "getActualAarrayAfterDragAndDropOperation",
     "getActualAarrayAfterDragAndDropOperationWithHiddenArea",
     "headerTextVerificationOnReportPage",
-    "viewThreatDetailsRedirectionOnReportPage"
+    "viewThreatDetailsRedirectionOnReportPage",
+    "switchToParentTabOfDashboardPage"
   ]
 }
