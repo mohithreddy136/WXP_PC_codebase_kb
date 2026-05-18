@@ -1,0 +1,33 @@
+{
+  "method": "verifySwitchAccount",
+  "actions": [
+    "click",
+    "verify_clickable",
+    "select_dropdown"
+  ],
+  "locators": [
+    "addWidgetButton",
+    "widgetAddConfirmButton",
+    "visualizationForBatterry"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "clickOnElementsOfDashboardPage",
+    "clickByJavaScriptOnDashboardPage"
+  ],
+  "ui_interactions": [
+    "click add widget button",
+    "select category and subcategory",
+    "select option",
+    "confirm widget add"
+  ],
+  "reusable_helpers": [
+    "selectCategoryForFlexibleDashboardPage",
+    "selectSubCategoryForFlexibleDashboardPage",
+    "selectOptionForFlexibleDashboardPage",
+    "getTextLanguage",
+    "verifyElementIsClickableOfDashboardPage"
+  ]
+}
