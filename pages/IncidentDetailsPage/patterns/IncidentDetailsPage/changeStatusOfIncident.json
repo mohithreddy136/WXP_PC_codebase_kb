@@ -1,0 +1,7 @@
+{
+  "method": "changeStatusOfIncident",
+  "pattern_detected": [
+    "popup_search_delegation",
+    "exception_handling_with_logging"
+  ]
+}
