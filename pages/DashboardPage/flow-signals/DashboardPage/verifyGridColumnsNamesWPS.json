@@ -1,0 +1,14 @@
+{
+  "method": "verifyGridColumnsNamesWPS",
+  "signals": [
+    "chart_label_count_verification",
+    "criteria_logging"
+  ],
+  "domain": "dashboard_analytics",
+  "related_entities": [
+    "chart",
+    "legend",
+    "criteria",
+    "count"
+  ]
+}
