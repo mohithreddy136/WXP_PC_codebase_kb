@@ -1,0 +1,10 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi",
+  "depends_on_methods": [
+    "waitForPageLoaded",
+    "getTextOfDashboardPage",
+    "getElementsOfDashboardPage",
+    "sleeper",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
