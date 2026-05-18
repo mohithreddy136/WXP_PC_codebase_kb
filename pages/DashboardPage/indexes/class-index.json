@@ -42,6 +42,7 @@
     "verifyColumnsofAVRemediationList",
     "clickDonutChart",
     "verifyDrillDownCountgDonutChartFlexi",
-    "verifyTooltipTextVersionStatusdrilldown"
+    "verifyTooltipTextVersionStatusdrilldown",
+    "verifyTooltipTextOnReportWithDrillDown"
   ]
 }
