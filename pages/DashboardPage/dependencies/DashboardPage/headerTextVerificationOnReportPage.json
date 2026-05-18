@@ -1,0 +1,17 @@
+{
+  "method": "headerTextVerificationOnReportPage",
+  "depends_on_methods": [
+    "clickByJavaScriptOnDashboardPage",
+    "verifyElementIsClickableOfDashboardPage",
+    "sleeper",
+    "clickOnElementsOfDashboardPage",
+    "selectCategoryForFlexibleDashboardPage",
+    "selectSubCategoryForFlexibleDashboardPage",
+    "selectOptionForFlexibleDashboardPage",
+    "getTextLanguage"
+  ],
+  "cross_page_calls": [],
+  "utilities": [
+    "LOGGER"
+  ]
+}
