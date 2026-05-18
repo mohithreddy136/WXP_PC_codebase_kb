@@ -146,5 +146,9 @@
   "VerifyheaderTextOnReportPageFrameDonutSwellChartFlexi": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/VerifyheaderTextOnReportPageFrameDonutSwellChartFlexi.json"
+  },
+  "verifyTooltipCountonReportWithFrameDonutBatterySwellChartFlexiWithOffset": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyTooltipCountonReportWithFrameDonutBatterySwellChartFlexiWithOffset.json"
   }
 }
