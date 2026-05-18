@@ -42,5 +42,9 @@
   "submitIncident": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/submitIncident.json"
+  },
+  "validateDeviceNameHyperLink": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/validateDeviceNameHyperLink.json"
   }
 }
