@@ -1,0 +1,13 @@
+{
+  "method": "changePriorityOfIncident",
+  "depends_on_methods": [
+    "getTextOfList",
+    "getTextBy",
+    "LOGGER.error"
+  ],
+  "cross_page_calls": [],
+  "helpers": [
+    "list text helper getTextOfList",
+    "text retrieval helper getTextBy"
+  ]
+}
