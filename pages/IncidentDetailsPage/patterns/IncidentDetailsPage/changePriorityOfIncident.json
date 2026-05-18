@@ -1,0 +1,8 @@
+{
+  "method": "changePriorityOfIncident",
+  "pattern_detected": [
+    "list_text_extraction_pattern",
+    "thin_wrapper_over_helpers",
+    "exception_handling_with_logging"
+  ]
+}
