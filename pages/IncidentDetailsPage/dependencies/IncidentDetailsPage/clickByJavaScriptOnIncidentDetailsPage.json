@@ -1,0 +1,13 @@
+{
+  "method": "clickByJavaScriptOnIncidentDetailsPage",
+  "depends_on_methods": [
+    "click"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "LOGGER"
+  ],
+  "utilities": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty"
+  ]
+}
