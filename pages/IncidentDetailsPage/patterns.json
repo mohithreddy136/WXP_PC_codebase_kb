@@ -2,58 +2,47 @@
   {
     "methods": [
       {
-        "method": "getTextOfElementOnIncidentDetailsPage",
+        "method": "selectOptionFromDropdownOnIncidentDetailsPage",
         "pattern_detected": [
-          "property_key_to_locator_resolution",
-          "exception_wrapped_helper_call"
-        ],
-        "notes": [
-          "Uses properties file to resolve locator key to actual locator string",
-          "Wraps low-level helper getTextBy with try/catch and logging"
+          "dropdown_selection_workflow",
+          "popup_interaction_workflow",
+          "safe_try_catch_wrapper"
         ]
       },
       {
-        "method": "verifyElementIsEnableOfIncidentDetailsPage",
+        "method": "selectedValueFromSearchBoxInsidePopup",
         "pattern_detected": [
-          "property_key_to_locator_resolution",
-          "exception_wrapped_helper_call",
-          "state_verification_pattern"
-        ],
-        "notes": [
-          "Encapsulates enabled-state verification behind page-level method"
+          "search_selection_workflow",
+          "popup_interaction_workflow",
+          "wait_and_click_pattern",
+          "no_results_handling_pattern",
+          "safe_try_catch_wrapper"
         ]
       },
       {
-        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "method": "selectedValueFromSearchBoxInsideDevicePopup",
         "pattern_detected": [
-          "property_key_to_locator_resolution",
-          "exception_wrapped_helper_call",
-          "clickability_verification_pattern"
-        ],
-        "notes": [
-          "Encapsulates clickable-state verification behind page-level method"
+          "search_selection_workflow",
+          "popup_interaction_workflow",
+          "wait_and_click_pattern",
+          "no_results_handling_pattern",
+          "safe_try_catch_wrapper"
         ]
       },
       {
-        "method": "waitForElementOfIncidentDetailsPage",
+        "method": "verifySearchValueOnIncidentInsidePopup",
         "pattern_detected": [
-          "property_key_to_locator_resolution",
-          "wait_and_check_visibility_pattern",
-          "exception_wrapped_helper_call"
-        ],
-        "notes": [
-          "Uses visibility verification as a wait mechanism"
+          "search_verification_workflow",
+          "safe_try_catch_wrapper",
+          "helper_delegation_pattern"
         ]
       },
       {
-        "method": "getElementOfIncidentDetailsPage",
+        "method": "waitForElementToBeClickableOfIncidentDetailsPage",
         "pattern_detected": [
-          "property_key_to_locator_resolution",
-          "exception_wrapped_helper_call",
-          "element_access_helper_pattern"
-        ],
-        "notes": [
-          "Provides direct WebElement access via key-based lookup"
+          "wait_and_clickable_pattern",
+          "safe_try_catch_wrapper",
+          "explicit_wait_helper_pattern"
         ]
       }
     ]
