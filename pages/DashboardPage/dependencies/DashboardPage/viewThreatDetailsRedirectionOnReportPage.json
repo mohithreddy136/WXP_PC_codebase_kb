@@ -1,0 +1,18 @@
+{
+  "method": "viewThreatDetailsRedirectionOnReportPage",
+  "depends_on_methods": [
+    "verifyElementIsClickableOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "selectCategoryForFlexibleDashboardPage",
+    "selectSubCategoryForFlexibleDashboardPage",
+    "selectOptionForFlexibleDashboardPage",
+    "clickByJavaScriptOnDashboardPage",
+    "sleeper",
+    "scrollToDashboardPage",
+    "getTextLanguage"
+  ],
+  "cross_page_calls": [],
+  "utilities": [
+    "LOGGER"
+  ]
+}
