@@ -16,6 +16,7 @@
     "changeStatusOfIncident",
     "changePriorityOfIncident",
     "getDetailsOfIncident",
-    "getDetailsOfIncident_continuation_block"
+    "getDetailsOfIncident_continuation_block",
+    "selectValueFromDropdownInPopup"
   ]
 }
