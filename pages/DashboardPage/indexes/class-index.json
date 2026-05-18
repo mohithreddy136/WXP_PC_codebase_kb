@@ -3,6 +3,7 @@
     "verifyElementsOfDashboardPage",
     "waitForElementsOfDashboardPage",
     "waitForElementsOfDashboardPageDynamic",
-    "waitForPresenceOfElementsOfDashboardPageDynamic"
+    "waitForPresenceOfElementsOfDashboardPageDynamic",
+    "clickOnElementsOfDashboardPage"
   ]
 }
