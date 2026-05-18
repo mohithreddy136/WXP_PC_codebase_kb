@@ -1,0 +1,14 @@
+{
+  "method": "getTextOfIncidentDetailsPage",
+  "depends_on_methods": [
+    "enterText"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "enterText"
+  ],
+  "utilities": [
+    "incidentDetailsPagePropertiesPageProperties",
+    "LOGGER"
+  ]
+}
