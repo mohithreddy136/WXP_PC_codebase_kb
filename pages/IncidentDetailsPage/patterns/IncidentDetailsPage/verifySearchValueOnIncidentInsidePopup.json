@@ -1,0 +1,9 @@
+{
+  "method": "verifySearchValueOnIncidentInsidePopup",
+  "pattern_detected": [
+    "dropdown_selection_workflow"
+  ],
+  "details": {
+    "selection": "conditional option selection based on current value"
+  }
+}
