@@ -1,0 +1,12 @@
+{
+  "method": "clickOnElementsOfDashboardPage",
+  "signals": [
+    "dashboard_element_state_check",
+    "selection_verification"
+  ],
+  "domain": "dashboard_ui",
+  "related_entities": [
+    "dashboard_element",
+    "selection_state"
+  ]
+}
