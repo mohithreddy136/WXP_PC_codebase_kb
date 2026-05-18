@@ -2,56 +2,38 @@
   {
     "methods": [
       {
-        "method": "getTextsOfIncidentDetailsPage",
+        "method": "ObjectReader",
         "pattern_detected": [
-          "text_extraction_helper"
-        ],
-        "notes": [
-          "Wrapper around generic list text extraction utility"
+          "page_object_repository_reference"
         ]
       },
       {
-        "method": "getTextOfIncidentDetailsPage",
+        "method": "getProperty",
         "pattern_detected": [
-          "text_extraction_helper"
-        ],
-        "notes": [
-          "Wrapper around generic single element text extraction utility"
+          "config_from_system_property",
+          "ui_version_switching"
         ]
       },
       {
-        "method": "enrollDevice",
+        "method": "getInstance",
         "pattern_detected": [
-          "multi_page_navigation_workflow",
-          "api_test_data_setup",
-          "exception_swallow_with_logging"
-        ],
-        "notes": [
-          "Uses UI pages to gather data then calls backend helper to enroll fake device"
+          "double_checked_locking_singleton",
+          "lazy_initialization",
+          "shared_webdriver_singleton_page"
         ]
       },
       {
-        "method": "submitIncident",
+        "method": "IncidentDetailsPage",
         "pattern_detected": [
-          "api_submission_workflow",
-          "localization_lookup_before_action",
-          "exception_swallow_with_logging"
-        ],
-        "notes": [
-          "Builds localized incident metadata then submits via API helper"
+          "page_object_constructor_initialization",
+          "object_repository_loading"
         ]
       },
       {
-        "method": "validateDeviceNameHyperLink",
+        "method": "getTextLanguage",
         "pattern_detected": [
-          "table_configuration_workflow",
-          "search_selection_workflow",
-          "waitless_click_sequence",
-          "attribute_based_validation",
-          "exception_swallow_with_logging"
-        ],
-        "notes": [
-          "Configures table, searches incident, opens details, validates device name is non-clickable and non-editable"
+          "i18n_language_properties_lookup",
+          "key_based_text_resolution"
         ]
       }
     ]
