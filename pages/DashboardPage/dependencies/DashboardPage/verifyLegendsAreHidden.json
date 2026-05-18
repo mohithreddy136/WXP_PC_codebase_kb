@@ -1,0 +1,16 @@
+{
+  "method": "verifyLegendsAreHidden",
+  "depends_on_methods": [
+    "waitForPageLoaded",
+    "sleeper",
+    "verifyElementsOfDashboardPage",
+    "verifyLabelHiddenWhenClickOnLegendsFlexi",
+    "getElementsOfDashboardPage",
+    "mouseHoverbyoffsett",
+    "waitForElementsOfDashboardPage",
+    "getTextOfDashboardPage",
+    "mouseHoverbyoffsettClick",
+    "switchToDifferentTabOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
