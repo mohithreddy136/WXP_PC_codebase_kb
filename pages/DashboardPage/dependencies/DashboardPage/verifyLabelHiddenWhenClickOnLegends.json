@@ -1,0 +1,13 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegends",
+  "depends_on_methods": [
+    "getTextOfDashboardPage",
+    "mouseHoverbyoffsettClick",
+    "waitForElementsOfDashboardPage",
+    "waitForElementsOfDashboardPageDynamic",
+    "switchToDifferentTabOfDashboardPage",
+    "clickOnElementsOfDashboardPage",
+    "getElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
