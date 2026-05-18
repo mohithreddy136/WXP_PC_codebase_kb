@@ -1,5 +1,6 @@
 {
   "DashboardPage": [
-    "verifyElementsOfDashboardPage"
+    "verifyElementsOfDashboardPage",
+    "waitForElementsOfDashboardPage"
   ]
 }
