@@ -1,0 +1,9 @@
+{
+  "method": "verifyChartsMessageAllIncidentsFixed",
+  "pattern_detected": [
+    "localization_based_validation",
+    "guard_clause_on_chart_type",
+    "no_data_message_verification",
+    "exception_on_invalid_input"
+  ]
+}
