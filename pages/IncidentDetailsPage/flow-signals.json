@@ -2,88 +2,74 @@
   {
     "methods": [
       {
-        "method": "changeAssigneeOfIncident",
+        "method": "getDetailsOfIncident",
         "signals": [
-          "incident_update",
-          "assignee_change",
-          "comment_capture"
+          "read_incident_details",
+          "fetch_incident_metadata"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "assignee",
-          "comment"
-        ],
-        "notes": [
-          "Returns comment text after assignee change"
+          "incident_type",
+          "incident_subtype",
+          "priority",
+          "status",
+          "created_on"
         ]
       },
       {
-        "method": "changeStatusOfIncident",
+        "method": "selectValueFromDropdownInPopup",
         "signals": [
-          "incident_update",
-          "status_change",
-          "comment_capture"
+          "update_incident_field_via_popup",
+          "select_single_dropdown_value"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "popup",
+          "dropdown",
+          "field_value"
+        ]
+      },
+      {
+        "method": "selectValueFromDropdownInTypePopup",
+        "signals": [
+          "update_incident_type_and_subtype",
+          "select_cascading_dropdown_values"
+        ],
+        "domain": "incident_management",
+        "related_entities": [
+          "incident",
+          "incident_type",
+          "incident_subtype",
+          "popup",
+          "dropdown"
+        ]
+      },
+      {
+        "method": "verifyOptionsOnDropdownForIncidentDetailsPage",
+        "signals": [
+          "validate_dropdown_configuration",
+          "verify_status_options"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
           "status",
-          "comment"
-        ],
-        "notes": [
-          "Returns first comment text after status change; potential mismatch with secondComment verification"
+          "dropdown",
+          "configuration"
         ]
       },
       {
-        "method": "changePriorityOfIncident",
+        "method": "selectFirstOptionFromDropdownOnIncidentDetailsPage",
         "signals": [
-          "incident_update",
-          "priority_change",
-          "comment_capture"
+          "auto_select_default_dropdown_option"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "priority",
-          "comment"
-        ],
-        "notes": [
-          "Returns first comment text after priority change; potential mismatch with thirdComment verification"
-        ]
-      },
-      {
-        "method": "changeTypeSubtypeOfIncident",
-        "signals": [
-          "incident_update",
-          "type_change",
-          "subtype_change",
-          "comment_capture"
-        ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "type",
-          "subtype",
-          "comment"
-        ],
-        "notes": [
-          "Returns map of type/subType derived from comments"
-        ]
-      },
-      {
-        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
-        "signals": [
-          "ui_wait",
-          "element_invisibility"
-        ],
-        "domain": "ui_synchronization",
-        "related_entities": [
-          "web_element",
-          "locator_key"
-        ],
-        "notes": [
-          "Non-throwing wait wrapper; logs on exception only"
+          "dropdown",
+          "default_option"
         ]
       }
     ]
