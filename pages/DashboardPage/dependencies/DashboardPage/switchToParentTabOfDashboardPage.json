@@ -1,0 +1,10 @@
+{
+  "method": "switchToParentTabOfDashboardPage",
+  "depends_on_methods": [
+    "clickByJavaScriptOnDashboardPage",
+    "verifyElementIsClickableOfDashboardPage",
+    "sleeper"
+  ],
+  "cross_page_calls": [],
+  "utilities": []
+}
