@@ -1,0 +1,44 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsDonutChartFlexi",
+  "actions": [
+    "wait_for_page_load",
+    "sleep",
+    "conditional_check",
+    "list_iteration",
+    "click",
+    "tab_switch",
+    "text_extraction",
+    "string_manipulation",
+    "pagination_parse",
+    "logging"
+  ],
+  "locators": [
+    "paginationKey",
+    "columnListKey"
+  ],
+  "waits": [
+    "waitForPageLoaded"
+  ],
+  "assertions": [
+    "last page number equals tooltip count OR tooltipcount equals number of grid rows"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "click",
+    "getText"
+  ],
+  "ui_interactions": [
+    "pagination_read",
+    "grid_row_count",
+    "legend_toggle"
+  ],
+  "reusable_helper_usage": [
+    "waitForPageLoaded",
+    "getTextOfDashboardPage",
+    "getElementsOfDashboardPage",
+    "sleeper",
+    "switchToPreviousTabOfDashboardPage"
+  ]
+}
