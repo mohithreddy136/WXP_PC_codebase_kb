@@ -166,5 +166,9 @@
   "clickDonutChart": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/clickDonutChart.json"
+  },
+  "verifyDrillDownCountgDonutChartFlexi": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyDrillDownCountgDonutChartFlexi.json"
   }
 }
