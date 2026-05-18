@@ -94,5 +94,9 @@
   "getFirstWord": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/getFirstWord.json"
+  },
+  "verifyGridColumnsNamesWPS": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyGridColumnsNamesWPS.json"
   }
 }
