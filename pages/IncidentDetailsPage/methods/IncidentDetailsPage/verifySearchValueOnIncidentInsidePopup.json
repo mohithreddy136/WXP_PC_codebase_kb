@@ -1,0 +1,26 @@
+{
+  "method": "verifySearchValueOnIncidentInsidePopup",
+  "actions": [
+    "delegate",
+    "return"
+  ],
+  "locators": [
+    "textKey",
+    "emptyTextKey",
+    "listKey"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean (search success/failure)"
+  ],
+  "selenium_actions": [
+    "verifySearchFunctionalityInsidePopup (wrapper utility)"
+  ],
+  "ui_interactions": [
+    "verify search behavior inside incident popup list"
+  ],
+  "reusable_helper_usage": [
+    "verifySearchFunctionalityInsidePopup"
+  ]
+}
