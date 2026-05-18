@@ -126,5 +126,9 @@
   "switchToParentTabOfDashboardPage": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/switchToParentTabOfDashboardPage.json"
+  },
+  "verifySwitchAccount": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifySwitchAccount.json"
   }
 }
