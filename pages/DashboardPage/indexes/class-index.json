@@ -38,6 +38,7 @@
     "VerifyheaderTextOnReportPageFrameDonutSwellChartFlexi",
     "verifyTooltipCountonReportWithFrameDonutBatterySwellChartFlexiWithOffset",
     "verifyTooltipCountOnDonutBatterySwellChartFlexi",
-    "verifyReadInsightsIncident"
+    "verifyReadInsightsIncident",
+    "verifyColumnsofAVRemediationList"
   ]
 }
