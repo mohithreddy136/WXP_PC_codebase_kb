@@ -29,6 +29,7 @@
     "verifyHideAndShowLink",
     "getActualAarrayAfterDragAndDropOperation",
     "getActualAarrayAfterDragAndDropOperationWithHiddenArea",
-    "headerTextVerificationOnReportPage"
+    "headerTextVerificationOnReportPage",
+    "viewThreatDetailsRedirectionOnReportPage"
   ]
 }
