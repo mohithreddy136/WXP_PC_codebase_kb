@@ -1,0 +1,48 @@
+{
+  "method": "selectedValueFromSearchBoxInsideDevicePopup",
+  "actions": [
+    "enter_text",
+    "sleep",
+    "conditional_flow",
+    "click",
+    "substring_extraction",
+    "return"
+  ],
+  "locators": [
+    "textKey",
+    "emptyTextKey",
+    "listKey",
+    "dropdownkey",
+    "cancelButtonKey"
+  ],
+  "waits": [
+    "sleeper(5000)"
+  ],
+  "assertions": [],
+  "return_values": [
+    "String (selected option text or null on exception)"
+  ],
+  "selenium_actions": [
+    "enterText",
+    "verifyElementIsPresent",
+    "getTextBy",
+    "getElementsTillAllElementsPresent",
+    "WebElement.getText",
+    "WebElement.click"
+  ],
+  "ui_interactions": [
+    "type into search box inside device popup",
+    "handle 'no items available' state",
+    "select matching item from filtered list",
+    "close dropdown and cancel popup when no results"
+  ],
+  "reusable_helper_usage": [
+    "enterText",
+    "sleeper",
+    "verifyElementIsPresent",
+    "getTextBy",
+    "getElementsTillAllElementsPresent",
+    "clickOnElementOfIncidentDetailsPage",
+    "getTextLanguage"
+  ]
+}
