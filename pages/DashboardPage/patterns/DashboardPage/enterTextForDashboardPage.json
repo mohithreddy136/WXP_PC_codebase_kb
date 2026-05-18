@@ -1,0 +1,10 @@
+{
+  "method": "enterTextForDashboardPage",
+  "pattern_detected": [
+    "attribute_read_helper",
+    "property_key_to_locator"
+  ],
+  "notes": [
+    "Centralized attribute retrieval via helper using property-based locator."
+  ]
+}
