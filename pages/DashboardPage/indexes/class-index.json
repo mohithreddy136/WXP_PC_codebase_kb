@@ -2,6 +2,7 @@
   "DashboardPage": [
     "verifyElementsOfDashboardPage",
     "waitForElementsOfDashboardPage",
-    "waitForElementsOfDashboardPageDynamic"
+    "waitForElementsOfDashboardPageDynamic",
+    "waitForPresenceOfElementsOfDashboardPageDynamic"
   ]
 }
