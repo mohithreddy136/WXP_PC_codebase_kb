@@ -2,76 +2,64 @@
   {
     "methods": [
       {
-        "method": "getTextsOfIncidentDetailsPage",
+        "method": "ObjectReader",
         "signals": [
-          "read_incident_details_texts"
+          "page_repository_setup"
         ],
-        "domain": "incident_management_ui",
+        "domain": "ui_automation_framework",
         "related_entities": [
-          "incident_details_page",
-          "ui_text_list"
-        ]
-      },
-      {
-        "method": "getTextOfIncidentDetailsPage",
-        "signals": [
-          "read_incident_detail_text"
-        ],
-        "domain": "incident_management_ui",
-        "related_entities": [
-          "incident_details_page",
-          "ui_text"
-        ]
-      },
-      {
-        "method": "enrollDevice",
-        "signals": [
-          "device_enrollment",
-          "test_data_setup"
-        ],
-        "domain": "device_management",
-        "related_entities": [
-          "company",
-          "device",
-          "company_pin",
-          "fake_device"
-        ],
-        "notes": [
-          "Enrolls a fake device for incident-related testing"
-        ]
-      },
-      {
-        "method": "submitIncident",
-        "signals": [
-          "incident_submission",
-          "api_case_creation"
-        ],
-        "domain": "incident_management",
-        "related_entities": [
-          "incident",
-          "device",
-          "tenant",
-          "user"
-        ],
-        "notes": [
-          "Submits incident via API for given device"
-        ]
-      },
-      {
-        "method": "validateDeviceNameHyperLink",
-        "signals": [
-          "incident_device_field_validation",
-          "ui_non_editable_validation"
-        ],
-        "domain": "incident_management_ui",
-        "related_entities": [
-          "incident",
-          "device",
-          "incident_table",
+          "object_repository",
           "incident_details_page"
+        ]
+      },
+      {
+        "method": "getProperty",
+        "signals": [
+          "ui_version_resolution"
         ],
-        "notes": [
-          "Validates device name field is not hyperlink and not editable for sales admin"
+        "domain": "configuration_management",
+        "related_entities": [
+          "system_property",
+          "ui_version"
+        ]
+      },
+      {
+        "method": "getInstance",
+        "signals": [
+          "page_instance_acquisition",
+          "driver_bound_page_creation"
+        ],
+        "domain": "ui_automation_framework",
+        "related_entities": [
+          "incident_details_page",
+          "webdriver",
+          "singleton_instance"
+        ]
+      },
+      {
+        "method": "IncidentDetailsPage",
+        "signals": [
+          "page_initialization",
+          "repository_binding"
+        ],
+        "domain": "ui_automation_framework",
+        "related_entities": [
+          "incident_details_page",
+          "object_repository"
+        ]
+      },
+      {
+        "method": "getTextLanguage",
+        "signals": [
+          "localized_text_resolution",
+          "language_file_loading"
+        ],
+        "domain": "i18n",
+        "related_entities": [
+          "language",
+          "locale_folder",
+          "text_key",
+          "properties_file"
         ]
       }
     ]
