@@ -1,0 +1,29 @@
+{
+  "method": "verifyGridColumnsNamesWPS",
+  "actions": [
+    "get_text",
+    "string_manipulation",
+    "map_put",
+    "click"
+  ],
+  "locators": [
+    "tooltipCountonChart"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "HashMap<String,Integer> labelCount"
+  ],
+  "selenium_actions": [
+    "getTextOfDashboardPage",
+    "click"
+  ],
+  "ui_interactions": [
+    "read_chart_tooltip_counts",
+    "click_legend_items"
+  ],
+  "reusable_helpers": [
+    "getTextOfDashboardPage",
+    "Strings.isNullOrEmpty"
+  ]
+}
