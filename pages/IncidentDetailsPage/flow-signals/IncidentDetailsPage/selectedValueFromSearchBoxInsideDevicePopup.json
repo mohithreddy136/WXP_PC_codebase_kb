@@ -1,0 +1,13 @@
+{
+  "method": "selectedValueFromSearchBoxInsideDevicePopup",
+  "signals": [
+    "incident_dropdown_option_verification",
+    "incident_dropdown_first_selection"
+  ],
+  "domain": "incident_management",
+  "related_entities": [
+    "incident",
+    "status_dropdown",
+    "dropdown_option"
+  ]
+}
