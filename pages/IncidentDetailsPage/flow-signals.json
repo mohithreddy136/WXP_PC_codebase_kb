@@ -2,79 +2,64 @@
   {
     "methods": [
       {
-        "method": "changeAssigneeOfIncident",
+        "method": "getTextOfElementOnIncidentDetailsPage",
         "signals": [
-          "incident_update",
-          "assignee_change",
-          "comment_validation"
+          "read_incident_detail_field"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "assignee",
-          "comment"
-        ],
-        "business_intent": "Change the assignee of an incident and return the latest comment confirming the change."
+          "incident_details_page",
+          "ui_field_text"
+        ]
       },
       {
-        "method": "changeStatusOfIncident",
+        "method": "verifyElementIsEnableOfIncidentDetailsPage",
         "signals": [
-          "incident_update",
-          "status_change",
-          "comment_validation"
+          "check_incident_detail_field_enabled"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "status",
-          "comment"
-        ],
-        "business_intent": "Change the status of an incident to Investigation and return a comment as confirmation."
+          "incident_details_page",
+          "ui_field_state"
+        ]
       },
       {
-        "method": "changePriorityOfIncident",
+        "method": "verifyElementIsClickableOfIncidentDetailsPage",
         "signals": [
-          "incident_update",
-          "priority_change",
-          "comment_validation"
+          "check_incident_detail_field_clickable"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "priority",
-          "comment"
-        ],
-        "business_intent": "Change the priority of an incident to Critical and return a comment as confirmation."
+          "incident_details_page",
+          "ui_field_state"
+        ]
       },
       {
-        "method": "changeTypeSubtypeOfIncident",
+        "method": "waitForElementOfIncidentDetailsPage",
         "signals": [
-          "incident_update",
-          "type_change",
-          "subtype_change",
-          "comment_validation"
+          "wait_for_incident_detail_field_visibility"
         ],
         "domain": "incident_management",
         "related_entities": [
           "incident",
-          "type",
-          "subtype",
-          "comment"
-        ],
-        "business_intent": "Change the type and subtype of an incident and return both values derived from comments."
+          "incident_details_page",
+          "ui_field_visibility"
+        ]
       },
       {
-        "method": "waitUntilElementIsInvisibleOfIncidentDetailsPage",
+        "method": "getElementOfIncidentDetailsPage",
         "signals": [
-          "ui_wait",
-          "element_invisibility"
+          "access_incident_detail_webelement"
         ],
-        "domain": "ui_synchronization",
+        "domain": "incident_management",
         "related_entities": [
-          "web_element",
-          "locator_key"
-        ],
-        "business_intent": "Block execution until a specific UI element becomes invisible using a locator key."
+          "incident",
+          "incident_details_page",
+          "webelement"
+        ]
       }
     ]
   }
