@@ -2,9 +2,10 @@
   {
     "methods": [
       {
-        "method": "getTextOfElementOnIncidentDetailsPage",
+        "method": "getTextsOfIncidentDetailsPage",
         "actions": [
-          "get_text"
+          "get_text_list",
+          "error_logging"
         ],
         "locators": [
           "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
@@ -12,22 +13,25 @@
         "waits": [],
         "assertions": [],
         "return_values": [
-          "String text of located element or null on exception"
+          "ArrayList<String> of texts from elements located by key; null on exception"
         ],
         "selenium_actions": [
-          "getText"
+          "indirect: getTextOfList (likely iterates WebElements and reads text)"
         ],
         "ui_interactions": [
-          "read_text"
+          "read multiple element texts"
         ],
         "reusable_helper_usage": [
-          "getTextBy(String locator)"
+          "getTextOfList",
+          "incidentDetailsPagePropertiesPageProperties",
+          "LOGGER.error"
         ]
       },
       {
-        "method": "verifyElementIsEnableOfIncidentDetailsPage",
+        "method": "getTextOfIncidentDetailsPage",
         "actions": [
-          "verify_enabled_state"
+          "get_text",
+          "propagate_exception"
         ],
         "locators": [
           "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
@@ -35,89 +39,150 @@
         "waits": [],
         "assertions": [],
         "return_values": [
-          "boolean enabled or false on exception"
+          "String text of element located by key; throws Exception on failure"
         ],
         "selenium_actions": [
-          "isEnabled"
+          "indirect: getTextBy (likely WebElement#getText)"
         ],
         "ui_interactions": [
-          "check_enabled_state"
+          "read single element text"
         ],
         "reusable_helper_usage": [
-          "verifyElementIsEnable(String locator)"
+          "getTextBy",
+          "incidentDetailsPagePropertiesPageProperties"
         ]
       },
       {
-        "method": "verifyElementIsClickableOfIncidentDetailsPage",
+        "method": "enrollDevice",
         "actions": [
-          "verify_clickable_state"
+          "instantiate_page_objects",
+          "read_text",
+          "click",
+          "generate_company_pin",
+          "call_enrollment_api",
+          "error_logging"
         ],
         "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+          "CompaniesPage.companyNameShow",
+          "CompaniesPage.companyEmailId",
+          "PreferencesPage.preferencesTab"
         ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "boolean clickable or false on exception"
+          "HashMap<String,String> deviceDetails from EnrollFakeDevice; null on exception"
         ],
         "selenium_actions": [
-          "isDisplayed",
-          "isEnabled",
-          "clickability_check"
+          "page object interactions via CompaniesPage and PreferencesPage (click, getText)"
         ],
         "ui_interactions": [
-          "check_clickable_state"
+          "navigate to preferences tab",
+          "read company name and email"
         ],
         "reusable_helper_usage": [
-          "verifyElementIsClickable(String locator)"
+          "CompaniesPage.getInstance",
+          "CompaniesPage.getTextOfCompaniesPage",
+          "PreferencesPage.getInstance",
+          "PreferencesPage.clickOnElementsOfPreferencesPage",
+          "PreDefinedActions.getDriver",
+          "CompanyPin.generateCompanyPin",
+          "EnrollFakeDevice.enrollFakeDeviceForIncident",
+          "LOGGER.error"
         ]
       },
       {
-        "method": "waitForElementOfIncidentDetailsPage",
+        "method": "submitIncident",
         "actions": [
-          "wait_for_visibility"
+          "instantiate_page_object",
+          "compose_incident_title",
+          "lookup_localized_text",
+          "submit_incident_via_api",
+          "error_logging"
         ],
         "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
-        ],
-        "waits": [
-          "verifyElementIsVisible"
-        ],
-        "assertions": [],
-        "return_values": [
-          "boolean visible after wait or false on exception"
-        ],
-        "selenium_actions": [
-          "explicit_wait_visibility"
-        ],
-        "ui_interactions": [
-          "wait_for_element"
-        ],
-        "reusable_helper_usage": [
-          "verifyElementIsVisible(String locator)"
-        ]
-      },
-      {
-        "method": "getElementOfIncidentDetailsPage",
-        "actions": [
-          "get_webelement"
-        ],
-        "locators": [
-          "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+          "DeviceDetailsPage API-related fields via deviceDetails map"
         ],
         "waits": [],
         "assertions": [],
         "return_values": [
-          "WebElement or null on exception"
+          "String incidentId from submitCaseUsingAPI; null on exception"
         ],
         "selenium_actions": [
-          "findElement"
+          "indirect: DeviceDetailsPage interactions; API submission helper"
         ],
         "ui_interactions": [
-          "access_element"
+          "none (API-based submission)"
         ],
         "reusable_helper_usage": [
-          "getElement(String locator)"
+          "DeviceDetailsPage.getInstance",
+          "PreDefinedActions.getDriver",
+          "getTextLanguage",
+          "DeviceDetailsPage.submitCaseUsingAPI",
+          "LOGGER.error"
+        ]
+      },
+      {
+        "method": "validateDeviceNameHyperLink",
+        "actions": [
+          "instantiate_page_objects",
+          "click",
+          "select_all_checkboxes",
+          "save_configuration",
+          "reset_to_default",
+          "search_incident",
+          "open_incident_details",
+          "locate_element",
+          "attribute_check",
+          "element_visibility_check",
+          "conditional_return",
+          "error_logging"
+        ],
+        "locators": [
+          "IncidentPage.tableConfigurationButton",
+          "TableConfigurationPage.columnCheckboxesOnPopup",
+          "TableConfigurationPage.listOfColumnsOnPopup",
+          "TableConfigurationPage.saveButton",
+          "TableConfigurationPage.resettodefault",
+          "IncidentPage.idSearchBox",
+          "IncidentPage.noelementsdisplaytext",
+          "IncidentPage.idlist",
+          "IncidentPage.incidentIdLink",
+          "IncidentDetailsPage.deviceName",
+          "IncidentDetailsPage.editDevieIcon"
+        ],
+        "waits": [],
+        "assertions": [
+          "implicit validation via verifySearchValueOnIncident"
+        ],
+        "return_values": [
+          "boolean: true if device name is neither hyperlink nor editable; false otherwise or on exception"
+        ],
+        "selenium_actions": [
+          "click",
+          "select_all_checkboxes_on_popup",
+          "search_and_verify",
+          "getElement",
+          "getAttribute",
+          "verifyElement"
+        ],
+        "ui_interactions": [
+          "configure incident table columns",
+          "reset table configuration",
+          "search incident by id",
+          "open incident details",
+          "inspect device name field and edit icon"
+        ],
+        "reusable_helper_usage": [
+          "IncidentPage.getInstance",
+          "TableConfigurationPage.getInstance",
+          "IncidentPage.clickOnElementsOfIncidentPage",
+          "TableConfigurationPage.selectAllCheckboxOfPopup",
+          "TableConfigurationPage.clickOnElementsOfTableConfigurationPage",
+          "IncidentPage.verifySearchValueOnIncident",
+          "getElementOfIncidentDetailsPage",
+          "verifyElementOfIncidentDetailsPage",
+          "PreDefinedActions.getDriver",
+          "LOGGER.error"
         ]
       }
     ]
