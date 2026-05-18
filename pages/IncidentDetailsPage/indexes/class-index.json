@@ -10,6 +10,7 @@
     "enterTextForIncidentDetailsPage",
     "selectedValueFromSearchBoxInsideDevicePopup",
     "verifySearchValueOnIncidentInsidePopup",
-    "submitIncident"
+    "submitIncident",
+    "validateDeviceNameHyperLink"
   ]
 }
