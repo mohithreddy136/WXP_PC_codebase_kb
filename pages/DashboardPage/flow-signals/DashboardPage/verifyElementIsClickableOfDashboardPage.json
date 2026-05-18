@@ -1,0 +1,11 @@
+{
+  "method": "verifyElementIsClickableOfDashboardPage",
+  "signals": [
+    "dashboard_element_click"
+  ],
+  "domain": "dashboard_ui",
+  "related_entities": [
+    "dashboard_element",
+    "click_action"
+  ]
+}
