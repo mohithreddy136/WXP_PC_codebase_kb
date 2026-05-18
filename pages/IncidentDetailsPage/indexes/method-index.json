@@ -38,5 +38,9 @@
   "verifySearchValueOnIncidentInsidePopup": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/verifySearchValueOnIncidentInsidePopup.json"
+  },
+  "submitIncident": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/submitIncident.json"
   }
 }
