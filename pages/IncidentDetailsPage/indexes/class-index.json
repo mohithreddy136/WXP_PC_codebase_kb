@@ -1,6 +1,7 @@
 {
   "IncidentDetailsPage": [
     "getTextOfElementOnIncidentDetailsPage",
-    "verifyElementIsEnableOfIncidentDetailsPage"
+    "verifyElementIsEnableOfIncidentDetailsPage",
+    "verifyElementIsClickableOfIncidentDetailsPage"
   ]
 }
