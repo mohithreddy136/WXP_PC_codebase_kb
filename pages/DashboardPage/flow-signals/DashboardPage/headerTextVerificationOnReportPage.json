@@ -1,0 +1,18 @@
+{
+  "method": "headerTextVerificationOnReportPage",
+  "signals": [
+    "dashboard_widget_add",
+    "security_compliance_widget",
+    "category_selection",
+    "subcategory_selection",
+    "option_selection"
+  ],
+  "domain": "dashboard_reporting",
+  "related_entities": [
+    "widget",
+    "category",
+    "subcategory",
+    "option",
+    "language"
+  ]
+}
