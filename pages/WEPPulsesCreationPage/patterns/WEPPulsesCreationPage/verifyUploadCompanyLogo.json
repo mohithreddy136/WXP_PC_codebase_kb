@@ -1,0 +1,11 @@
+{
+  "method": "verifyUploadCompanyLogo",
+  "pattern_detected": [
+    "tab_switch_workflow",
+    "wait_and_click_pattern",
+    "file_upload_via_robot_and_clipboard",
+    "actions_click_pattern",
+    "javascript_click_fallback",
+    "page_refresh_after_update"
+  ]
+}
