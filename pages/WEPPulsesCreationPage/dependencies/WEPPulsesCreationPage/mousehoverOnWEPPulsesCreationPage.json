@@ -1,0 +1,14 @@
+{
+  "method": "mousehoverOnWEPPulsesCreationPage",
+  "depends_on_methods": [
+    "enterText"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "enterText"
+  ],
+  "utilities": [
+    "WEPPulsesCreationPagePageProperties",
+    "LOGGER"
+  ]
+}
