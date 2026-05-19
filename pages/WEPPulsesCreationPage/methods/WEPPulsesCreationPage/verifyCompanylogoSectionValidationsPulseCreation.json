@@ -1,0 +1,54 @@
+{
+  "method": "verifyCompanylogoSectionValidationsPulseCreation",
+  "actions": [
+    "sleep",
+    "verify_element_present",
+    "verify_element_enabled",
+    "click",
+    "conditional_branching",
+    "switch_tab",
+    "refresh_page"
+  ],
+  "locators": [
+    "CompanyLogoTitleLabel",
+    "companyLogoNotPresent",
+    "companyLogoPresent",
+    "uploadCompanyLogoLabel",
+    "companyLogoToggle",
+    "updateCompanyLogoLabel",
+    "selectLogoImageIcon",
+    "browseButton",
+    "saveButtonOnPopUp",
+    "LogoPresent"
+  ],
+  "waits": [
+    "sleeper",
+    "waitForElementsOfWEPPulsesCreationPage"
+  ],
+  "assertions": [
+    "logo_presence_state_matches_configuration",
+    "toggle_state_respected",
+    "settings_navigation_behaviour"
+  ],
+  "return_values": [
+    "boolean"
+  ],
+  "selenium_actions": [
+    "click (Actions)"
+  ],
+  "ui_interactions": [
+    "toggle_company_logo",
+    "navigate_to_settings_tab",
+    "upload_or_remove_logo"
+  ],
+  "reusable_helpers_used": [
+    "verifyElementsOfWEPPulsesCreationPage",
+    "clickByActionsClickWEPPulsesCreationPage",
+    "verifyUploadCompanyLogo",
+    "verifyElementIsEnableonWEPPulsesCreationPage",
+    "waitForElementsOfWEPPulsesCreationPage",
+    "switchToDifferentTabOfWEPPulsesCreationPage",
+    "switchToPreviousTabOfWEPPulsesCreationPage",
+    "refreshPage"
+  ]
+}
