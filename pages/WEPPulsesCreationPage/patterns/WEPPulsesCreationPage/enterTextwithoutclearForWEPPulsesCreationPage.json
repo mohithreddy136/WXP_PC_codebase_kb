@@ -1,0 +1,7 @@
+{
+  "method": "enterTextwithoutclearForWEPPulsesCreationPage",
+  "pattern_detected": [
+    "direct_property_lookup",
+    "raw_text_entry_without_clear"
+  ]
+}
