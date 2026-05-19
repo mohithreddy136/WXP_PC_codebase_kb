@@ -26,5 +26,9 @@
   "verifyAudienceSectionValidationsApplyFiltersDynamicMethod": {
     "class_name": "WEPPulsesCreationPage",
     "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/verifyAudienceSectionValidationsApplyFiltersDynamicMethod.json"
+  },
+  "verifyAudienceSectionValidationsEntraIDMethod": {
+    "class_name": "WEPPulsesCreationPage",
+    "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/verifyAudienceSectionValidationsEntraIDMethod.json"
   }
 }
