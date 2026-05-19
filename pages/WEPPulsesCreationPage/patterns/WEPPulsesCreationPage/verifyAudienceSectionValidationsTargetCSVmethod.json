@@ -1,0 +1,10 @@
+{
+  "method": "verifyAudienceSectionValidationsTargetCSVmethod",
+  "pattern_detected": [
+    "settings_driven_state_change",
+    "tab_switch_workflow",
+    "wait_and_click_pattern",
+    "post_action_refresh_pattern",
+    "toggle_disable_flow"
+  ]
+}
