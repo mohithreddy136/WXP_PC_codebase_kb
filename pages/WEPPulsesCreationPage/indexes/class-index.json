@@ -5,6 +5,7 @@
     "mousehoverOnWEPPulsesCreationPage",
     "getElementOnWEPPulsesCreationPage",
     "clickByJavaScriptOnWEPPulsesCreationPage",
-    "verifyAudienceSectionValidationsApplyFiltersDynamicMethod"
+    "verifyAudienceSectionValidationsApplyFiltersDynamicMethod",
+    "enterTextwithoutclearForWEPPulsesCreationPage"
   ]
 }
