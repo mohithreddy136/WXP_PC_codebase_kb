@@ -9,6 +9,7 @@
     "enterTextwithoutclearForWEPPulsesCreationPage",
     "verifyUploadCompanyLogo",
     "verifyCompanylogoSectionValidationsPulseCreation",
-    "verifyScheduleSectionTabValidationsPulseCreation"
+    "verifyScheduleSectionTabValidationsPulseCreation",
+    "verifyAudienceSectionValidationsTargetCSVmethod"
   ]
 }
