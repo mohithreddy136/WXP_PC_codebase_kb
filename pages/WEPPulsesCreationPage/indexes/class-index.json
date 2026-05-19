@@ -8,6 +8,7 @@
     "verifyAudienceSectionValidationsApplyFiltersDynamicMethod",
     "enterTextwithoutclearForWEPPulsesCreationPage",
     "verifyUploadCompanyLogo",
-    "verifyCompanylogoSectionValidationsPulseCreation"
+    "verifyCompanylogoSectionValidationsPulseCreation",
+    "verifyScheduleSectionTabValidationsPulseCreation"
   ]
 }
