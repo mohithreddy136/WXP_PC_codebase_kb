@@ -1,0 +1,12 @@
+{
+  "method": "getElementOnWEPPulsesCreationPage",
+  "actions": [],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": [],
+  "raw_content": "143: \t *\n144: \t * @param key - Locator of element\n145: \t * @param text - The text to be entered"
+}
