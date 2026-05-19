@@ -1,0 +1,7 @@
+{
+  "method": "mousehoverOnWEPPulsesCreationPage",
+  "pattern_detected": [
+    "safe_try_catch_logging",
+    "text_entry_workflow"
+  ]
+}
