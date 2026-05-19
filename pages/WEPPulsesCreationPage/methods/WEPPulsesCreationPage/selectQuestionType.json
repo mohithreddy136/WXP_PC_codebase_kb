@@ -1,0 +1,19 @@
+{
+  "method": "selectQuestionType",
+  "actions": [],
+  "locators": [
+    "ReachNoteText"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [
+    "verifyElementsOfWEPPulsesCreationPage(\"ReachNoteText\")"
+  ],
+  "reusable_helper_usage": [
+    "verifyElementsOfWEPPulsesCreationPage"
+  ]
+}
