@@ -1,0 +1,22 @@
+{
+  "method": "clickByJavaScriptOnWEPPulsesCreationPage",
+  "actions": [
+    "enter_text_js"
+  ],
+  "locators": [
+    "WEPPulsesCreationPagePageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "enterTextUsingJavaScript"
+  ],
+  "ui_interactions": [
+    "text_input"
+  ],
+  "reusable_helper_usage": [
+    "enterTextUsingJavaScript"
+  ],
+  "raw_content": "149: \t\t\tenterTextUsingJavaScript(WEPPulsesCreationPagePageProperties.getProperty(key), Text);\n150: \t\t} catch (Exception e) {\n151: \t\t\tLOGGER.error((\"Exception occured in method enterTextForWEPPulsesCreationPage \" + e.getMessage()));\n152: \t\t}\n153: \t}\n154: \t\n155: "
+}
