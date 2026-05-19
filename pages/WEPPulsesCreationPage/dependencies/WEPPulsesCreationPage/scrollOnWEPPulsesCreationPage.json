@@ -1,0 +1,7 @@
+{
+  "method": "scrollOnWEPPulsesCreationPage",
+  "depends_on_methods": [],
+  "cross_page_calls": [],
+  "helper_methods": [],
+  "utilities": []
+}
