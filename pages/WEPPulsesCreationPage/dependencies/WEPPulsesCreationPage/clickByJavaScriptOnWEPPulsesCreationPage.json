@@ -1,0 +1,14 @@
+{
+  "method": "clickByJavaScriptOnWEPPulsesCreationPage",
+  "depends_on_methods": [
+    "enterTextUsingJavaScript"
+  ],
+  "cross_page_calls": [],
+  "helper_methods": [
+    "enterTextUsingJavaScript"
+  ],
+  "utilities": [
+    "WEPPulsesCreationPagePageProperties",
+    "LOGGER"
+  ]
+}
