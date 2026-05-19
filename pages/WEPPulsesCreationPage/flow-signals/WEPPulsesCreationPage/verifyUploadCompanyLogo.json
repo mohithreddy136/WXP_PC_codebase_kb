@@ -1,0 +1,19 @@
+{
+  "method": "verifyUploadCompanyLogo",
+  "signals": [
+    "open_company_settings_tab",
+    "initiate_logo_upload",
+    "select_existing_image",
+    "trigger_file_browse",
+    "confirm_logo_upload",
+    "return_to_pulse_creation",
+    "refresh_to_view_logo"
+  ],
+  "domain": "branding_configuration",
+  "related_entities": [
+    "company_logo",
+    "settings_page",
+    "pulse_creation_page",
+    "file_system"
+  ]
+}
