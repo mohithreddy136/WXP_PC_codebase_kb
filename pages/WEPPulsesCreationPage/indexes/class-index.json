@@ -3,6 +3,7 @@
     "enterTextJavaScriptForWEPPulsesCreationPage",
     "scrollOnWEPPulsesCreationPage",
     "mousehoverOnWEPPulsesCreationPage",
-    "getElementOnWEPPulsesCreationPage"
+    "getElementOnWEPPulsesCreationPage",
+    "clickByJavaScriptOnWEPPulsesCreationPage"
   ]
 }
