@@ -1,0 +1,22 @@
+{
+  "method": "mousehoverOnWEPPulsesCreationPage",
+  "actions": [
+    "enter_text"
+  ],
+  "locators": [
+    "WEPPulsesCreationPagePageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "enterText"
+  ],
+  "ui_interactions": [
+    "text_input"
+  ],
+  "reusable_helper_usage": [
+    "enterText"
+  ],
+  "raw_content": "134: \t\ttry {\n135: \t\t\tenterText(WEPPulsesCreationPagePageProperties.getProperty(key), Text);\n136: \t\t} catch (Exception e) {\n137: \t\t\tLOGGER.error((\"Exception occured in method enterTextForWEPPulsesCreationPage \" + e.getMessage()));\n138: \t\t}\n139: \t}\n140: \t"
+}
