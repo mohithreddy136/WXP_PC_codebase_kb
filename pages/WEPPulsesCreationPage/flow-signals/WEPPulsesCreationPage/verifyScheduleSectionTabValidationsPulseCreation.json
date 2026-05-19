@@ -1,0 +1,15 @@
+{
+  "method": "verifyScheduleSectionTabValidationsPulseCreation",
+  "signals": [
+    "complete_file_path_entry",
+    "confirm_upload_dialog",
+    "save_logo_selection",
+    "reload_pulse_page_to_reflect_logo"
+  ],
+  "domain": "branding_configuration",
+  "related_entities": [
+    "company_logo",
+    "upload_dialog",
+    "pulse_creation_page"
+  ]
+}
