@@ -1,0 +1,17 @@
+{
+  "method": "verifyCompanylogoSectionValidationsPulseCreation",
+  "depends_on_methods": [
+    "sleeper",
+    "verifyElementsOfWEPPulsesCreationPage",
+    "clickByActionsClickWEPPulsesCreationPage",
+    "verifyUploadCompanyLogo",
+    "verifyElementIsEnableonWEPPulsesCreationPage",
+    "waitForElementsOfWEPPulsesCreationPage",
+    "switchToDifferentTabOfWEPPulsesCreationPage",
+    "switchToPreviousTabOfWEPPulsesCreationPage",
+    "refreshPage"
+  ],
+  "external_dependencies": [
+    "LOGGER"
+  ]
+}
