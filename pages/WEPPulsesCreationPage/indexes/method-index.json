@@ -18,5 +18,9 @@
   "clickByJavaScriptOnWEPPulsesCreationPage": {
     "class_name": "WEPPulsesCreationPage",
     "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/clickByJavaScriptOnWEPPulsesCreationPage.json"
+  },
+  "selectQuestionType": {
+    "class_name": "WEPPulsesCreationPage",
+    "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/selectQuestionType.json"
   }
 }
