@@ -1,0 +1,38 @@
+{
+  "method": "verifyScheduleSectionTabValidationsPulseCreation",
+  "actions": [
+    "robot_key_sequence",
+    "sleep",
+    "click",
+    "wait_for_page_load",
+    "switch_tab",
+    "refresh_page"
+  ],
+  "locators": [
+    "saveButtonOnPopUp"
+  ],
+  "waits": [
+    "sleeper",
+    "waitForPageLoaded"
+  ],
+  "assertions": [
+    "company_logo_uploaded_message"
+  ],
+  "return_values": [
+    "boolean_flag_usage"
+  ],
+  "selenium_actions": [
+    "click (Actions)",
+    "refresh"
+  ],
+  "ui_interactions": [
+    "confirm_file_upload",
+    "tab_navigation"
+  ],
+  "reusable_helpers_used": [
+    "clickByActionsClickWEPPulsesCreationPage",
+    "waitForPageLoaded",
+    "switchToPreviousTabOfWEPPulsesCreationPage",
+    "refreshPage"
+  ]
+}
