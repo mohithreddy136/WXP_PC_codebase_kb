@@ -46,5 +46,9 @@
   "verifyScheduleSectionTabValidationsPulseCreation": {
     "class_name": "WEPPulsesCreationPage",
     "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/verifyScheduleSectionTabValidationsPulseCreation.json"
+  },
+  "verifyAudienceSectionValidationsTargetCSVmethod": {
+    "class_name": "WEPPulsesCreationPage",
+    "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/verifyAudienceSectionValidationsTargetCSVmethod.json"
   }
 }
