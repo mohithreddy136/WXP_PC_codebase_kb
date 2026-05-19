@@ -1,0 +1,51 @@
+{
+  "method": "verifyAudienceSectionValidationsTargetCSVmethod",
+  "actions": [
+    "wait_for_element",
+    "click",
+    "switch_tab",
+    "sleep",
+    "refresh_page",
+    "verify_element_present",
+    "verify_element_enabled"
+  ],
+  "locators": [
+    "updateCompanyLogoLabel",
+    "selectLogoImageIcon",
+    "saveButtonOnPopUp",
+    "LogoPresent",
+    "CompanyLogoTitleLabel",
+    "uploadCompanyLogoLabel",
+    "companyLogoNotPresent",
+    "companyLogoToggle"
+  ],
+  "waits": [
+    "waitForElementsOfWEPPulsesCreationPage",
+    "sleeper"
+  ],
+  "assertions": [
+    "logo_removed_successfully_when_disabled_via_settings",
+    "toggle_behaviour_after_removal",
+    "logo_present_but_toggle_disabled_scenario"
+  ],
+  "return_values": [
+    "boolean"
+  ],
+  "selenium_actions": [
+    "click (Actions)",
+    "refresh"
+  ],
+  "ui_interactions": [
+    "navigate_to_settings_and_remove_logo",
+    "toggle_logo_visibility"
+  ],
+  "reusable_helpers_used": [
+    "waitForElementsOfWEPPulsesCreationPage",
+    "clickByActionsClickWEPPulsesCreationPage",
+    "switchToDifferentTabOfWEPPulsesCreationPage",
+    "verifyElementsOfWEPPulsesCreationPage",
+    "switchToPreviousTabOfWEPPulsesCreationPage",
+    "refreshPage",
+    "verifyElementIsEnableonWEPPulsesCreationPage"
+  ]
+}
