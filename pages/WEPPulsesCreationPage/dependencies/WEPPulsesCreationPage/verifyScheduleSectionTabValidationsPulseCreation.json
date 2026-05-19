@@ -1,0 +1,15 @@
+{
+  "method": "verifyScheduleSectionTabValidationsPulseCreation",
+  "depends_on_methods": [
+    "clickByActionsClickWEPPulsesCreationPage",
+    "waitForPageLoaded",
+    "switchToPreviousTabOfWEPPulsesCreationPage",
+    "refreshPage",
+    "sleeper"
+  ],
+  "external_dependencies": [
+    "java.awt.Robot",
+    "java.awt.event.KeyEvent",
+    "LOGGER"
+  ]
+}
