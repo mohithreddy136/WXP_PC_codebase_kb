@@ -1,5 +1,6 @@
 {
   "WEPPulsesCreationPage": [
-    "enterTextJavaScriptForWEPPulsesCreationPage"
+    "enterTextJavaScriptForWEPPulsesCreationPage",
+    "scrollOnWEPPulsesCreationPage"
   ]
 }
