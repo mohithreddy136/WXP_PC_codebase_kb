@@ -6,6 +6,7 @@
     "getElementOnWEPPulsesCreationPage",
     "clickByJavaScriptOnWEPPulsesCreationPage",
     "verifyAudienceSectionValidationsApplyFiltersDynamicMethod",
-    "enterTextwithoutclearForWEPPulsesCreationPage"
+    "enterTextwithoutclearForWEPPulsesCreationPage",
+    "verifyUploadCompanyLogo"
   ]
 }
