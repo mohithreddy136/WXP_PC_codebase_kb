@@ -1,0 +1,16 @@
+{
+  "method": "verifyAudienceSectionValidationsTargetCSVmethod",
+  "signals": [
+    "navigate_to_logo_update_from_pulse",
+    "remove_logo_from_settings",
+    "sync_logo_state_back_to_pulse",
+    "disable_logo_toggle_when_required"
+  ],
+  "domain": "branding_configuration",
+  "related_entities": [
+    "company_logo",
+    "settings_page",
+    "pulse_creation_page",
+    "logo_toggle"
+  ]
+}
