@@ -1,0 +1,7 @@
+{
+  "method": "enterTextwithoutclearForWEPPulsesCreationPage",
+  "depends_on_methods": [
+    "WEPPulsesCreationPagePageProperties.getProperty",
+    "enterTextwithoutclear"
+  ]
+}
