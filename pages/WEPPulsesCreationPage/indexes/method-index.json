@@ -34,5 +34,9 @@
   "enterTextwithoutclearForWEPPulsesCreationPage": {
     "class_name": "WEPPulsesCreationPage",
     "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/enterTextwithoutclearForWEPPulsesCreationPage.json"
+  },
+  "verifyUploadCompanyLogo": {
+    "class_name": "WEPPulsesCreationPage",
+    "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/verifyUploadCompanyLogo.json"
   }
 }
