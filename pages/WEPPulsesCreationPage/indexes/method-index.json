@@ -6,5 +6,9 @@
   "scrollOnWEPPulsesCreationPage": {
     "class_name": "WEPPulsesCreationPage",
     "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/scrollOnWEPPulsesCreationPage.json"
+  },
+  "mousehoverOnWEPPulsesCreationPage": {
+    "class_name": "WEPPulsesCreationPage",
+    "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/mousehoverOnWEPPulsesCreationPage.json"
   }
 }
