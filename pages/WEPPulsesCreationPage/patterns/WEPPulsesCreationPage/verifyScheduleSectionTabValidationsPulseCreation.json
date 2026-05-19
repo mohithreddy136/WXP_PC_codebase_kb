@@ -1,0 +1,10 @@
+{
+  "method": "verifyScheduleSectionTabValidationsPulseCreation",
+  "pattern_detected": [
+    "file_upload_confirmation_sequence",
+    "robot_keyboard_interaction",
+    "wait_and_click_pattern",
+    "tab_switch_workflow",
+    "post_action_refresh_pattern"
+  ]
+}
