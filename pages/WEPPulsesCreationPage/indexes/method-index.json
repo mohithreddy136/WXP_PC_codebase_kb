@@ -42,5 +42,9 @@
   "verifyCompanylogoSectionValidationsPulseCreation": {
     "class_name": "WEPPulsesCreationPage",
     "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/verifyCompanylogoSectionValidationsPulseCreation.json"
+  },
+  "verifyScheduleSectionTabValidationsPulseCreation": {
+    "class_name": "WEPPulsesCreationPage",
+    "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/verifyScheduleSectionTabValidationsPulseCreation.json"
   }
 }
