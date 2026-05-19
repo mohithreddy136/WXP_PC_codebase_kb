@@ -1,0 +1,13 @@
+{
+  "method": "clickByJavaScriptOnWEPPulsesCreationPage",
+  "signals": [
+    "user_input",
+    "field_population",
+    "javascript_interaction"
+  ],
+  "domain": "wep_pulses",
+  "related_entities": [
+    "form_field",
+    "text_value"
+  ]
+}
