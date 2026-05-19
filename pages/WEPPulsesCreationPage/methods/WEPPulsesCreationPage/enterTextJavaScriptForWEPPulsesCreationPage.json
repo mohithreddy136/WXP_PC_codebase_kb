@@ -1,0 +1,12 @@
+{
+  "method": "enterTextJavaScriptForWEPPulsesCreationPage",
+  "actions": [],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": [],
+  "raw_content": "115: \t}\n116: \n117: \t/**\n118: \t * This method is to get the element text for the provided key\n119: \t * @param key\n120: \t * @return\n121: \t * @throws Exception"
+}
