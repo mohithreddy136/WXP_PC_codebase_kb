@@ -10,5 +10,9 @@
   "mousehoverOnWEPPulsesCreationPage": {
     "class_name": "WEPPulsesCreationPage",
     "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/mousehoverOnWEPPulsesCreationPage.json"
+  },
+  "getElementOnWEPPulsesCreationPage": {
+    "class_name": "WEPPulsesCreationPage",
+    "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/getElementOnWEPPulsesCreationPage.json"
   }
 }
