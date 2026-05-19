@@ -4,6 +4,7 @@
     "scrollOnWEPPulsesCreationPage",
     "mousehoverOnWEPPulsesCreationPage",
     "getElementOnWEPPulsesCreationPage",
-    "clickByJavaScriptOnWEPPulsesCreationPage"
+    "clickByJavaScriptOnWEPPulsesCreationPage",
+    "verifyAudienceSectionValidationsApplyFiltersDynamicMethod"
   ]
 }
