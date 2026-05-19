@@ -1,0 +1,20 @@
+{
+  "method": "verifyUploadCompanyLogo",
+  "depends_on_methods": [
+    "switchToDifferentTabOfWEPPulsesCreationPage",
+    "waitForPageLoaded",
+    "waitForElementsOfWEPPulsesCreationPage",
+    "sleeper",
+    "clickByActionsClickWEPPulsesCreationPage",
+    "clickByJavaScriptOnWEPPulsesCreationPage",
+    "switchToPreviousTabOfWEPPulsesCreationPage",
+    "refreshPage"
+  ],
+  "external_dependencies": [
+    "java.awt.Toolkit",
+    "java.awt.datatransfer.StringSelection",
+    "java.awt.Robot",
+    "java.awt.event.KeyEvent",
+    "LOGGER"
+  ]
+}
