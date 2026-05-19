@@ -1,0 +1,48 @@
+{
+  "method": "verifyUploadCompanyLogo",
+  "actions": [
+    "switch_tab",
+    "wait_for_page_load",
+    "wait_for_element",
+    "click",
+    "sleep",
+    "refresh_page",
+    "set_clipboard",
+    "robot_key_sequence"
+  ],
+  "locators": [
+    "selectLogoImageIcon",
+    "selectImageRadioButtonOnPopup",
+    "browseButton",
+    "saveButtonOnPopUp"
+  ],
+  "waits": [
+    "waitForPageLoaded",
+    "waitForElementsOfWEPPulsesCreationPage",
+    "sleeper"
+  ],
+  "assertions": [],
+  "return_values": [
+    "boolean"
+  ],
+  "selenium_actions": [
+    "click (Actions)",
+    "click (JavaScript)",
+    "refresh"
+  ],
+  "ui_interactions": [
+    "open_new_tab",
+    "upload_file_via_native_dialog",
+    "confirm_upload"
+  ],
+  "reusable_helpers_used": [
+    "switchToDifferentTabOfWEPPulsesCreationPage",
+    "waitForPageLoaded",
+    "waitForElementsOfWEPPulsesCreationPage",
+    "clickByActionsClickWEPPulsesCreationPage",
+    "clickByJavaScriptOnWEPPulsesCreationPage",
+    "sleeper",
+    "switchToPreviousTabOfWEPPulsesCreationPage",
+    "refreshPage"
+  ]
+}
