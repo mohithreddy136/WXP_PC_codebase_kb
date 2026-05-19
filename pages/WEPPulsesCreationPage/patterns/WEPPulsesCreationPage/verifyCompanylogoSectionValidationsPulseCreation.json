@@ -1,0 +1,11 @@
+{
+  "method": "verifyCompanylogoSectionValidationsPulseCreation",
+  "pattern_detected": [
+    "conditional_ui_validation_matrix",
+    "toggle_configuration_pattern",
+    "settings_redirection_pattern",
+    "wait_and_click_pattern",
+    "tab_switch_workflow",
+    "post_action_refresh_pattern"
+  ]
+}
