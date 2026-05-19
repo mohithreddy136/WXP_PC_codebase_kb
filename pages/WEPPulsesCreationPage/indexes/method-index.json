@@ -38,5 +38,9 @@
   "verifyUploadCompanyLogo": {
     "class_name": "WEPPulsesCreationPage",
     "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/verifyUploadCompanyLogo.json"
+  },
+  "verifyCompanylogoSectionValidationsPulseCreation": {
+    "class_name": "WEPPulsesCreationPage",
+    "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/verifyCompanylogoSectionValidationsPulseCreation.json"
   }
 }
