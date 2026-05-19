@@ -1,0 +1,17 @@
+{
+  "method": "verifyCompanylogoSectionValidationsPulseCreation",
+  "signals": [
+    "evaluate_logo_presence_state",
+    "upload_logo_if_required",
+    "enable_or_disable_logo_toggle",
+    "navigate_to_settings_if_logo_present",
+    "validate_logo_section_against_configuration"
+  ],
+  "domain": "branding_configuration",
+  "related_entities": [
+    "company_logo",
+    "logo_toggle",
+    "pulse_creation_page",
+    "settings_page"
+  ]
+}
