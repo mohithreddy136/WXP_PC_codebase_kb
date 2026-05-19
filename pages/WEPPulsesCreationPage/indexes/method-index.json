@@ -22,5 +22,9 @@
   "selectQuestionType": {
     "class_name": "WEPPulsesCreationPage",
     "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/selectQuestionType.json"
+  },
+  "verifyAudienceSectionValidationsApplyFiltersDynamicMethod": {
+    "class_name": "WEPPulsesCreationPage",
+    "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/verifyAudienceSectionValidationsApplyFiltersDynamicMethod.json"
   }
 }
