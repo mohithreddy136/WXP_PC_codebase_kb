@@ -1,6 +1,7 @@
 {
   "WEPPulsesCreationPage": [
     "enterTextJavaScriptForWEPPulsesCreationPage",
-    "scrollOnWEPPulsesCreationPage"
+    "scrollOnWEPPulsesCreationPage",
+    "mousehoverOnWEPPulsesCreationPage"
   ]
 }
