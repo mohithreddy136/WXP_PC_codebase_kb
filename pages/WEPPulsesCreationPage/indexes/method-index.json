@@ -14,5 +14,9 @@
   "getElementOnWEPPulsesCreationPage": {
     "class_name": "WEPPulsesCreationPage",
     "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/getElementOnWEPPulsesCreationPage.json"
+  },
+  "clickByJavaScriptOnWEPPulsesCreationPage": {
+    "class_name": "WEPPulsesCreationPage",
+    "path": "pages/WEPPulsesCreationPage/methods/WEPPulsesCreationPage/clickByJavaScriptOnWEPPulsesCreationPage.json"
   }
 }
