@@ -1,0 +1,12 @@
+{
+  "method": "enterTextwithoutclearForWEPPulsesCreationPage",
+  "signals": [
+    "input_append_without_clear",
+    "field_update"
+  ],
+  "domain": "pulse_configuration",
+  "related_entities": [
+    "pulse_form_field",
+    "input_text"
+  ]
+}
