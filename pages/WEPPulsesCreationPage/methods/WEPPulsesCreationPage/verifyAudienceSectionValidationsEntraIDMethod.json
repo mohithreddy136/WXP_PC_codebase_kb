@@ -1,0 +1,42 @@
+{
+  "method": "verifyAudienceSectionValidationsEntraIDMethod",
+  "actions": [
+    "verify_element",
+    "get_text",
+    "log",
+    "return"
+  ],
+  "locators": [
+    "contentpreviewNumbers",
+    "contentDescriptionSentiment",
+    "contentQuestionSections",
+    "contentpreviewbackEnabled",
+    "contentpreviewfarwardenabled",
+    ":dynamic: contentLogo"
+  ],
+  "waits": [
+    "sleeper(4000)"
+  ],
+  "assertions": [
+    "back button disabled and forward enabled at start",
+    "logo presence/absence matches LogoPresent flag",
+    "content sections visible on each forward click",
+    "back enabled and forward disabled at max count",
+    "forward button present after backward navigation"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "clickByActionsClickWEPPulsesCreationPage"
+  ],
+  "ui_interactions": [
+    "verify preview counters",
+    "navigate forward/backward through content preview"
+  ],
+  "reusable_helpers": [
+    "verifyElementsOfWEPPulsesCreationPage",
+    "getAttributesOfWEPPulsesCreationPage",
+    "sleeper"
+  ]
+}
