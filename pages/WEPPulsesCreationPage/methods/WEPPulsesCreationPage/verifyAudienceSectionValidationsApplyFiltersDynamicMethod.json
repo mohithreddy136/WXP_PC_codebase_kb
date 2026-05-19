@@ -1,0 +1,51 @@
+{
+  "method": "verifyAudienceSectionValidationsApplyFiltersDynamicMethod",
+  "actions": [
+    "click",
+    "file_import",
+    "verify_element",
+    "get_text",
+    "conditional_logic",
+    "log",
+    "sleep",
+    "return"
+  ],
+  "locators": [
+    "uploadCSVButton",
+    "uploadinprogressFileName",
+    "uploadInprogressText",
+    "uploadInprogessBar",
+    "fileDeleteIcon",
+    "errorMessage",
+    "errorMessageformatInvalid",
+    "deleteFileStateIcon",
+    "errorFile"
+  ],
+  "waits": [
+    "sleeper(3000)"
+  ],
+  "assertions": [
+    "error message equals expected for each CSV scenario",
+    "error message element not present after delete",
+    "invalid format error message equals expected",
+    "error message present before downloading error CSV"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "clickByActionsClickWEPPulsesCreationPage",
+    "fileImportInV3"
+  ],
+  "ui_interactions": [
+    "CSV upload via file chooser",
+    "click delete icon",
+    "click error file link"
+  ],
+  "reusable_helpers": [
+    "VerifyUploadCSVInProgressElements",
+    "verifyElementsOfWEPPulsesCreationPage",
+    "getTextOfWEPPulsesCreationPage",
+    "sleeper"
+  ]
+}
