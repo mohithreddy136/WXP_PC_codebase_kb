@@ -1,0 +1,12 @@
+{
+  "method": "scrollOnWEPPulsesCreationPage",
+  "actions": [],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": [],
+  "raw_content": "125: \t}\n126: \n127: \t/**\n128: \t * This is a method to enter text on an element\n129: \t *\n130: \t * @param key - Locator of element\n131: \t * @param text - The text to be entered"
+}
