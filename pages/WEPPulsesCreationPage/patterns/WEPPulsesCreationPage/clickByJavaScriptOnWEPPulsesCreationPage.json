@@ -1,0 +1,7 @@
+{
+  "method": "clickByJavaScriptOnWEPPulsesCreationPage",
+  "pattern_detected": [
+    "safe_try_catch_logging",
+    "javascript_text_entry_workflow"
+  ]
+}
