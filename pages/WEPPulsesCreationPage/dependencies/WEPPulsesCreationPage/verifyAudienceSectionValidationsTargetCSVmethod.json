@@ -1,0 +1,16 @@
+{
+  "method": "verifyAudienceSectionValidationsTargetCSVmethod",
+  "depends_on_methods": [
+    "waitForElementsOfWEPPulsesCreationPage",
+    "clickByActionsClickWEPPulsesCreationPage",
+    "switchToDifferentTabOfWEPPulsesCreationPage",
+    "sleeper",
+    "verifyElementsOfWEPPulsesCreationPage",
+    "switchToPreviousTabOfWEPPulsesCreationPage",
+    "refreshPage",
+    "verifyElementIsEnableonWEPPulsesCreationPage"
+  ],
+  "external_dependencies": [
+    "LOGGER"
+  ]
+}
