@@ -1,0 +1,23 @@
+{
+  "method": "enterTextwithoutclearForWEPPulsesCreationPage",
+  "actions": [
+    "enter_text"
+  ],
+  "locators": [
+    "WEPPulsesCreationPagePageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "void"
+  ],
+  "selenium_actions": [
+    "sendKeys (no clear)"
+  ],
+  "ui_interactions": [
+    "type_without_clearing"
+  ],
+  "reusable_helpers_used": [
+    "enterTextwithoutclear"
+  ]
+}
